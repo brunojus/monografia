@@ -1,0 +1,10 @@
+# Fdb version 3
+["pdflatex"] 1536000479 "/home/bruno/Monografia/tex/2_MachineLearning.tex" "2_MachineLearning.pdf" "2_MachineLearning" 1536000479
+  "/home/bruno/Monografia/tex/2_MachineLearning.tex" 1536000479 256 1ae9b805462483a45cad7c25e273615a ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1525040116 33301 a3134070eacafb10b1f371612ce2650d ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1535994381 7906415 213e60017b0051259b992004113278d4 ""
+  "2_MachineLearning.aux" 1536000479 8 a94a2480d3289e625eea47cd1b285758 ""
+  "2_MachineLearning.tex" 1536000479 256 1ae9b805462483a45cad7c25e273615a ""
+  (generated)
+  "2_MachineLearning.log"
+  "2_MachineLearning.pdf"

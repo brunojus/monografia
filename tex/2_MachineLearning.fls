@@ -1,0 +1,5 @@
+PWD /home/bruno/Monografia/tex
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/bruno/Monografia/tex/2_MachineLearning.tex
+OUTPUT 2_MachineLearning.log

@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classe do documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Opções:
+%  - Graduação: bacharelado|engenharia|licenciatura
+%  - Pós-graduação: [qualificacao], mestrado|doutorado, ppca|ppginf
+
+\documentclass[engenharia]{UnB-CIC}%
+% \documentclass[qualificacao,mestrado,ppca]{UnB-CIC}%
+
+\usepackage{pdfpages}% incluir PDFs, usado no apêndice
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informações do Trabalho
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\orientador{\prof \dr-Ing João Paulo Lustosa da Costa}{ENE/UnB}%
+%\coorientador{\prof \dr José Ralha}{CIC/UnB}
+\coordenador{\prof \dr José Edil Guimarães de Medeiros}{Bibliothèque universelle de Genève}%
+\diamesano{24}{dezembro}{2014}%
+
+\membrobanca{\prof \dr Rafael Timóteo de Sousa Júnior}{ENE/UnB}%
+\membrobanca{\dr-Ing Ricardo Kerhle Miranda}{ENM/UnB}%
+
+\autor{Bruno Justino Garcia}{Praciano}%
+
+\titulo{Spatio-Temporal Trend Analysis of the Brazilian Elections based on Twitter Data}%
+
+\palavraschave{Big Data, Aprendizado de Máquina Supervisionado, Análise de Sentimentos, Máquina de Vetor de Suporte}%
+\keywords{Big Data, Supervised Machine Learning, Sentiment Analysis, Support Vector Machine}%
+
+\newcommand{\unbcic}{\texttt{UnB-CIC}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}%
+    \capitulo{1_Introducao}{Introduction}%
+    \capitulo{2_MachineLearning}{Machine Learning}%
+    \capitulo{3_TextMining}{Text Mining}%
+    \capitulo{4_Methodology}{Methodology}%
+    \capitulo{5_Results}{Results}%
+    \capitulo{6_Conclusion}{Conclusion}%
+
+    \apendice{Apendice_Fichamento}{}%
+    \anexo{Anexo1}{Documentação Original \unbcic\ (parcial)}%
+\end{document}%
