@@ -8,45 +8,40 @@
 \contentsline {section}{\numberline {1.4}Outline}{1}{section.1.4}
 \contentsline {section}{\numberline {1.5}Related work}{1}{section.1.5}
 \contentsline {section}{\numberline {1.6}Chapters description}{1}{section.1.6}
-\contentsline {chapter}{\numberline {2}Machine Learning}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Basic Concepts}{2}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Training and testing phases}{2}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Learning of paradigms}{2}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Performance measures}{2}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Support Vector Machine}{2}{section.2.2}
-\contentsline {section}{\numberline {2.3}Naive Bayes}{2}{section.2.3}
-\contentsline {section}{\numberline {2.4}Decision Trees}{2}{section.2.4}
-\contentsline {section}{\numberline {2.5}Logistic Regression}{2}{section.2.5}
-\contentsline {chapter}{\numberline {3}Text Mining}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}Data Colection}{3}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Social Networks}{3}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Natural Language Processing}{3}{section.3.2}
-\contentsline {section}{\numberline {3.3}Pre-Processing}{3}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tokenization}{3}{section.3.4}
-\contentsline {section}{\numberline {3.5}Bag of Words}{3}{section.3.5}
-\contentsline {section}{\numberline {3.6}Term Frequency}{3}{section.3.6}
-\contentsline {section}{\numberline {3.7}Term Frequency - Inverse Document Frequency (TF-IDF)}{3}{section.3.7}
-\contentsline {section}{\numberline {3.8}Stemming}{3}{section.3.8}
-\contentsline {section}{\numberline {3.9}Stop Words}{3}{section.3.9}
-\contentsline {section}{\numberline {3.10}Sentiment Analysis}{3}{section.3.10}
-\contentsline {chapter}{\numberline {4}Methodology}{4}{chapter.4}
-\contentsline {section}{\numberline {4.1}Crawling and Tweet Extraction}{4}{section.4.1}
-\contentsline {section}{\numberline {4.2}Data Pre-Processing}{4}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lexical Dictionary}{4}{section.4.3}
-\contentsline {section}{\numberline {4.4}Sentiment Classification}{4}{section.4.4}
-\contentsline {section}{\numberline {4.5}Data Visualization}{4}{section.4.5}
-\contentsline {chapter}{\numberline {5}Results}{5}{chapter.5}
-\contentsline {section}{\numberline {5.1}Perfomance evaluation of trend analysis}{5}{section.5.1}
-\contentsline {section}{\numberline {5.2}N-Fold Cross Validation}{5}{section.5.2}
-\contentsline {section}{\numberline {5.3}Error evaluation of the sentiment analysis via SVM}{5}{section.5.3}
-\contentsline {section}{\numberline {5.4}Spatio Trend Analysis}{5}{section.5.4}
-\contentsline {section}{\numberline {5.5}Election Results}{5}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{6}{chapter.6}
+\contentsline {chapter}{\numberline {2}Concepts on Machine Learning and Text Mining}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Basic Concepts}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Training and testing phases}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Learning of paradigms}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Performance measures}{3}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Support Vector Machine}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Naive Bayes}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}Decision Trees}{3}{section.2.4}
+\contentsline {section}{\numberline {2.5}Logistic Regression}{3}{section.2.5}
+\contentsline {section}{\numberline {2.6}Natural Language Processing}{3}{section.2.6}
+\contentsline {section}{\numberline {2.7}Pre-Processing}{3}{section.2.7}
+\contentsline {section}{\numberline {2.8}Tokenization}{3}{section.2.8}
+\contentsline {section}{\numberline {2.9}Bag of Words}{3}{section.2.9}
+\contentsline {section}{\numberline {2.10}Term Frequency}{3}{section.2.10}
+\contentsline {section}{\numberline {2.11}Term Frequency - Inverse Document Frequency (TF-IDF)}{3}{section.2.11}
+\contentsline {section}{\numberline {2.12}Stemming}{3}{section.2.12}
+\contentsline {section}{\numberline {2.13}Stop Words}{3}{section.2.13}
+\contentsline {section}{\numberline {2.14}Sentiment Analysis}{3}{section.2.14}
+\contentsline {chapter}{\numberline {3}Proposed Framework}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}Crawling and Tweet Extraction}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Pre-Processing}{4}{section.3.2}
+\contentsline {section}{\numberline {3.3}Lexical Dictionary}{4}{section.3.3}
+\contentsline {section}{\numberline {3.4}Sentiment Classification}{4}{section.3.4}
+\contentsline {section}{\numberline {3.5}Data Visualization}{4}{section.3.5}
+\contentsline {chapter}{\numberline {4}Results}{5}{chapter.4}
+\contentsline {section}{\numberline {4.1}Perfomance evaluation of trend analysis}{5}{section.4.1}
+\contentsline {section}{\numberline {4.2}N-Fold Cross Validation}{5}{section.4.2}
+\contentsline {section}{\numberline {4.3}Error evaluation of the sentiment analysis via SVM}{5}{section.4.3}
+\contentsline {section}{\numberline {4.4}Spatio Trend Analysis}{5}{section.4.4}
+\contentsline {section}{\numberline {4.5}Election Results}{5}{section.4.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{6}{chapter.5}
 \contentsline {chapter}{Refer\^encias}{7}{section*.6}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \contentsline {chapter}{Appendix}{7}{chapter*.7}
 \contentsline {chapter}{\numberline {A}}{8}{appendix.A}
 \contentsline {section}{\numberline {A.\textlinf {1}}Appendix}{8}{section.A.1}
-\contentsline {chapter}{Anexo}{8}{section.A.1}
-\contentsline {chapter}{\numberline {I}Documenta\IeC {\c c}\IeC {\~a}o Original \texttt {UnB-CIC}\ (parcial)}{9}{appendix.B}

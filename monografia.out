@@ -9,7 +9,7 @@
 \BOOKMARK [1][-]{section.1.4}{Outline}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.5}{Related work}{chapter.1}% 10
 \BOOKMARK [1][-]{section.1.6}{Chapters description}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{Machine Learning}{}% 12
+\BOOKMARK [0][-]{chapter.2}{Concepts on Machine Learning and Text Mining}{}% 12
 \BOOKMARK [1][-]{section.2.1}{Basic Concepts}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.1.1}{Training and testing phases}{section.2.1}% 14
 \BOOKMARK [2][-]{subsection.2.1.2}{Learning of paradigms}{section.2.1}% 15
@@ -18,34 +18,29 @@
 \BOOKMARK [1][-]{section.2.3}{Naive Bayes}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.4}{Decision Trees}{chapter.2}% 19
 \BOOKMARK [1][-]{section.2.5}{Logistic Regression}{chapter.2}% 20
-\BOOKMARK [0][-]{chapter.3}{Text Mining}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Data Colection}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.1.1}{Social Networks}{section.3.1}% 23
-\BOOKMARK [1][-]{section.3.2}{Natural Language Processing}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.3}{Pre-Processing}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Tokenization}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.5}{Bag of Words}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.6}{Term Frequency}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.7}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.8}{Stemming}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.9}{Stop Words}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.10}{Sentiment Analysis}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Methodology}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Crawling and Tweet Extraction}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Data Pre-Processing}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Lexical Dictionary}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.4}{Sentiment Classification}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.5}{Data Visualization}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Perfomance evaluation of trend analysis}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{N-Fold Cross Validation}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Error evaluation of the sentiment analysis via SVM}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.4}{Spatio Trend Analysis}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.5}{Election Results}{chapter.5}% 44
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 45
-\BOOKMARK [0][-]{section*.6}{Refer\352ncias}{}% 46
-\BOOKMARK [0][-]{chapter*.7}{Appendix}{}% 47
-\BOOKMARK [0][-]{appendix.A}{}{}% 48
-\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 49
-\BOOKMARK [0][-]{section.A.1}{Anexo}{}% 50
-\BOOKMARK [0][-]{appendix.B}{Documenta\347\343o Original UnB-CIC \(parcial\)}{}% 51
+\BOOKMARK [1][-]{section.2.6}{Natural Language Processing}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{Pre-Processing}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.8}{Tokenization}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.9}{Bag of Words}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.10}{Term Frequency}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.11}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.12}{Stemming}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.13}{Stop Words}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.14}{Sentiment Analysis}{chapter.2}% 29
+\BOOKMARK [0][-]{chapter.3}{Proposed Framework}{}% 30
+\BOOKMARK [1][-]{section.3.1}{Crawling and Tweet Extraction}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.2}{Data Pre-Processing}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.3}{Lexical Dictionary}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Sentiment Classification}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.5}{Data Visualization}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Perfomance evaluation of trend analysis}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{N-Fold Cross Validation}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.3}{Error evaluation of the sentiment analysis via SVM}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.4}{Spatio Trend Analysis}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.5}{Election Results}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 42
+\BOOKMARK [0][-]{section*.6}{Refer\352ncias}{}% 43
+\BOOKMARK [0][-]{chapter*.7}{Appendix}{}% 44
+\BOOKMARK [0][-]{appendix.A}{}{}% 45
+\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 46
