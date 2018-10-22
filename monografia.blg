@@ -2,48 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: monografia.aux
 The style file: babunsrt.bst
-I found no \citation commands---while reading file monografia.aux
 Database file #1: bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 0 entries,
+Warning--empty language in song2014analyzing
+You've used 2 entries,
             2465 wiz_defined-function locations,
-            581 strings with 5435 characters,
-and the built_in function-call counts, 44 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            596 strings with 5888 characters,
+and the built_in function-call counts, 773 in all, are:
+= -- 53
+> -- 22
+< -- 1
++ -- 8
+- -- 6
+* -- 92
+:= -- 96
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 3
+duplicate$ -- 47
+empty$ -- 85
+format.name$ -- 18
+if$ -- 167
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 15
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 24
+num.names$ -- 2
+pop$ -- 12
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 19
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 35
+swap$ -- 24
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 14
-(There was 1 error message)
+warning$ -- 1
+while$ -- 5
+width$ -- 3
+write$ -- 35
+(There was 1 warning)

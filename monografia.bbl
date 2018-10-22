@@ -1,4 +1,4 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -11,5 +11,28 @@
   \providebibliographyfont{url}{\url}%
   \providebibliographyfont{numeral}{}%
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {song2014analyzing}
+\btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
+  C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Y.\btxfnamespacelong K. \btxlastnamefont {Jeong}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Analyzing the political landscape of 2012
+  {K}orean presidential election in {T}witter}{Analyzing the political
+  landscape of 2012 {K}orean presidential election in {T}witter}}.
+\newblock \btxjournalfont {IEEE Intelligent Systems}, 29(2):18--26, 2014.
+
+\bibitem {5194581}
+\btxnamefont {\btxlastnamefont {Araniti}, G.}, \btxnamefont {I.
+  \btxlastnamefont {Bisio}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {M.\btxfnamespacelong De \btxlastnamefont {Sanctis}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Towards the reliable and efficient
+  interplanetary internet: A survey of possible advanced networking and
+  communications solutions}{Towards the Reliable and Efficient Interplanetary
+  Internet: A Survey of Possible Advanced Networking and Communications
+  Solutions}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2009 First International Conference on
+  Advances in Satellite and Space Communications}, \btxpageslong {}\ 30--34,
+  \btxprintmonthyear{.}{July}{2009}{long}.
 
 \end{thebibliography}
