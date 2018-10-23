@@ -3,7 +3,7 @@ maneira na seção 2.1 são apresentados os conceitos básicos para o entendimen
 os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito de análise de sentimentos e a sua aplicação.
 
 
-\section{Machine Learning}
+\section{Aprendizado de Máquina}
   \subsection{Basic Concepts}
 
     Com o alto volume de informações geradas no dia a dia, a utilização de algoritmos que sejam capazes de identificar padrões tornam-se cada
@@ -252,22 +252,51 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           não-supervisionado. E é possível ver que o modelo foi capaz de agrupar as características semelhantes que os cachorros têm e agrupá-los em um
           único cluster e também foi formado um outro cluster contendo apenas o gato, pois não tem características semelhantes aos cães.
 
-          \figuraBib{unsupervised}{Treinamento de um modelo de aprenzidado de máquina não-supervisionado}{}{unsupervised}{width=0.6\textwidth}%
-    \subsubsection{Reinforcement Learning}
+          \figuraBib{unsupervised}{Treinamento de um modelo de aprendizado de máquina não-supervisionado}{}{unsupervised}{width=0.6\textwidth}%
+
+          \paragraph{K-means}
+          O algoritmo mais utilizado no aprendizado não-supervisionado é o \textit{k-means}, pois a sua implementação é muito simples, pois basta comprovar
+          o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência \cite{macqueen1967some}. Na 
+          Equação \ref{kmeans} é possível visualizar como é realizada a seleção de clusters através do número de amostras $X$, descrito pela média $\mu_{j}$ de 
+          cada amostra nos clusters. 
+
+          \begin{equation}\label{kmeans}
+            \begin{aligned}
+              \sum_{i=0}^{n}\min_{\mu_j \in C}(||x_i - \mu_j||^2)
+          \end{aligned} 
+          \end{equation}
 
 
-  \subsection{Performance measures}
+
+    \subsubsection{Aprendizado por reforço}
+
+          O último paradigma é baseado na forma em que o modelo reage de acordo com o que o ambiente passa para ele, é possível aprender
+          continuamente. Esse aprendizado é realizado através das ações que são executadas, caso seja a decisão correta o modelo ganha uma recompensa, caso
+          contrário pode ser imposta algum tipo de penalidade \cite{zurada}. Esse paradigma de aprendizado é necessário ajustar os parâmetros de forma
+          contínua com o intuito de maximar ou minimizar um determinado índice, e sempre há um "treinador" nessa fase verificando se os estímulos proporcionados
+          estão tendo a saída correta, pois caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo \cite{mazurowski2008training}.
 
 
-\section{Text Mining}
-  \subsection{Natural Language Processing}
-  \subsection{Pre-Processing}
-  \subsection{Tokenization}
+          Na aprendizagem por reforço, o modelo só aprende com uma série de estímulos, que podem ser recompensas ou punições no decorrer da aprendizagem, 
+          um exemplo do mundo real seria, avaliar um motorista com nota baixa em um aplicativo de locomoção urbana, nesse caso ele irá saber que existiu
+          alguma condunta ruim. Um caso em que recebe um estímulo positivo pode ser dar um biscoito a um cachorro após fazer de forma correta o que foi pedido.
+
+          Na Figura \ref{reforco} é possível ver um fluxograma de treinamento de um modelo utilizando o reforço.
+
+          \figuraBib{reforco}{Fluxograma de treinamento de um modelo de aprendizado de máquina por reforço}{}{reforco}{width=0.6\textwidth}%
+
+  \subsection{Medidas de avaliação}
+
+
+\section{Mineração de Texto}
+  \subsection{Processamento de Linguagem natural}
+  \subsection{Pre-Processamento}
+  \subsection{Tokeninzação}
   \subsection{Stemming}
   \subsection{Stop Words}
   \subsection{Bag of Words}
   \subsection{Term Frequency}
   \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
 
-\section{Sentiment Analysis}
+\section{Análise de Sentimentos}
 

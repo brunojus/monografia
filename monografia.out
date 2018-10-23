@@ -2,15 +2,15 @@
 \BOOKMARK [0][-]{acknowledgements.0}{Agradecimentos}{}% 2
 \BOOKMARK [0][-]{resumo.0}{Resumo}{}% 3
 \BOOKMARK [0][-]{abstract.0}{Abstract}{}% 4
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
-\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.2}{Problems}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.3}{Objectives}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Problemas}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.4}{Trabalho Publicado}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.5}{Related work}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.6}{Chapters description}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{Concepts on Machine Learning and Text Mining}{}% 12
-\BOOKMARK [1][-]{section.2.1}{Machine Learning}{chapter.2}% 13
+\BOOKMARK [1][-]{section.1.5}{Trabalhos Relacionados}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.6}{Descri\347\343o dos cap\355tulos}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Conceitos em Aprendizado de M\341quina e Minera\347\343o de Texto}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Aprendizado de M\341quina}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.1.1}{Basic Concepts}{section.2.1}% 14
 \BOOKMARK [2][-]{subsection.2.1.2}{Paradigmas de Aprendizado de M\341quina}{section.2.1}% 15
 \BOOKMARK [3][-]{subsubsection.2.1.2.1}{Aprendizado Supervisionado}{subsection.2.1.2}% 16
@@ -19,32 +19,33 @@
 \BOOKMARK [4][-]{paragraph.2.1.2.1.3}{\301rvores de Decis\343o}{subsubsection.2.1.2.1}% 19
 \BOOKMARK [4][-]{paragraph.2.1.2.1.4}{Regress\343o Log\355stica}{subsubsection.2.1.2.1}% 20
 \BOOKMARK [3][-]{subsubsection.2.1.2.2}{Aprendizado n\343o-supervisionado}{subsection.2.1.2}% 21
-\BOOKMARK [3][-]{subsubsection.2.1.2.3}{Reinforcement Learning}{subsection.2.1.2}% 22
-\BOOKMARK [2][-]{subsection.2.1.3}{Performance measures}{section.2.1}% 23
-\BOOKMARK [1][-]{section.2.2}{Text Mining}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.1}{Natural Language Processing}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.2}{Pre-Processing}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.3}{Tokenization}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.4}{Stemming}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.5}{Stop Words}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.6}{Bag of Words}{section.2.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.7}{Term Frequency}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.8}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{section.2.2}% 32
-\BOOKMARK [1][-]{section.2.3}{Sentiment Analysis}{chapter.2}% 33
-\BOOKMARK [0][-]{chapter.3}{Proposed Framework}{}% 34
-\BOOKMARK [1][-]{section.3.1}{Crawling and Tweet Extraction}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.2}{Data Pre-Processing}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.3}{Lexical Dictionary}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.4}{Sentiment Classification}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.5}{Data Visualization}{chapter.3}% 39
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 40
-\BOOKMARK [1][-]{section.4.1}{Perfomance evaluation of trend analysis}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.2}{N-Fold Cross Validation}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.3}{Error evaluation of the sentiment analysis via SVM}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.4}{Spatio Trend Analysis}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.5}{Election Results}{chapter.4}% 45
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 46
-\BOOKMARK [0][-]{section*.9}{Refer\352ncias}{}% 47
-\BOOKMARK [0][-]{chapter*.10}{Appendix}{}% 48
-\BOOKMARK [0][-]{appendix.A}{}{}% 49
-\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 50
+\BOOKMARK [4][-]{paragraph.2.1.2.2.1}{K-means}{subsubsection.2.1.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.2.3}{Aprendizado por refor\347o}{subsection.2.1.2}% 23
+\BOOKMARK [2][-]{subsection.2.1.3}{Medidas de avalia\347\343o}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{Minera\347\343o de Texto}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{Processamento de Linguagem natural}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.2}{Pre-Processamento}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.3}{Tokeninza\347\343o}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.4}{Stemming}{section.2.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.5}{Stop Words}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.6}{Bag of Words}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.7}{Term Frequency}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.8}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{section.2.2}% 33
+\BOOKMARK [1][-]{section.2.3}{An\341lise de Sentimentos}{chapter.2}% 34
+\BOOKMARK [0][-]{chapter.3}{Framework Proposto}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Extra\347\343o de Dados}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.2}{Pr\351-processamento de dados}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.3}{Dicion\341rio L\351xico}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.4}{Classifica\347\343o dos Sentimentos}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.5}{Visualiza\347\343o dos Dados}{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 41
+\BOOKMARK [1][-]{section.4.1}{Avalia\347\343o da Performance dos Algoritmos}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.2}{Valida\347\343o Cruzada N-Fold}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.3}{Avalia\347\343o do erro utilizando o modelo}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.4}{An\341lise Espa\347o-Temporal}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.5}{Resultado das Elei\347\365es}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Conslus\343o}{}% 47
+\BOOKMARK [0][-]{section*.9}{Refer\352ncias}{}% 48
+\BOOKMARK [0][-]{chapter*.10}{Ap\352ndice}{}% 49
+\BOOKMARK [0][-]{appendix.A}{}{}% 50
+\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 51
