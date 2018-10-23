@@ -15,51 +15,54 @@ Warning--entry type for "w3techs" isn't style-file defined
 --line 169 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
 --line 197 of file bibliografia.bib
+Warning--entry type for "martin" isn't style-file defined
+--line 246 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Warning--empty language in song2014analyzing
+Warning--empty language in w3techs
 Warning--empty year in lorena2007introduccao
 Warning--empty journal in coelhoanalise
 Warning--empty year in coelhoanalise
 Warning--can't use both volume and number fields in macqueen1967some
-You've used 31 entries,
+Warning--can't use both volume and number fields in kohavi1995study
+You've used 34 entries,
             2465 wiz_defined-function locations,
-            768 strings with 11421 characters,
-and the built_in function-call counts, 9702 in all, are:
-= -- 758
-> -- 271
-< -- 10
-+ -- 105
-- -- 74
-* -- 1074
-:= -- 1164
-add.period$ -- 67
-call.type$ -- 31
-change.case$ -- 28
+            785 strings with 11954 characters,
+and the built_in function-call counts, 10759 in all, are:
+= -- 840
+> -- 303
+< -- 12
++ -- 117
+- -- 83
+* -- 1201
+:= -- 1285
+add.period$ -- 73
+call.type$ -- 34
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 618
-empty$ -- 1167
-format.name$ -- 208
-if$ -- 2228
+cite$ -- 40
+duplicate$ -- 685
+empty$ -- 1289
+format.name$ -- 234
+if$ -- 2469
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 38
-newline$ -- 140
-num.names$ -- 32
-pop$ -- 198
+int.to.str$ -- 34
+missing$ -- 41
+newline$ -- 151
+num.names$ -- 35
+pop$ -- 219
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 286
+skip$ -- 318
 stack$ -- 0
-substring$ -- 398
-swap$ -- 300
-text.length$ -- 10
+substring$ -- 444
+swap$ -- 339
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 67
-width$ -- 33
-write$ -- 324
-(There were 11 warnings)
+warning$ -- 6
+while$ -- 74
+width$ -- 36
+write$ -- 353
+(There were 13 warnings)

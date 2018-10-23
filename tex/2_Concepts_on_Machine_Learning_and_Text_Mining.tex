@@ -286,7 +286,56 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           \figuraBib{reforco}{Fluxograma de treinamento de um modelo de aprendizado de máquina por reforço}{}{reforco}{width=0.6\textwidth}%
 
   \subsection{Medidas de avaliação}
+          Ao utilizar um modelo \acrshort{AM} é necessário que existam parâmetros para demonstrar se o modelo está correto ou não. Pois existem 
+          possibilidade do modelo ter um \textit{overfitting} que é quando o modelo se ajusta perfeitamente ao conjunto de dados de teste, mas não é capaz
+          de prever novos resultados, já no \textit{underfitting} é quando não há dados suficientes ou com baixa qualidade e não é possível treinar o modelo 
+          da maneira correta \cite{van2010process}.
+          
+          Na validação cruzada, os dados são dividos de forma aleatória em $n$ grupos de tamanho aproximadamente iguais. E este processo 
+          é realizado por várias vezes, e em cada rodada do teste é considerado um novo valor. O seu desempenho é calculado a partir da média
+          dos desempenhos calculados em cada uma das divisões, o número que $n$ pode assumir é variável, depende da situação, os valores
+          mais utilizados são $5$ e $10$\cite{kohavi1995study}
 
+
+          A matriz de confusão é outra forma de verificar a qualidade do modelo, pois ela fornece métricas importantes 
+          para medir o desempenho. Essa é baseada em classes relacionadas à assertividade da previsão das classes. Os positivos verdadeiros (VP) e verdadeiros negativos (VN)
+          que são os valores corretos que o sistema previu de forma correta, e também existe outras duas medidas que são os falsos negativos (FN) e falsos positivos (FP) que são 
+          as entradas que foram classificadas de forma errada e tiveram sua saída trocada \cite{martin}. Na Figura \ref{confusion_matrix} é possível visualizar
+          as classes de uma matriz de confusão.
+
+
+          \figuraBib{confusion_matrix}{Matriz de confusão \cite{martin}}{}{confusion_matrix}{width=0.6\textwidth}%
+
+
+          Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo, 
+          na Equação \ref{acuracia} é calculada a acurácia do modelo, na Equação \ref{precision} é calculada a precisão do modelo, na Equação \ref{recall} é
+          calculada a frequência que o modelo encontra os exemplos de uma determinada classe e por fim na Equação \ref{f1score}, temos o F1-score que é uma métrica
+          que indica a qualidade geral do modelo.
+
+          \begin{equation}\label{acuracia}
+            \begin{aligned}
+              \textup{Acurácia} = \frac{VP+VN}{VP+VN+FP+FN}
+          \end{aligned} 
+          \end{equation}
+
+          \begin{equation}\label{precision}
+            \begin{aligned}
+              \textup{Precisão} = \frac{VP}{VP+VN+FP+FN}
+          \end{aligned} 
+          \end{equation}
+
+          \begin{equation}\label{recall}
+            \begin{aligned}
+              \textup{Recall} = \frac{VP}{VP+FN}
+          \end{aligned} 
+          \end{equation}
+
+
+          \begin{equation}\label{f1score}
+            \begin{aligned}
+              \textup{F$1$-Score} = \frac{2*\textup{Precisão}*\textup{Recall}}{\textup{Precisão}+\textup{Recall}}
+          \end{aligned} 
+          \end{equation}
 
 \section{Mineração de Texto}
   \subsection{Processamento de Linguagem natural}
