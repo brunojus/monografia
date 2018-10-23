@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  22 OCT 2018 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  23 OCT 2018 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,11 +1070,26 @@ number indent calculated (toc, 1): 16.94398pt
 \tf@toc=\write7
 \openout7 = `monografia.toc'.
 
- (./tex/siglas.tex
-\@gls@deffile=\write8
-\openout8 = `monografia.glsdefs'.
+ [8] (./monografia.lof
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+)
+\tf@lof=\write8
+\openout8 = `monografia.lof'.
 
-) (./monografia.acr) [8]
+ (./tex/siglas.tex
+\@gls@deffile=\write9
+\openout9 = `monografia.glsdefs'.
+
+) (./monografia.acr [9
+
+]) [10
+
+
+]
 (/usr/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
@@ -1084,37 +1099,62 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Chapter 1.
-(./tex/1_Introducao.tex
-
-LaTeX Warning: Citation `song2014analyzing' on page 1 undefined on input line 6
-.
-
-) [1
+(./tex/1_Introducao.tex [1
 
 
 ]
-Chapter 2.
-(./tex/2_Concepts_on_Machine_Learning_and_Text_Mining.tex) [2
+<img/idioma.png, id=318, 630.85687pt x 367.3725pt>
+File: img/idioma.png Graphic file (type png)
+<use img/idioma.png>
+Package pdftex.def Info: img/idioma.png  used on input line 27.
+(pdftex.def)             Requested size: 455.24411pt x 265.10779pt.
+ [2 <./img/idioma.png (PNG copy)>]
 
-]
-Overfull \vbox (138.87915pt too high) has occurred while \output is active []
+LaTeX Warning: Citation `8474783' on page 3 undefined on input line 54.
 
+
+LaTeX Warning: Citation `6413737' on page 3 undefined on input line 60.
 
 [3]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 108.
+
+ (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 108.
+)
+Runaway argument?
+{itemize 
+! File ended while scanning use of \end.
+<inserted text> 
+                \par 
+l.39     \capitulo{1_Introducao}{Introduction}
+                                              %
+? 
+[4]
+Chapter 2.
+(./tex/2_Concepts_on_Machine_Learning_and_Text_Mining.tex) [5
+
+]
+Overfull \vbox (241.2171pt too high) has occurred while \output is active []
+
+
+[6]
 Chapter 3.
-(./tex/3_Proposed_framework.tex) [4
+(./tex/3_Proposed_framework.tex) [7
 
 ]
 Chapter 4.
-(./tex/4_Results.tex) [5
+(./tex/4_Results.tex) [8
 
 ]
 Chapter 5.
-(./tex/5_Conclusion.tex) [6
+(./tex/5_Conclusion.tex) [9
 
 ] (./monografia.bbl (./monografia.brf)
-\tf@brf=\write9
-\openout9 = `monografia.brf'.
+\tf@brf=\write10
+\openout10 = `monografia.brf'.
 
 
 babelbib: Using the BibTeX style's default font for `name'.
@@ -1128,14 +1168,54 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-) [7
+
+Underfull \hbox (badness 1337) in paragraph at lines 23--23
+[]\T1/lmr/m/n/12 W3Techs: \T1/lmr/m/it/12 His-tor-i-cal trends in the us-age of
+ con-tent lan-guages for web-
+ []
+
+! Misplaced alignment tab character &.
+<argument> ...ions population division, internet &
+                                                   mobile association of ind...
+l.56 
+     
+? 
+
+Underfull \hbox (badness 4378) in paragraph at lines 83--83
+[]\T1/lmr/m/n/12 País, El: \T1/lmr/m/it/12 Cam-bridge an-a-lyt-ica, em-presa pi
+vô no es-cân-dalo do face-
+ []
 
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\T1/lmr/m/it/12 book, é fechada\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / /
+ brasil . elpais . com / brasil / 2018 / 05 / 02 /
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 117--117
+[]\T1/lmr/m/n/12 Loria, S.: \T1/lmr/m/it/12 TextBlob: Sim-pli-fied text pro-ces
+s-ing\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 http : / / textblob .
+ []
+
+[10
+
+
+]) [11]
 Appendix A.
 (./tex/Apendice_Fichamento.tex)
+
+! LaTeX Error: \begin{itemize} on input line 107 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \end{document}
+                   %
+? 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
- [8
+[12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
@@ -1143,15 +1223,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 89D007F62DB4D358E251606C54405D50;2948.
+(rerunfilecheck)             Checksum: 68D25D34D01BA22F21F8B3E155C57648;2949.
+Package rerunfilecheck Info: File `monografia.brf' has not changed.
+(rerunfilecheck)             Checksum: 59875EBFD7CD1BBE519ED429C1B06B67;803.
 
-
-Package rerunfilecheck Warning: File `monografia.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `monografia.brf':
-(rerunfilecheck)             Before: 4DDEC5C87ECB779B004BCCB196794B28;43
-(rerunfilecheck)             After:  7577C7E1B60510D4AE269B37EFBAECB9;96.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -1164,28 +1239,34 @@ LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 107 (\begingroup)
+### bottom level
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15578 strings out of 492642
- 250527 string characters out of 6135566
- 426728 words of memory out of 5000000
- 19035 multiletter control sequences out of 15000+600000
- 50445 words of font info for 40 fonts, out of 8000000 for 9000
+ 15702 strings out of 492642
+ 252091 string characters out of 6135566
+ 428071 words of memory out of 5000000
+ 19122 multiletter control sequences out of 15000+600000
+ 53437 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,6n,69p,1988b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,9n,69p,1988b,732s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/
-fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type
-1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb><
-/usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/f
-onts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.p
-fb>
-Output written on monografia.pdf (16 pages, 170066 bytes).
+fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-e
+c.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/sha
+re/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></
+usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fo
+nts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy
+10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texm
+f-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+rm2074.pfb>
+Output written on monografia.pdf (22 pages, 239550 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 374 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

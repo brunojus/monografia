@@ -1,16 +1,16 @@
-\ifglsentryexists{UnB}{}%
+\ifglsentryexists{IBGE}{}%
 {%
-\gls@defglossaryentry{UnB}%
+\gls@defglossaryentry{IBGE}%
 {%
-name={UnB},%
-sort={UnB},%
+name={IBGE},%
+sort={IBGE},%
 type={acronym},%
-first={Universidade de Bras\IeC {\'\i }lia\glsspace (UnB)},%
-firstplural={Universidade de Bras\IeC {\'\i }lias\glsspace (UnBs)},%
-text={UnB},%
-plural={UnBs},%
-description={Universidade de Brasília},%
-descriptionplural={Universidade de Brasília\acrpluralsuffix },%
+first={Instituto Brasileiro de Geografia e Estat\IeC {\'\i }stica\glsspace (IBGE)},%
+firstplural={Instituto Brasileiro de Geografia e Estat\IeC {\'\i }sticas\glsspace (IBGEs)},%
+text={IBGE},%
+plural={IBGEs},%
+description={Instituto Brasileiro de Geografia e Estatística},%
+descriptionplural={Instituto Brasileiro de Geografia e Estatística\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -19,28 +19,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Universidade de Bras\IeC {\'\i }lia},%
-longplural={Universidade de Bras\IeC {\'\i }lias},%
-short={UnB},%
-shortplural={UnBs},%
+long={Instituto Brasileiro de Geografia e Estat\IeC {\'\i }stica},%
+longplural={Instituto Brasileiro de Geografia e Estat\IeC {\'\i }sticas},%
+short={IBGE},%
+shortplural={IBGEs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{BCE}{}%
+\ifglsentryexists{TM}{}%
 {%
-\gls@defglossaryentry{BCE}%
+\gls@defglossaryentry{TM}%
 {%
-name={BCE},%
-sort={BCE},%
+name={TM},%
+sort={TM},%
 type={acronym},%
-first={Biblioteca Central\glsspace (BCE)},%
-firstplural={Biblioteca Centrals\glsspace (BCEs)},%
-text={BCE},%
-plural={BCEs},%
-description={Biblioteca Central},%
-descriptionplural={Biblioteca Central\acrpluralsuffix },%
+first={Text Mining\glsspace (TM)},%
+firstplural={Text Minings\glsspace (TMs)},%
+text={TM},%
+plural={TMs},%
+description={Text Mining},%
+descriptionplural={Text Mining\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -49,28 +49,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Biblioteca Central},%
-longplural={Biblioteca Centrals},%
-short={BCE},%
-shortplural={BCEs},%
+long={Text Mining},%
+longplural={Text Minings},%
+short={TM},%
+shortplural={TMs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{CIC}{}%
+\ifglsentryexists{API}{}%
 {%
-\gls@defglossaryentry{CIC}%
+\gls@defglossaryentry{API}%
 {%
-name={CIC},%
-sort={CIC},%
+name={API},%
+sort={API},%
 type={acronym},%
-first={Departamento de Ci\IeC {\^e}ncia da Computa\IeC {\c c}\IeC {\~a}o\glsspace (CIC)},%
-firstplural={Departamento de Ci\IeC {\^e}ncia da Computa\IeC {\c c}\IeC {\~a}os\glsspace (CICs)},%
-text={CIC},%
-plural={CICs},%
-description={Departamento de Ciência da Computação},%
-descriptionplural={Departamento de Ciência da Computação\acrpluralsuffix },%
+first={Aplication Programming Interface\glsspace (API)},%
+firstplural={Aplication Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Aplication Programming Interface},%
+descriptionplural={Aplication Programming Interface\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -79,28 +79,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Departamento de Ci\IeC {\^e}ncia da Computa\IeC {\c c}\IeC {\~a}o},%
-longplural={Departamento de Ci\IeC {\^e}ncia da Computa\IeC {\c c}\IeC {\~a}os},%
-short={CIC},%
-shortplural={CICs},%
+long={Aplication Programming Interface},%
+longplural={Aplication Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{CTAN}{}%
+\ifglsentryexists{AM}{}%
 {%
-\gls@defglossaryentry{CTAN}%
+\gls@defglossaryentry{AM}%
 {%
-name={CTAN},%
-sort={CTAN},%
+name={AM},%
+sort={AM},%
 type={acronym},%
-first={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Network\glsspace (CTAN)},%
-firstplural={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Networks\glsspace (CTANs)},%
-text={CTAN},%
-plural={CTANs},%
-description={Comprehensive \TeX \ Archive Network},%
-descriptionplural={Comprehensive \TeX \ Archive Network\acrpluralsuffix },%
+first={Aprendizado de M\IeC {\'a}quina\glsspace (AM)},%
+firstplural={Aprendizado de M\IeC {\'a}quinas\glsspace (AMs)},%
+text={AM},%
+plural={AMs},%
+description={Aprendizado de Máquina},%
+descriptionplural={Aprendizado de Máquina\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -109,10 +109,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Network},%
-longplural={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Networks},%
-short={CTAN},%
-shortplural={CTANs},%
+long={Aprendizado de M\IeC {\'a}quina},%
+longplural={Aprendizado de M\IeC {\'a}quinas},%
+short={AM},%
+shortplural={AMs},%
 counter={page},%
 parent={},%
 %

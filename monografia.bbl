@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,6 +13,14 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {w3techs}
+\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Historical trends in the usage of content languages for
+  websites.}{Historical trends in the usage of content languages for
+  websites.}}
+\newblock {\latintext
+  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
+
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -34,5 +42,109 @@
 \newblock \Btxinlong {}\ \btxtitlefont {2009 First International Conference on
   Advances in Satellite and Space Communications}, \btxpageslong {}\ 30--34,
   \btxprintmonthyear{.}{July}{2009}{long}.
+
+\bibitem {ILS}
+\btxnamefont {\btxlastnamefont {Stats}, Internet\btxfnamespacelong
+  Live}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Elaboration of data by
+  international telecommunication union (itu), united nations population
+  division, internet & mobile association of india (iamai), world
+  bank.}{Elaboration of data by International Telecommunication Union (ITU),
+  United Nations Population Division, Internet & Mobile Association of India
+  (IAMAI), World Bank.}}
+\newblock {\latintext
+  \btxurlfont{http://www.internetlivestats.com/internet-users-by-country/}}.
+
+\bibitem {miller1995wordnet}
+\btxnamefont {\btxlastnamefont {Miller}, G.\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Wordnet: a lexical
+  database for {E}nglish}{WordNet: a lexical database for {E}nglish}}.
+\newblock \btxjournalfont {Communications of the ACM}, 38(11):39--41, 1995.
+
+\bibitem {Twitter}
+\btxnamefont {\btxlastnamefont {Twitter}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Twitter developer platform}{Twitter Developer Platform}}.
+\newblock {\latintext \btxurlfont{https://developer.twitter.com}}.
+
+\bibitem {EBC}
+\btxnamefont {\btxlastnamefont {Comunicação}, Empresa\btxfnamespacelong
+  Brasil~de}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Facebook chega a
+  127 milhões de usuários no brasil}{Facebook chega a 127 milhões de
+  usuários no Brasil}}.
+\newblock {\latintext
+  \btxurlfont{http://agenciabrasil.ebc.com.br/economia/noticia/2018-07/facebook-chega-127-milhoes-de-usuarios-no-brasil}}.
+
+\bibitem {face}
+\btxnamefont {\btxlastnamefont {País}, El}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Cambridge analytica, empresa pivô no escândalo do
+  facebook, é fechada}{Cambridge Analytica, empresa pivô no escândalo do
+  Facebook, é fechada}}.
+\newblock {\latintext
+  \btxurlfont{https://brasil.elpais.com/brasil/2018/05/02/internacional/1525285885_691249.html}}.
+
+\bibitem {souza}
+\btxnamefont {\btxlastnamefont {Souza}, Marlo} \btxandlong {}\ \btxnamefont
+  {Renata \btxlastnamefont {Vieira}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Sentiment analysis on twitter data for portuguese
+  language}{Sentiment Analysis on Twitter Data for Portuguese Language}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 10th International
+  Conference on Computational Processing of the Portuguese Language},
+  PROPOR'12, \btxpageslong {}\ 241--247, Berlin, Heidelberg, 2012.
+  \btxpublisherfont {Springer-Verlag}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-3-642-28884-5}}}.
+\newblock {\latintext
+  \btxurlfont{http://dx.doi.org/10.1007/978-3-642-28885-2_28}}.
+
+\bibitem {Neuenschwander}
+\btxnamefont {\btxlastnamefont {Neuenschwander}, Bruna}, \btxnamefont
+  {Adriano\btxfnamespacelong C.M. \btxlastnamefont {Pereira}}, \btxnamefont
+  {Wagner \btxlastnamefont {Meira}, Jr.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {Denilson \btxlastnamefont {Barbosa}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Sentiment analysis for streams of web data:
+  A case study of brazilian financial markets}{Sentiment Analysis for Streams
+  of Web Data: A Case Study of Brazilian Financial Markets}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 20th Brazilian
+  Symposium on Multimedia and the Web}, WebMedia '14, \btxpageslong {}\
+  167--170, New York, NY, USA, 2014. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-1-4503-3230-9}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2664551.2664579}}.
+
+\bibitem {textblob}
+\btxnamefont {\btxlastnamefont {Loria}, S.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{T}ext{B}lob: Simplified text processing}{{T}ext{B}lob:
+  Simplified Text Processing}}.
+\newblock {\latintext
+  \btxurlfont{http://textblob.readthedocs.io/en/dev/index.html}}.
+
+\bibitem {wegrzyn2012tweets}
+\btxnamefont {\btxlastnamefont {Wegrzyn-Wolska}, K.} \btxandlong {}\
+  \btxnamefont {L. \btxlastnamefont {Bougueroua}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Tweets mining for {F}rench presidential election}{Tweets
+  mining for {F}rench Presidential Election}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2012 Fourth International Conference on
+  Computational Aspects of Social Networks (CASoN)}, \btxpageslong {}\
+  138--143, \btxprintmonthyear{.}{Nov}{2012}{long}.
+
+\bibitem {guzman}
+\btxnamefont {\btxlastnamefont {Cerón-Guzmán}, J.\btxfnamespacelong A.}
+  \btxandlong {}\ \btxnamefont {E. \btxlastnamefont
+  {León-Guzmán}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A sentiment
+  analysis system of {S}panish tweets and its application in {C}olombia 2014
+  presidential election}{A Sentiment Analysis System of {S}panish Tweets and
+  Its Application in {C}olombia 2014 Presidential Election}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2016 IEEE International Conferences on
+  Big Data and Cloud Computing (BDCloud), Social Computing and Networking
+  (SocialCom), Sustainable Computing and Communications (SustainCom)
+  (BDCloud-SocialCom-SustainCom)}, \btxpageslong {}\ 250--257,
+  \btxprintmonthyear{.}{Oct}{2016}{long}.
+
+\bibitem {joyce}
+\btxnamefont {\btxlastnamefont {Joyce}, B.} \btxandlong {}\ \btxnamefont {J.
+  \btxlastnamefont {Deng}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Sentiment analysis of tweets for the 2016 {US} presidential
+  election}{Sentiment analysis of tweets for the 2016 {US} presidential
+  election}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2017 IEEE MIT Undergraduate Research
+  Technology Conference (URTC)}, \btxpageslong {}\ 1--4,
+  \btxprintmonthyear{.}{Nov}{2017}{long}.
 
 \end{thebibliography}
