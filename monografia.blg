@@ -4,59 +4,59 @@ The top-level auxiliary file: monografia.aux
 The style file: babunsrt.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "ILS" isn't style-file defined
---line 77 of file bibliografia.bib
+--line 108 of file bibliografia.bib
 Warning--entry type for "Twitter" isn't style-file defined
---line 83 of file bibliografia.bib
+--line 114 of file bibliografia.bib
 Warning--entry type for "EBC" isn't style-file defined
---line 89 of file bibliografia.bib
+--line 120 of file bibliografia.bib
 Warning--entry type for "face" isn't style-file defined
---line 95 of file bibliografia.bib
+--line 126 of file bibliografia.bib
 Warning--entry type for "w3techs" isn't style-file defined
---line 101 of file bibliografia.bib
+--line 132 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 129 of file bibliografia.bib
-Warning--I didn't find a database entry for "mitchell"
+--line 160 of file bibliografia.bib
+Warning--I didn't find a database entry for "lorena2007introduccao"
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--empty language in w3techs
-You've used 19 entries,
+You've used 23 entries,
             2465 wiz_defined-function locations,
-            700 strings with 9158 characters,
-and the built_in function-call counts, 6021 in all, are:
-= -- 502
-> -- 135
+            723 strings with 10140 characters,
+and the built_in function-call counts, 7522 in all, are:
+= -- 586
+> -- 211
 < -- 8
-+ -- 54
-- -- 35
-* -- 580
-:= -- 710
-add.period$ -- 44
-call.type$ -- 19
-change.case$ -- 17
++ -- 81
+- -- 58
+* -- 831
+:= -- 895
+add.period$ -- 52
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 383
-empty$ -- 745
-format.name$ -- 96
-if$ -- 1438
+cite$ -- 24
+duplicate$ -- 478
+empty$ -- 902
+format.name$ -- 164
+if$ -- 1734
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 17
-newline$ -- 94
-num.names$ -- 20
-pop$ -- 132
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 110
+num.names$ -- 24
+pop$ -- 147
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 212
+skip$ -- 232
 stack$ -- 0
-substring$ -- 276
-swap$ -- 184
+substring$ -- 319
+swap$ -- 239
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 43
-width$ -- 21
-write$ -- 207
+while$ -- 51
+width$ -- 25
+write$ -- 249
 (There were 8 warnings)

@@ -37,7 +37,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
       O aprendizado supervisionado é uma das formas em ensinar uma tarefa para a máquina, onde existe uma entrada e uma saída desejada que já foi 
       anteriormente rotulada, esse processo pode ser feito de forma manual ou utilizar de dicionários, quando a informação de entrada é um texto.
-      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas. Na Figura \ref{supervisionado} é possível visualizar 
+      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas \cite{mitchell}. Na Figura \ref{supervisionado} é possível visualizar 
       a forma que é realizada etapa de treinamento do modelo, onde é fornecida uma informação, juntamente com o que ela significa, pois esse tipo de aprendizado 
       é necessário rotular todas as informações que serão utilizadas para que a máquina consiga distinguir o que é gato e o que é cachorro.
       
@@ -49,6 +49,80 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
       \figuraBib{supervisionado_predicao}{Utilização do modelo para realizar predição a partir de classes previamente treinadas}{}{supervisionado_predicao}{width=.6\textwidth}%
 
+
+      Algum dos algoritmos mais utilizados para esse paradigma serão detalhados durante essa subseção.
+
+      \paragraph{SVM}
+
+        A máquina de vetor de suportes, do inglês support vector machine (\acrshort{SVM}), faz parte do aprendizado supervisionado, com ele é possível
+        classificar grupos de dados separando as suas margens. Essas margens são delineadas pela fração dos dados de treinamento, são chamadas de vetores de suporte \cite{chang2011libsvm}.
+
+        As vantagens de utilizar \acrshort{SVM} são \cite{pedregosa2011scikit}:
+
+        \begin{itemize}
+
+          \item Efetivos em espaços multidimensionais
+          \item Continua eficaz em casos onde o número de dimensões é maior que o número de amostras.
+          \item Utiliza os vetores de suporte, que otimiza o uso de memória do computador.
+          \item É possível utilizar diversos kernels para a função de decisão.
+
+        \end{itemize}
+
+        Como desvantagens, temos \cite{pedregosa2011scikit}:
+
+        The disadvantages of support vector machines include:
+
+        \begin{itemize}
+
+          \item Se o número de entradas for muito maior que o número de amostras, pois existe a possibilidade de overfitting.
+
+        \end{itemize}
+        
+        O \acrshort{SVM} é construido em um hiper-plano ou em vários hiper-planos em um espaço de infinitas dimensões, que podem ser
+        usadas classificação ou regressão. Na Figura \ref{SVM} é detalhado um hiper-plano que mostra uma boa separação das variáveis
+        que possui a maior distância até os pontos dos dados de treinamento mais próximos de qualquer classe, pois é conhecido no \acrshort{SVM}
+        que quanto maior for a margem, menor será o erro do classificador\cite{vieira2017plantrna_sniffer}. 
+        
+        \figuraBib{SVM}{Exemplo de vetores de suporte com dimensão 2}{}{SVM}{width=.6\textwidth}%
+
+        Nesse trabalho foi utilizado esse algoritmo para classificar dados multi-classes, pois foi utilizadas três classes distintas, para
+        desenvolvimento do modelo: Positivo, Negativo e Neutro. 
+        
+        Tendo como os dados de treinamento $x_{i} \in \mathbb{R}^{p}$, onde i$=$1,\cdots, n. Onde $ y \in \left \{ 1,-1 \right \}^{n}$, na Equação \ref{eq:SVM} é
+        possível visualizar a solução matemática para esse algoritmo.
+
+        \begin{equation}\label{eq:SVM}
+          \begin{aligned}
+            & \min_{\omega,\beta, \zeta } \frac{1}{2}\omega^{T}\omega + C \sum_{i=1}^{n}\zeta_{i}\\
+            & \textup{sujeito a } y_{i}\left ( \omega^{T}\phi \left ( x_{i} \right ) +b \right )\geq 1 - \zeta_{i},\\
+            & \zeta_{i}\geq 0, i = 1,\cdots, n
+        \end{aligned}
+        \end{equation}
+
+        A partir do espaço de Hilbert, temos que o dual de um espaço de Hilbert é um espaço de Hilbert \cite{lorena2007introduccao}, 
+        
+        na Equação \ref{eq:svmdual}, temos:
+
+        \begin{equation}\label{eq:svmdual}
+          \begin{aligned}
+            & \min_{\alpha} \frac{1}{2}\alpha^{T}Q\alpha - e^{T}\alpha\\ \\
+            & \textup{sujeito } a y^{T}\alpha = 0 \\ \\
+            & 0\leq \alpha_{i}\leq C, i= 1\cdots, n 
+        \end{aligned}
+        \end{equation}
+
+        onde $e$ é o vetor com todos os valores, $C>0$ é o limite superior, $Q$ é uma matriz semidefinida positiva de tamanho n por n,
+        $Q_{ij}\equiv y_{i}y_{j}K(x_{i},x_{j})$, onde $K(x_{i},x_{j}) = \phi(x_{i})^{T}\phi(x_{j})$ é a função kernel do \acrshort{SVM}. Onde os 
+        vetores de treinamento são definidos em um espaço dimensional maior pela função $\phi$.
+         E por fim na Equação \ref{eq:predSVM}, temos a função de decisão:
+
+         \begin{equation}\label{eq:predSVM}
+          \begin{aligned}
+            sgn(\sum_{i=1}^{n}y_{i}\alpha_{i}K(x_{i},x)+\rho )
+        \end{aligned}
+        \end{equation}
+        
+        Onde o termo $y_{i}\alpha_{i}$ representa o coeficiente dual, $K(x_{i},x)$ são os vetores de suporte e $\rho$ é um termo independente.
     \subsubsection{Unsupervised Learning}
     \subsubsection{Semi-Supervised Learning}
     \subsubsection{Reinforcement Learning}

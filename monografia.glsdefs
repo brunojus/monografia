@@ -118,19 +118,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{CEP}{}%
+\ifglsentryexists{IEEE}{}%
 {%
-\gls@defglossaryentry{CEP}%
+\gls@defglossaryentry{IEEE}%
 {%
-name={CEP},%
-sort={CEP},%
+name={IEEE},%
+sort={IEEE},%
 type={acronym},%
-first={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blica\glsspace (CEP)},%
-firstplural={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blicas\glsspace (CEPs)},%
-text={CEP},%
-plural={CEPs},%
-description={Comissão de Ética Pública},%
-descriptionplural={Comissão de Ética Pública\acrpluralsuffix },%
+first={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicos\glsspace (IEEE)},%
+firstplural={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicoss\glsspace (IEEEs)},%
+text={IEEE},%
+plural={IEEEs},%
+description={Instituto de Engenheiros Eletricistas e Eletrônicos},%
+descriptionplural={Instituto de Engenheiros Eletricistas e Eletrônicos\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -139,28 +139,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blica},%
-longplural={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blicas},%
-short={CEP},%
-shortplural={CEPs},%
+long={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicos},%
+longplural={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicoss},%
+short={IEEE},%
+shortplural={IEEEs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{CAPES}{}%
+\ifglsentryexists{ICDM}{}%
 {%
-\gls@defglossaryentry{CAPES}%
+\gls@defglossaryentry{ICDM}%
 {%
-name={CAPES},%
-sort={CAPES},%
+name={ICDM},%
+sort={ICDM},%
 type={acronym},%
-first={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superior\glsspace (CAPES)},%
-firstplural={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superiors\glsspace (CAPESs)},%
-text={CAPES},%
-plural={CAPESs},%
-description={Coordenação de Aperfeiçoamento de Pessoal de Nível Superior},%
-descriptionplural={Coordenação de Aperfeiçoamento de Pessoal de Nível Superior\acrpluralsuffix },%
+first={International Conference on Data Mining\glsspace (ICDM)},%
+firstplural={International Conference on Data Minings\glsspace (ICDMs)},%
+text={ICDM},%
+plural={ICDMs},%
+description={International Conference on Data Mining},%
+descriptionplural={International Conference on Data Mining\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -169,10 +169,40 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superior},%
-longplural={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superiors},%
-short={CAPES},%
-shortplural={CAPESs},%
+long={International Conference on Data Mining},%
+longplural={International Conference on Data Minings},%
+short={ICDM},%
+shortplural={ICDMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SVM}{}%
+{%
+\gls@defglossaryentry{SVM}%
+{%
+name={SVM},%
+sort={SVM},%
+type={acronym},%
+first={Support Vector Machine\glsspace (SVM)},%
+firstplural={Support Vector Machines\glsspace (SVMs)},%
+text={SVM},%
+plural={SVMs},%
+description={Support Vector Machine},%
+descriptionplural={Support Vector Machine\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Support Vector Machine},%
+longplural={Support Vector Machines},%
+short={SVM},%
+shortplural={SVMs},%
 counter={page},%
 parent={},%
 %

@@ -187,4 +187,49 @@
 \newblock \btxpublisherfont {IEEE Press}, Piscataway, NJ, USA,
   1994\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0780311043}}}.
 
+\bibitem {mitchell}
+\btxnamefont {\btxlastnamefont {Mitchell}, Thomas\btxfnamespacelong
+  M.}\btxauthorcolon\ \btxtitlefont {Machine Learning}.
+\newblock \btxpublisherfont {McGraw-Hill, Inc.}, New York, NY, USA,
+  \btxeditionnumlong {1}{}, 1997\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {0070428077, 9780070428072}}}.
+
+\bibitem {chang2011libsvm}
+\btxnamefont {\btxlastnamefont {Chang}, Chih\btxfnamespacelong Chung}
+  \btxandlong {}\ \btxnamefont {Chih\btxfnamespacelong Jen \btxlastnamefont
+  {Lin}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Libsvm: a library
+  for support vector machines}{LIBSVM: a library for support vector machines}}.
+\newblock \btxjournalfont {ACM transactions on intelligent systems and
+  technology (TIST)}, 2(3):27, 2011.
+
+\bibitem {pedregosa2011scikit}
+\btxnamefont {\btxlastnamefont {Pedregosa}, Fabian}, \btxnamefont {Ga{\"e}l
+  \btxlastnamefont {Varoquaux}}, \btxnamefont {Alexandre \btxlastnamefont
+  {Gramfort}}, \btxnamefont {Vincent \btxlastnamefont {Michel}}, \btxnamefont
+  {Bertrand \btxlastnamefont {Thirion}}, \btxnamefont {Olivier \btxlastnamefont
+  {Grisel}}, \btxnamefont {Mathieu \btxlastnamefont {Blondel}}, \btxnamefont
+  {Peter \btxlastnamefont {Prettenhofer}}, \btxnamefont {Ron \btxlastnamefont
+  {Weiss}}, \btxnamefont {Vincent \btxlastnamefont {Dubourg}}\btxandcomma {}
+  \btxetalfont {\btxetalshort {.}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Scikit-learn: Machine learning in python}{Scikit-learn:
+  Machine learning in Python}}.
+\newblock \btxjournalfont {Journal of machine learning research},
+  12(Oct):2825--2830, 2011.
+
+\bibitem {vieira2017plantrna_sniffer}
+\btxnamefont {\btxlastnamefont {Vieira}, Lucas\btxfnamespacelong Maciel},
+  \btxnamefont {Clicia \btxlastnamefont {Grativol}}, \btxnamefont {Flavia
+  \btxlastnamefont {Thiebaut}}, \btxnamefont {Thais\btxfnamespacelong G
+  \btxlastnamefont {Carvalho}}, \btxnamefont {Pablo\btxfnamespacelong R
+  \btxlastnamefont {Hardoim}}, \btxnamefont {Adriana \btxlastnamefont
+  {Hemerly}}, \btxnamefont {Sergio \btxlastnamefont {Lifschitz}}, \btxnamefont
+  {Paulo\btxfnamespacelong Cavalcanti\btxfnamespacelong Gomes \btxlastnamefont
+  {Ferreira}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Maria\btxfnamespacelong Emilia\btxfnamespacelong MT \btxlastnamefont
+  {Walter}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Plantrna\_sniffer: a svm-based workflow to predict long intergenic
+  non-coding rnas in plants}{PlantRNA\_Sniffer: a SVM-based workflow to predict
+  long intergenic non-coding RNAs in plants}}.
+\newblock \btxjournalfont {Non-coding RNA}, 3(1):11, 2017.
+
 \end{thebibliography}
