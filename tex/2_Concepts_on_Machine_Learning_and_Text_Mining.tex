@@ -1,15 +1,64 @@
-\section{Basic Concepts}
-  \subsection{Training and testing phases}
-  \subsection{Learning of paradigms}
-  \subsection{Performance measures}
+Neste capítulo é feita uma introdução sobre o \acrshort{AM}, tema principal dessa monografia. E está dividido da seguinte
+maneira na seção 2.1 são apresentados os conceitos básicos para o entendimento inicial do tema. Na seção 2.2 são apresentados
+os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito de análise de sentimentos e a sua aplicação.
+
 
 \section{Machine Learning}
-  \subsection{Support Vector Machine}
-  \subsection{Naive Bayes}
-  \subsection{Decision Trees}
-  \subsection{Logistic Regression}
+  \subsection{Basic Concepts}
 
-\section{Natural Language Processing}
+    Com o alto volume de informações geradas no dia a dia, a utilização de algoritmos que sejam capazes de identificar padrões tornam-se cada
+    vez mais necessários, pois em diversas empresas e órgãos do governo não são capazes de analisar todas as informações existentes ou entregar
+    de maneira célere \cite{nasrabadi2007pattern}. 
+    
+    Portanto para realizar esse tipo de atividade é necessário entender o problema existente e também ter um volume de dados razoável para realizar o treinamento do modelo, e com a técnica de \acrshort{AM} é possível automatizar a construção
+    de sistemas inteligentes que podem ser ajustados de acordo com a necessidade de cada tarefa \cite{bonaccorso2017machine}.
+
+    Em outras palavras o \acrshort{AM} é um conjunto de regras, que possibilitam uma máquina a tomar decisões baseadas em experiências passadas ao invés
+    de um software que teve que ser definido anteriormente como tratar cada tipo de regra, também existe a possibilidade desses modelos serem desenvolvidos
+    e melhorarem quando expostos a novos dados \cite{zurada1995review}.
+
+
+    O conceito de \acrshort{AM} pode ser sintetizado como a capacidade de um programa de computador aprender com a experiencia (E) relacionada a alguma 
+    classe de tarefas (T), baseada em uma medida de desempenho (P). Dessa forma, o desempenho em tarefas (T), quando medido por (P), melhora com a 
+    experiencia em (E) \cite{mitchell}
+
+    Essas técnicas tem sido utilizadas amplamente para resolução de diversos problemas, atualmente o assunto está em alta e existem diversas oportunidade
+    para colocar em prática a matemática que foi desenvolvida para a criação desses algoritmos. Gigantes da indústria tem investido severamente para
+    o desenvolvimento de novas tecnologias, como os veículos autônomos, robôs advogados, veículos não tripulados e na identificação de doenças.
+
+    Existem distintos paradigmas para ensinar uma máquina, esse trabalho irá focar apenas nos tipos de \acrshort{AM} que estão sendo utilizados no desenvolvimento do framework,
+    portanto não será abordados temas como aprendizado estatístico ou redes bayesianas.
+
+  \subsection{Paradigmas de Aprendizado de Máquina}
+
+    Os principais tipos de \acrshort{AM} utilizados atualmente serão detalhados nas 4 subseções a seguir:
+
+    \subsubsection{Aprendizado Supervisionado}
+
+      O aprendizado supervisionado é uma das formas em ensinar uma tarefa para a máquina, onde existe uma entrada e uma saída desejada que já foi 
+      anteriormente rotulada, esse processo pode ser feito de forma manual ou utilizar de dicionários, quando a informação de entrada é um texto.
+      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas. Na Figura \ref{supervisionado} é possível visualizar 
+      a forma que é realizada etapa de treinamento do modelo, onde é fornecida uma informação, juntamente com o que ela significa, pois esse tipo de aprendizado 
+      é necessário rotular todas as informações que serão utilizadas para que a máquina consiga distinguir o que é gato e o que é cachorro.
+      
+
+      \figuraBib{supervisionado}{Treinamento de um modelo de aprenzidado de máquina supervisionado}{}{supervisionado}{width=.6\textwidth}%
+
+      Na Figura \ref{supervisionado_predicao} é possível visualizar o modelo preditivo em funcionamento, onde o usuário fornece uma informação de entrada
+      e o sistema o responde com a classe que foi identificada através da entrada.
+
+      \figuraBib{supervisionado_predicao}{Utilização do modelo para realizar predição a partir de classes previamente treinadas}{}{supervisionado_predicao}{width=.6\textwidth}%
+
+    \subsubsection{Unsupervised Learning}
+    \subsubsection{Semi-Supervised Learning}
+    \subsubsection{Reinforcement Learning}
+  \subsection{Training and testing phases}
+
+  \subsection{Performance measures}
+
+
+\section{Text Mining}
+  \subsection{Natural Language Processing}
   \subsection{Pre-Processing}
   \subsection{Tokenization}
   \subsection{Stemming}

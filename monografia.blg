@@ -14,50 +14,49 @@ Warning--entry type for "face" isn't style-file defined
 Warning--entry type for "w3techs" isn't style-file defined
 --line 101 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 110 of file bibliografia.bib
-Warning--I didn't find a database entry for "8474783"
-Warning--I didn't find a database entry for "6413737"
+--line 129 of file bibliografia.bib
+Warning--I didn't find a database entry for "mitchell"
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--empty language in w3techs
-You've used 14 entries,
+You've used 19 entries,
             2465 wiz_defined-function locations,
-            671 strings with 8335 characters,
-and the built_in function-call counts, 4358 in all, are:
-= -- 353
-> -- 96
-< -- 6
-+ -- 39
-- -- 25
-* -- 424
-:= -- 514
-add.period$ -- 32
-call.type$ -- 14
-change.case$ -- 14
+            700 strings with 9158 characters,
+and the built_in function-call counts, 6021 in all, are:
+= -- 502
+> -- 135
+< -- 8
++ -- 54
+- -- 35
+* -- 580
+:= -- 710
+add.period$ -- 44
+call.type$ -- 19
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 272
-empty$ -- 548
-format.name$ -- 68
-if$ -- 1039
+cite$ -- 20
+duplicate$ -- 383
+empty$ -- 745
+format.name$ -- 96
+if$ -- 1438
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 10
-newline$ -- 74
-num.names$ -- 14
-pop$ -- 96
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 94
+num.names$ -- 20
+pop$ -- 132
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 163
+skip$ -- 212
 stack$ -- 0
-substring$ -- 186
-swap$ -- 132
-text.length$ -- 6
+substring$ -- 276
+swap$ -- 184
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 31
-width$ -- 16
-write$ -- 155
-(There were 9 warnings)
+while$ -- 43
+width$ -- 21
+write$ -- 207
+(There were 8 warnings)

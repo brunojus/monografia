@@ -115,6 +115,25 @@
 \newblock {\latintext
   \btxurlfont{http://textblob.readthedocs.io/en/dev/index.html}}.
 
+\bibitem {8474783}
+\btxnamefont {\btxlastnamefont {Wagh}, Rasika} \btxandlong {}\ \btxnamefont
+  {Payal \btxlastnamefont {Punde}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Survey on sentiment analysis using twitter dataset}{Survey
+  on Sentiment Analysis using Twitter Dataset}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2018 Second International Conference on
+  Electronics, Communication and Aerospace Technology (ICECA)}, \btxpageslong
+  {}\ 208--211. IEEE, 2018.
+
+\bibitem {6413737}
+\btxnamefont {\btxlastnamefont {Wang}, Yuanhong}, \btxnamefont {Yang
+  \btxlastnamefont {Liu}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Xiaohui
+  \btxlastnamefont {Yu}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Collaborative filtering with aspect-based opinion mining: A tensor
+  factorization approach}{Collaborative filtering with aspect-based opinion
+  mining: A tensor factorization approach}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Data Mining (ICDM), 2012 IEEE 12th
+  International Conference on}, \btxpageslong {}\ 1152--1157. IEEE, 2012.
+
 \bibitem {wegrzyn2012tweets}
 \btxnamefont {\btxlastnamefont {Wegrzyn-Wolska}, K.} \btxandlong {}\
   \btxnamefont {L. \btxlastnamefont {Bougueroua}}\btxauthorcolon\ \btxtitlefont
@@ -146,5 +165,26 @@
 \newblock \Btxinlong {}\ \btxtitlefont {2017 IEEE MIT Undergraduate Research
   Technology Conference (URTC)}, \btxpageslong {}\ 1--4,
   \btxprintmonthyear{.}{Nov}{2017}{long}.
+
+\bibitem {nasrabadi2007pattern}
+\btxnamefont {\btxlastnamefont {Nasrabadi}, Nasser\btxfnamespacelong
+  M}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Pattern recognition and
+  machine learning}{Pattern recognition and machine learning}}.
+\newblock \btxjournalfont {Journal of electronic imaging}, 16(4):049901, 2007.
+
+\bibitem {bonaccorso2017machine}
+\btxnamefont {\btxlastnamefont {Bonaccorso}, Giuseppe}\btxauthorcolon\
+  \btxtitlefont {Machine Learning Algorithms}.
+\newblock \btxpublisherfont {Packt Publishing Ltd}, 2017.
+
+\bibitem {zurada1995review}
+\btxnamefont {\btxlastnamefont {Marks},~II, Robert\btxfnamespacelong J.},
+  \btxnamefont {Jacek\btxfnamespacelong M. \btxlastnamefont
+  {Zurada}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Charles\btxfnamespacelong J. \btxlastnamefont {Robinson}}\ (\btxeditorslong
+  {})\btxauthorcolon\ \btxtitlefont {Computational Intelligence: Imitating
+  Life}.
+\newblock \btxpublisherfont {IEEE Press}, Piscataway, NJ, USA,
+  1994\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0780311043}}}.
 
 \end{thebibliography}

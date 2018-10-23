@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  23 OCT 2018 09:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  23 OCT 2018 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,6 +775,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 38.
 Package tocstyle Info: prepare \l@subsection for redefinition on input line 38.
 
+Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
+38.
+Package tocstyle Info: prepare \l@paragraph for redefinition on input line 38.
 Package tocstyle Info: prepare \l@table for redefinition on input line 38.
 Package tocstyle Info: prepare \l@figure for redefinition on input line 38.
 
@@ -799,7 +802,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=188, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=192, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 <use img/positivo_cor.pdf>
 Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38.
@@ -903,6 +906,31 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 40.76587pt
+number indent by \l@... (toc, 3):  82.24883pt
+text indent by \l@... (toc, 3):  48.17438pt
+number indent by parent (toc, 3):  70.79372pt
+text indent calculated (toc, 3): 39.16682pt
+number indent calculated (toc, 3): 70.79372pt
+number indent by \l@... (toc, 3):  82.24883pt
+text indent by \l@... (toc, 3):  48.17438pt
+number indent by parent (toc, 3):  70.79372pt
+text indent calculated (toc, 3): 39.16682pt
+number indent calculated (toc, 3): 70.79372pt
+number indent by \l@... (toc, 3):  82.24883pt
+text indent by \l@... (toc, 3):  48.17438pt
+number indent by parent (toc, 3):  70.79372pt
+text indent calculated (toc, 3): 39.16682pt
+number indent calculated (toc, 3): 70.79372pt
+number indent by \l@... (toc, 3):  82.24883pt
+text indent by \l@... (toc, 3):  48.17438pt
+number indent by parent (toc, 3):  70.79372pt
+text indent calculated (toc, 3): 39.16682pt
+number indent calculated (toc, 3): 70.79372pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  40.76587pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 40.76587pt
 number indent by \l@... (toc, 2):  44.64938pt
 text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
@@ -918,26 +946,6 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 40.76587pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  40.76587pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 40.76587pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  40.76587pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 40.76587pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  40.76587pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 40.76587pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 23.82188pt
-number indent calculated (toc, 1): 16.94398pt
 number indent by \l@... (toc, 2):  44.64938pt
 text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
@@ -988,14 +996,14 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
 text indent calculated (toc, 1): 23.82188pt
 number indent calculated (toc, 1): 16.94398pt
+[7
+
+]
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
 text indent calculated (toc, 1): 23.82188pt
 number indent calculated (toc, 1): 16.94398pt
-[7
-
-]
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
@@ -1076,6 +1084,16 @@ text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
 text indent calculated (lof, 1): 20.88887pt
 number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
 )
 \tf@lof=\write8
 \openout8 = `monografia.lof'.
@@ -1103,22 +1121,16 @@ Chapter 1.
 
 
 ]
-<img/idioma.png, id=318, 630.85687pt x 367.3725pt>
+<img/idioma.png, id=328, 630.85687pt x 367.3725pt>
 File: img/idioma.png Graphic file (type png)
 <use img/idioma.png>
 Package pdftex.def Info: img/idioma.png  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 265.10779pt.
- [2 <./img/idioma.png (PNG copy)>]
-
-LaTeX Warning: Citation `8474783' on page 3 undefined on input line 54.
-
-
-LaTeX Warning: Citation `6413737' on page 3 undefined on input line 60.
-
-[3]
+ [2 <./img/idioma.png (PNG copy)>] [3]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 108.
 
- (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
+
+(/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
@@ -1134,23 +1146,35 @@ l.39     \capitulo{1_Introducao}{Introduction}
 ? 
 [4]
 Chapter 2.
-(./tex/2_Concepts_on_Machine_Learning_and_Text_Mining.tex) [5
+(./tex/2_Concepts_on_Machine_Learning_and_Text_Mining.tex [5
 
 ]
-Overfull \vbox (241.2171pt too high) has occurred while \output is active []
 
+LaTeX Warning: Citation `mitchell' on page 6 undefined on input line 23.
 
-[6]
+<img/supervisionado.jpg, id=390, 770.88pt x 578.16pt>
+File: img/supervisionado.jpg Graphic file (type jpg)
+<use img/supervisionado.jpg>
+Package pdftex.def Info: img/supervisionado.jpg  used on input line 45.
+(pdftex.def)             Requested size: 273.14923pt x 204.85565pt.
+<img/supervisionado_predicao.png, id=392, 770.88pt x 578.16pt>
+File: img/supervisionado_predicao.png Graphic file (type png)
+<use img/supervisionado_predicao.png>
+Package pdftex.def Info: img/supervisionado_predicao.png  used on input line 50
+.
+(pdftex.def)             Requested size: 273.14923pt x 204.85565pt.
+) [6] [7 <./img/supervisionado.jpg> <./img/supervisionado_predicao.png>]
+[8]
 Chapter 3.
-(./tex/3_Proposed_framework.tex) [7
+(./tex/3_Proposed_framework.tex) [9
 
 ]
 Chapter 4.
-(./tex/4_Results.tex) [8
+(./tex/4_Results.tex) [10
 
 ]
 Chapter 5.
-(./tex/5_Conclusion.tex) [9
+(./tex/5_Conclusion.tex) [11
 
 ] (./monografia.bbl (./monografia.brf)
 \tf@brf=\write10
@@ -1198,10 +1222,10 @@ Underfull \hbox (badness 4193) in paragraph at lines 117--117
 s-ing\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 http : / / textblob .
  []
 
-[10
+[12
 
 
-]) [11]
+]) [13]
 Appendix A.
 (./tex/Apendice_Fichamento.tex)
 
@@ -1215,7 +1239,7 @@ l.47 \end{document}
                    %
 ? 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-[12
+[14
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
@@ -1223,9 +1247,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 68D25D34D01BA22F21F8B3E155C57648;2949.
+(rerunfilecheck)             Checksum: 129402C368953BCCEB03E09840AE9451;3106.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 59875EBFD7CD1BBE519ED429C1B06B67;803.
+(rerunfilecheck)             Checksum: 88CAB2713AA798DAE221A92805051ED7;1040.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1245,13 +1269,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
 ### bottom level
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15702 strings out of 492642
- 252091 string characters out of 6135566
- 428071 words of memory out of 5000000
- 19122 multiletter control sequences out of 15000+600000
+ 15755 strings out of 492642
+ 253229 string characters out of 6135566
+ 428490 words of memory out of 5000000
+ 19160 multiletter control sequences out of 15000+600000
  53437 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,9n,69p,1988b,732s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,9n,69p,1988b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/
 fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-e
 c.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/sha
@@ -1263,10 +1287,10 @@ nts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy
 f-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm2074.pfb>
-Output written on monografia.pdf (22 pages, 239550 bytes).
+Output written on monografia.pdf (24 pages, 401611 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 443 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 379 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 484 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 

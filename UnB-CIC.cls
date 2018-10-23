@@ -918,6 +918,8 @@
     \bibliography{bibliografia}%
 }%
 
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 
 \newcommand{\sigla}[2]{\newacronym{#1}{#1}{#2}}%
 
