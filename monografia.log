@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  23 OCT 2018 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  23 OCT 2018 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**monografia.tex
+**monografia
 (./monografia.tex
 LaTeX2e <2018-04-01> patch level 5
 (./UnB-CIC.cls
@@ -802,7 +802,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=200, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=205, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 <use img/positivo_cor.pdf>
 Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38.
@@ -921,6 +921,21 @@ text indent by \l@... (toc, 4):  58.74916pt
 number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
 number indent calculated (toc, 4): 109.96054pt
+number indent by \l@... (toc, 4):  117.49832pt
+text indent by \l@... (toc, 4):  58.74916pt
+number indent by parent (toc, 4):  109.96054pt
+text indent calculated (toc, 4): 48.3058pt
+number indent calculated (toc, 4): 109.96054pt
+number indent by \l@... (toc, 4):  117.49832pt
+text indent by \l@... (toc, 4):  58.74916pt
+number indent by parent (toc, 4):  109.96054pt
+text indent calculated (toc, 4): 48.3058pt
+number indent calculated (toc, 4): 109.96054pt
+number indent by \l@... (toc, 4):  117.49832pt
+text indent by \l@... (toc, 4):  58.74916pt
+number indent by parent (toc, 4):  109.96054pt
+text indent calculated (toc, 4): 48.3058pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
@@ -931,16 +946,6 @@ text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
 number indent calculated (toc, 3): 70.79372pt
-number indent by \l@... (toc, 3):  82.24883pt
-text indent by \l@... (toc, 3):  48.17438pt
-number indent by parent (toc, 3):  70.79372pt
-text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 70.79372pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  40.76587pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 40.76587pt
 number indent by \l@... (toc, 2):  44.64938pt
 text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
@@ -996,6 +1001,9 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
 text indent calculated (toc, 1): 23.82188pt
 number indent calculated (toc, 1): 16.94398pt
+[7
+
+]
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
@@ -1006,9 +1014,6 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
 text indent calculated (toc, 1): 23.82188pt
 number indent calculated (toc, 1): 16.94398pt
-[7
-
-]
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  16.94398pt
@@ -1109,6 +1114,16 @@ text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
 text indent calculated (lof, 1): 20.88887pt
 number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
 )
 \tf@lof=\write8
 \openout8 = `monografia.lof'.
@@ -1136,7 +1151,7 @@ Chapter 1.
 
 
 ]
-<img/idioma.png, id=343, 630.85687pt x 367.3725pt>
+<img/idioma.png, id=352, 630.85687pt x 367.3725pt>
 File: img/idioma.png Graphic file (type png)
 <use img/idioma.png>
 Package pdftex.def Info: img/idioma.png  used on input line 27.
@@ -1164,19 +1179,19 @@ Chapter 2.
 (./tex/2_Concepts_on_Machine_Learning_and_Text_Mining.tex [6
 
 ]
-<img/supervisionado.jpg, id=413, 770.88pt x 578.16pt>
+<img/supervisionado.jpg, id=422, 770.88pt x 578.16pt>
 File: img/supervisionado.jpg Graphic file (type jpg)
 <use img/supervisionado.jpg>
 Package pdftex.def Info: img/supervisionado.jpg  used on input line 45.
 (pdftex.def)             Requested size: 273.14923pt x 204.85565pt.
-<img/supervisionado_predicao.png, id=415, 770.88pt x 578.16pt>
+<img/supervisionado_predicao.png, id=424, 770.88pt x 578.16pt>
 File: img/supervisionado_predicao.png Graphic file (type png)
 <use img/supervisionado_predicao.png>
 Package pdftex.def Info: img/supervisionado_predicao.png  used on input line 50
 .
 (pdftex.def)             Requested size: 273.14923pt x 204.85565pt.
  [7] [8 <./img/supervisionado.jpg> <./img/supervisionado_predicao.png>]
-<img/SVM.png, id=438, 461.725pt x 320.19624pt>
+<img/SVM.png, id=447, 461.725pt x 320.19624pt>
 File: img/SVM.png Graphic file (type png)
 <use img/SVM.png>
 Package pdftex.def Info: img/SVM.png  used on input line 86.
@@ -1201,22 +1216,50 @@ l.91 ...}^{p}$, onde i$=$1,\cdots, n. Onde $ y \in
                                                    \left \{ 1,-1 \right \}^{...
 
 ? 
-[9 <./img/SVM.png>]
+[9 <./img/SVM.png>] [10]
+<img/decision_tree.png, id=486, 770.88pt x 578.16pt>
+File: img/decision_tree.png Graphic file (type png)
+<use img/decision_tree.png>
+Package pdftex.def Info: img/decision_tree.png  used on input line 186.
+(pdftex.def)             Requested size: 455.24411pt x 341.42903pt.
 
-LaTeX Warning: Citation `lorena2007introduccao' on page 10 undefined on input l
-ine 102.
+! Undefined control sequence.
+l.189 ...vetores de treinamento $x_{i} \in \mathbb
+                                                  {R}^{n}$, $i=1,\cdots, n$,...
 
-) [10] [11]
+? 
+! Undefined control sequence.
+l.189 ... com os rótulos de saída $y \in \mathbb
+                                                  {R}^{n}$,
+? 
+
+LaTeX Warning: Citation `breiman2017classification' on page 11 undefined on inp
+ut line 190.
+
+[11] [12 <./img/decision_tree.png>]
+! Undefined control sequence.
+<recently read> \Beta 
+                      
+l.241           Onde, $\Beta
+                            _{i}$ são calculados através da função de m�...
+
+? 
+<img/unsupervised.png, id=512, 770.88pt x 578.16pt>
+File: img/unsupervised.png Graphic file (type png)
+<use img/unsupervised.png>
+Package pdftex.def Info: img/unsupervised.png  used on input line 255.
+(pdftex.def)             Requested size: 455.24411pt x 341.42903pt.
+) [13] [14 <./img/unsupervised.png>] [15]
 Chapter 3.
-(./tex/3_Proposed_framework.tex) [12
+(./tex/3_Proposed_framework.tex) [16
 
 ]
 Chapter 4.
-(./tex/4_Results.tex) [13
+(./tex/4_Results.tex) [17
 
 ]
 Chapter 5.
-(./tex/5_Conclusion.tex) [14
+(./tex/5_Conclusion.tex) [18
 
 ] (./monografia.bbl (./monografia.brf)
 \tf@brf=\write10
@@ -1264,13 +1307,13 @@ Underfull \hbox (badness 4193) in paragraph at lines 117--117
 s-ing\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 http : / / textblob .
  []
 
-[15
+[19
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 196.
-) [16]
+ [20]) [21]
 Appendix A.
 (./tex/Apendice_Fichamento.tex)
 
@@ -1284,7 +1327,7 @@ l.47 \end{document}
                    %
 ? 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-[17
+[22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
@@ -1292,9 +1335,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 44D9368BEEF70568C6FBB155335F2B1E;3241.
+(rerunfilecheck)             Checksum: 89BC41306FCEE7873446976DFF97DED3;3345.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 781E628C40B307E83D2B8B56F56D9D58;1444.
+(rerunfilecheck)             Checksum: C64FB05CAFC42A92ABC56CF0DC3D194B;1855.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1314,32 +1357,33 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
 ### bottom level
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15844 strings out of 492642
- 254579 string characters out of 6135566
- 427470 words of memory out of 5000000
- 19227 multiletter control sequences out of 15000+600000
+ 15904 strings out of 492642
+ 255619 string characters out of 6135566
+ 428228 words of memory out of 5000000
+ 19263 multiletter control sequences out of 15000+600000
  60006 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,9n,69p,1992b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,9n,69p,1988b,862s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/
-fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathe
-x.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf
--dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/l
+fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-maths
+y.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf
+-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/l
 m/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
 sr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi
 12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf
 -dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public
-/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1
-/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><
-/usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (27 pages, 441171 bytes).
+/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/
+texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/
+public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/font
+s/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti
+10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on monografia.pdf (32 pages, 634279 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 418 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 626 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 

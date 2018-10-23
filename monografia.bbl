@@ -232,4 +232,34 @@
   long intergenic non-coding RNAs in plants}}.
 \newblock \btxjournalfont {Non-coding RNA}, 3(1):11, 2017.
 
+\bibitem {lorena2007introduccao}
+\btxnamefont {\btxlastnamefont {Lorena}, Ana\btxfnamespacelong Carolina}
+  \btxandlong {}\ \btxnamefont {Andr{\'e}\btxfnamespacelong CPLF
+  de~\btxlastnamefont {Carvalho}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Uma introdu{\c{c}}{\~a}o {\`a}s support vector
+  machines}{Uma introdu{\c{c}}{\~a}o {\`a}s support vector machines}}.
+\newblock \btxjournalfont {Revista de Inform{\'a}tica Te{\'o}rica e Aplicada},
+  14(2):43--67.
+
+\bibitem {McCallum98acomparison}
+\btxnamefont {\btxlastnamefont {McCallum}, Andrew} \btxandlong {}\ \btxnamefont
+  {Kamal \btxlastnamefont {Nigam}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A comparison of event models for naive bayes text
+  classification}{A comparison of event models for Naive Bayes text
+  classification}}, 1998.
+
+\bibitem {zhang2004optimality}
+\btxnamefont {\btxlastnamefont {Zhang}, Harry}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The optimality of naive bayes}{The optimality of naive
+  Bayes}}.
+\newblock \btxjournalfont {AA}, 1(2):3, 2004.
+
+\bibitem {coelhoanalise}
+\btxnamefont {\btxlastnamefont {Coelho}, Vin{\'\i}cius\btxfnamespacelong
+  Coutinho\btxfnamespacelong Guimar{\~a}es}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An{\'a}lise de logs de intera{\c{c}}{\~a}o em ambiente
+  educacional corporativo via minera{\c{c}}{\~a}o de dados
+  educacionais}{An{\'a}lise de logs de intera{\c{c}}{\~a}o em ambiente
+  educacional corporativo via minera{\c{c}}{\~a}o de dados educacionais}}.
+
 \end{thebibliography}

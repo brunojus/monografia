@@ -31,7 +31,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
   \subsection{Paradigmas de Aprendizado de Máquina}
 
-    Os principais tipos de \acrshort{AM} utilizados atualmente serão detalhados nas 4 subseções a seguir:
+    Os principais tipos de \acrshort{AM} utilizados atualmente serão detalhados nas 3 subseções a seguir:
 
     \subsubsection{Aprendizado Supervisionado}
 
@@ -123,10 +123,138 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         \end{equation}
         
         Onde o termo $y_{i}\alpha_{i}$ representa o coeficiente dual, $K(x_{i},x)$ são os vetores de suporte e $\rho$ é um termo independente.
-    \subsubsection{Unsupervised Learning}
-    \subsubsection{Semi-Supervised Learning}
+
+
+
+        \paragraph{Naive Bayes}
+
+        O Naive Bayes é um outro algoritmo \acrshort{AM} supervisionado, a sua formulação matemática é sustentada pelo teorema estatístico de
+        Bayes com um pouco de ingenuidade, pois assume-se que a suposição de independência condicional entre cada par de recursos, dado o valor da
+        variável de classe \cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
+        \ref{eq:Bayes}
+
+        \begin{equation}\label{eq:Bayes}
+          \begin{aligned}
+            P\left ( y\mid x_{1},\cdots, x_{n} \right ) = \frac{P(y)P(x_{1},\cdots,x_{n}\mid y)}{P(x_{1},\cdots, x_{n})}
+        \end{aligned}
+        \end{equation}
+        
+
+        Na Equação \ref{eq:Bayes1} é desconsiderado completamente a correlação entre as variáveis, 
+
+
+        \begin{equation}\label{eq:Bayes1}
+          \begin{aligned}
+            P\left ( x_{i}\mid y,x_{1}, \cdots,x_{i-1},x_{i+1},\cdots, x_{n} \right ) = P(x_{i}|y),
+        \end{aligned}
+        \end{equation}
+
+
+        Na Equação \ref{eq:BayesSimples}, para todo $i$, é possível simplificar através da relação:
+
+
+        \begin{equation}\label{eq:BayesSimples}
+          \begin{aligned}
+            P(y|x_{1},\cdots, x_{n}) = \frac{P(y)\prod_{i=1}^{n}P(x_{i}|y)}{P(x_{1},\cdots, x_{n})},
+        \end{aligned}
+        \end{equation}
+
+
+        Sabendo que $P(x_{1},\cdots, x_{n})$ é constante dada a entrada, podemos usar a seguinte regra de classificação, na Equação \ref{eq:NBFINAL}:
+        
+        \begin{equation}\label{eq:NBFINAL}
+          \begin{aligned}
+            \widehat{y} = \arg\max_{y} P(y)\prod_{i=1}^{n}P(x_{i}|y),
+        \end{aligned}
+        \end{equation}
+
+
+        O classificador Naive Bayes pode ser extremamente rápido em comparação a outros algoritmos mais sofisticados, pois existe o desacoplamento
+        das distribuições de características condicionais de classe que significa que cada uma pode ser estimada independentemente com uma distribuição unidimensional\cite{zhang2004optimality}.
+
+
+        \paragraph{Árvores de Decisão}
+
+          A árvore de decisão funciona quando as classes presentes no conjunto de dados de treinamento se dividem, ou seja, esse algoritmo seleciona
+          um problema mais complexo e divide em subproblemas mais simples e de forma recursiva a mesma estratégia é a aplicada a cada subproblema \cite{coelhoanalise}.
+
+
+          Na Figura \ref{decisionTree}, é um exemplo de como uma árvore de decisão poderia realizar uma análise de crédito de forma rápida. 
+
+
+          \figuraBib{decision_tree}{Árvore de decisão para análise de crédito de um cliente que deseja empréstimo alto no banco, levando em consideração 
+          a educação e faixa salarial}{}{decisionTree}{width=\textwidth}%
+
+
+          Tendo como entrada os vetores de treinamento $x_{i} \in \mathbb{R}^{n}$, $i=1,\cdots, n$, e o vetor com os rótulos de saída $y \in \mathbb{R}^{n}$,
+          a árvore de decisão divide recursivamente o espaço de forma que as amostras com os mesmos rótulos sejam agrupadas\cite{breiman2017classification}.
+
+          Considerando os dados no nó $m$ que pode ser representado pela letra $Q$. Para cada candidato é dividido $\theta = (j,t_{m})$ consistindo 
+          a entrada como $j$ e o \textit{threshold} $t_{m}$, dividindo os dados entre $Q_{left}(\theta)$ e $Q_{right}(\theta)$ e esses subconjuntos pode ser vistos na
+          Equação \ref{eq:DT}
+
+
+          \begin{equation}\label{eq:DT}
+            \begin{aligned}
+              & Q_{left}(\theta) = (x,y)|x_{j} \leq t_{m} \\
+              & Q_{right}(\theta) = \frac{Q}{Q_{left}(\theta)}
+          \end{aligned}
+          \end{equation}
+
+
+          A impureza no nó apresentado é calculada utilizando uma função de impureza denotada de $K()$, que pode ser escolhida dependendo se o 
+          problema for de classificação ou regressão. Na Equação \ref{eq:DT2} é calculada essa impureza:
+
+          \begin{equation}\label{eq:DT2}
+            \begin{aligned}
+              G(Q,\theta) = \frac{n_{left}}{N_{m}}K(Q_{left}(\theta)) + \frac{n_{right}}{N_{m}}K(Q_{right}(\theta))
+          \end{aligned}
+          \end{equation}
+
+
+          Por fim, na Equação \ref{eq:DT3} são selecionados os parâmetros para diminuir a impureza,
+
+          \begin{equation}\label{eq:DT3}
+            \begin{aligned}
+              \theta = \arg\min_{\theta}G(Q,\theta)
+          \end{aligned} 
+          \end{equation}
+
+          É possível gerar outros nós a partir dos subconjuntos de dados gerados para direita e para esquerda, 
+          até que a profundidade máxima permitida seja atingida, $N_{m} < \min_{samples}$ ou $N_{m} = 1$.
+
+        \paragraph{Regressão Logística}
+
+          Apesar do nome, é um modelo de classificação linear e não de regressão como sugere o seu nome. Neste modelo, os dados
+          são descritos, através de um único teste e são modeladas a partir de uma função logística \cite{nasrabadi2007pattern}.
+
+          Seja a probabilidade P(X), na Equação \ref{eq:LogReg1}
+
+
+          \begin{equation}\label{eq:LogReg1}
+            \begin{aligned}
+              & P(x) = \frac{1}{1+e^{-(B_{0}+B_{1}x)}} = \frac{e^{B_{0} + B_{1}}x}{1+e^{B_{0}+B_{1}}x }\\ \\
+              & \frac{p(x)}{1-p(x)} = e^{B_{0}+B_{1}x}\\ \\
+          \end{aligned} 
+          \end{equation}
+         
+          Onde, $\Beta_{i}$ são calculados através da função de máxima verossimilhança. 
+
+    \subsubsection{Aprendizado não-supervisionado}
+
+          Nesse tipo de aprendizado não existe a necessidade de um vetor contendo os rótulos de cada medida, ou seja, não é 
+          necessário avisar a máquina o tipo de cada dado. A essa não inserção de rótulos faz com que o algoritmo aprenda de acordo 
+          com as características dos dados de entrada. Esse tipo de paradigma não tem certos benefícios que existem  no aprendizado supervisionado, 
+          para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada \cite{bonaccorso2017machine}. Esse tipo de algoritmo 
+          é muito interessante em base de dados que ainda não foram exploradas e que necessita-se visualizar os dados agrupados.
+
+          A Figura \ref{unsupervised} é ilustrado o exemplo que foi exposto ao falar sobre aprendizado supervisionado, mas agora levando em consideração o 
+          não-supervisionado. E é possível ver que o modelo foi capaz de agrupar as características semelhantes que os cachorros têm e agrupá-los em um
+          único cluster e também foi formado um outro cluster contendo apenas o gato, pois não tem características semelhantes aos cães.
+
+          \figuraBib{unsupervised}{Treinamento de um modelo de aprenzidado de máquina não-supervisionado}{}{unsupervised}{width=0.6\textwidth}%
     \subsubsection{Reinforcement Learning}
-  \subsection{Training and testing phases}
+
 
   \subsection{Performance measures}
 

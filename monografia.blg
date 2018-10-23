@@ -4,59 +4,62 @@ The top-level auxiliary file: monografia.aux
 The style file: babunsrt.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "ILS" isn't style-file defined
---line 108 of file bibliografia.bib
+--line 138 of file bibliografia.bib
 Warning--entry type for "Twitter" isn't style-file defined
---line 114 of file bibliografia.bib
+--line 144 of file bibliografia.bib
 Warning--entry type for "EBC" isn't style-file defined
---line 120 of file bibliografia.bib
+--line 150 of file bibliografia.bib
 Warning--entry type for "face" isn't style-file defined
---line 126 of file bibliografia.bib
+--line 156 of file bibliografia.bib
 Warning--entry type for "w3techs" isn't style-file defined
---line 132 of file bibliografia.bib
+--line 162 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 160 of file bibliografia.bib
-Warning--I didn't find a database entry for "lorena2007introduccao"
+--line 190 of file bibliografia.bib
+Warning--I didn't find a database entry for "breiman2017classification"
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--empty language in w3techs
-You've used 23 entries,
+Warning--empty year in lorena2007introduccao
+Warning--empty journal in coelhoanalise
+Warning--empty year in coelhoanalise
+You've used 27 entries,
             2465 wiz_defined-function locations,
-            723 strings with 10140 characters,
-and the built_in function-call counts, 7522 in all, are:
-= -- 586
-> -- 211
+            741 strings with 10715 characters,
+and the built_in function-call counts, 8410 in all, are:
+= -- 650
+> -- 235
 < -- 8
-+ -- 81
-- -- 58
-* -- 831
-:= -- 895
-add.period$ -- 52
-call.type$ -- 23
-change.case$ -- 21
++ -- 91
+- -- 64
+* -- 929
+:= -- 1011
+add.period$ -- 58
+call.type$ -- 27
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 478
-empty$ -- 902
-format.name$ -- 164
-if$ -- 1734
+cite$ -- 31
+duplicate$ -- 534
+empty$ -- 1017
+format.name$ -- 180
+if$ -- 1932
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 25
-newline$ -- 110
-num.names$ -- 24
-pop$ -- 147
+int.to.str$ -- 27
+missing$ -- 31
+newline$ -- 124
+num.names$ -- 28
+pop$ -- 173
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 232
+skip$ -- 255
 stack$ -- 0
-substring$ -- 319
-swap$ -- 239
+substring$ -- 341
+swap$ -- 258
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 51
-width$ -- 25
-write$ -- 249
-(There were 8 warnings)
+warning$ -- 4
+while$ -- 58
+width$ -- 29
+write$ -- 281
+(There were 11 warnings)
