@@ -370,7 +370,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           da polaridade de novas frases que não existiam durante a fase de treinamento \cite{golbeck2010twitter}.
           
           
-        \subsubsection{Pre-Processamento}
+        \subsubsection{Pré-Processamento}
 
             O pré-processamento dos dados é a parte mais importante da análise, pois é a etapa onde irá ser tratada as informações e com isso 
           facilitará o processo de aprendizado da máquina. Onde será indentificado padrões para facilitar a limpeza dos dados, onde pode ser definido
@@ -428,9 +428,69 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
   
 
   \subsection{Bag of Words}
+
+            Os dados utilizados nesse trabalho são textos, ou seja, é um formato que não existe um padrão conhecido, o que dificulta
+            a extração de informações. Por isso é necessário alguma técnica que organize esse conjunto de dados e extraia informações
+            relevantes deles\cite{wallach2006topic}.
+
+            Portanto é necessário utilizar o \textit{bag of words} para realizar a estruturação do texto que será analisado. No caso mais simples,
+            seria uma matriz que apenas indica se determinado termo existe ou não naquela frase, dessa forma seria uma abordagem booleana. Onde temos duas
+            frases que serão transformadas na matriz a ser utilizada nas próximas etapas.
+
+            \textit{$D_{1}=\textup{José gosta de assistir os jogos do Flamengo.}$}\\
+            \textit{$D_{2}=\textup{Maria gosta de assistir filmes}$}\\
+
+            \begin{center}
+              \begin{bmatrix}              
+                \textup{José}& \textup{gosta}  & \textup{assistir} & \textup{jogos} & \textup{Flamengo}& \textup{Maria} & \textup{filmes} \\ 
+                1 & 1  & 1 & 1 & 1 & 0 & 0  \\ 
+                0 & 1  & 1 & 0 & 0 & 1 & 1  \\ 
+              \end{bmatrix}
+            \end{center}        
+
   \subsection{Term Frequency}
-  \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
+
+            A medida de \textit{Term Frequency} é uma outra forma de representar os dados na matriz do modelo estudado, ele considera 
+            a quantidade de ocorrência que um determinado termo $n_{t}$, o que difere drásticamente do primeiro tipo de \textit{bag of words}\cite{salton1988term}.
+            Esse modelo tem uma performance superior ao booleano que foi apresentado na subseção anterior, a sua fórmula matemática é descrita na
+            Equação \ref{eq:tf}.
+            
+
+            \begin{equation}\label{eq:tf}
+              \begin{aligned}
+                TF_{t} = \frac{n_{t}}{N},
+            \end{aligned} 
+            \end{equation}
+  
+            onde $n_{t}$ é a frequência que o termo $n$ apareceu dentro do \textit{Corpus} e $N$ é a quantidade total de termos.
+            
+            \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
+               Uma abordagem mais eficaz é a TF-IDF, pois quando se utiliza a \textit{Term Frequency} ele considera todas as palavras 
+               tendo a mesma importância, portanto é necessário normalizar esses valores, para diminuir a influência que esses termos irão 
+               ter no processo de análise textual \cite{sparck1972statistical}. Para isso é necessário utilizar a equação descrita por \cite{sparck1972statistical},
+               onde é apresentada uma função inversa que irá calcular a importância de cada termo. É possível visualizar a Equação \ref{eq:idf} que é descrita por
+               \cite{sparck1972statistical}.
+               
+
+               \begin{equation}\label{eq:idf}
+                \begin{aligned}
+                  IDF = \log \frac{N}{d},
+              \end{aligned} 
+              \end{equation}
+               
+              Onde $N$ é o número total de frases e $d$ é a quantidade de documentos nos quais o termo aparece.
 
 
+              A fórmula final do TF-IDF é obtida a partir do produto da Equação \ref{eq:tf}, que é a frequência de cada termo com a Equação \ref{eq:idf}, 
+              que é o a taxa de normalização dos valores. Na Equação \ref{eq:tfidf} é possível ver que esse tipo de normalização irá desconsiderar 
+              palavras que aparecem em todas as frases do \textit{Corpus}, pois considera que esses termos não são úteis para as etapas seguintes.
+              
+
+              \begin{equation}\label{eq:tfidf}
+                \begin{aligned}
+                  Tf-IDF = TF*IDF,
+              \end{aligned} 
+              \end{equation}
+               
 
 

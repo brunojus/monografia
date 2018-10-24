@@ -16,12 +16,9 @@ Warning--entry type for "w3techs" isn't style-file defined
 Warning--entry type for "textblob" isn't style-file defined
 --line 197 of file bibliografia.bib
 Warning--entry type for "martin" isn't style-file defined
---line 268 of file bibliografia.bib
-Warning--I didn't find a database entry for "golbeck2010twitter"
-Warning--I didn't find a database entry for "mcnamee2004character"
-Warning--I didn't find a database entry for "bird2004nltk"
+--line 310 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Warning--empty language in w3techs
+Warning--empty language in song2014analyzing
 Warning--empty year in lorena2007introduccao
 Warning--empty journal in coelhoanalise
 Warning--empty year in coelhoanalise
@@ -30,45 +27,45 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 Warning--empty journal in ferreirametodo
 Warning--empty year in ferreirametodo
-You've used 36 entries,
+You've used 42 entries,
             2465 wiz_defined-function locations,
-            795 strings with 12311 characters,
-and the built_in function-call counts, 11177 in all, are:
-= -- 865
-> -- 318
-< -- 12
-+ -- 123
-- -- 87
-* -- 1251
-:= -- 1341
-add.period$ -- 76
-call.type$ -- 36
-change.case$ -- 33
+            832 strings with 13283 characters,
+and the built_in function-call counts, 13126 in all, are:
+= -- 1042
+> -- 361
+< -- 14
++ -- 140
+- -- 98
+* -- 1458
+:= -- 1583
+add.period$ -- 90
+call.type$ -- 42
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 715
-empty$ -- 1339
-format.name$ -- 245
-if$ -- 2557
+cite$ -- 51
+duplicate$ -- 832
+empty$ -- 1566
+format.name$ -- 276
+if$ -- 3007
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 45
-newline$ -- 158
-num.names$ -- 37
-pop$ -- 234
+int.to.str$ -- 42
+missing$ -- 55
+newline$ -- 182
+num.names$ -- 43
+pop$ -- 265
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 328
+skip$ -- 375
 stack$ -- 0
-substring$ -- 444
-swap$ -- 349
-text.length$ -- 12
+substring$ -- 574
+swap$ -- 400
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 76
-width$ -- 38
-write$ -- 367
-(There were 19 warnings)
+while$ -- 94
+width$ -- 44
+write$ -- 429
+(There were 16 warnings)

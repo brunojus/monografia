@@ -13,21 +13,6 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {w3techs}
-\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Historical trends in the usage of content languages for
-  websites.}{Historical trends in the usage of content languages for
-  websites.}}
-\newblock {\latintext
-  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
-
-\bibitem {martin}
-\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
-  architecture for software defined networking}{AN INTRUSION DETECTION AND
-  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
-  \btxprintmonthyear{.}{04}{2014}{long}.
-
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -66,6 +51,14 @@
   A.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Wordnet: a lexical
   database for {E}nglish}{WordNet: a lexical database for {E}nglish}}.
 \newblock \btxjournalfont {Communications of the ACM}, 38(11):39--41, 1995.
+
+\bibitem {w3techs}
+\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Historical trends in the usage of content languages for
+  websites.}{Historical trends in the usage of content languages for
+  websites.}}
+\newblock {\latintext
+  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
 
 \bibitem {Twitter}
 \btxnamefont {\btxlastnamefont {Twitter}}\btxauthorcolon\ \btxtitlefont
@@ -281,7 +274,8 @@
   classification and analysis of multivariate observations}}.
 \newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the fifth Berkeley
   symposium on mathematical statistics and probability}, \btxvolumelong
-  {}~\btxvolumefont {1}, \btxpageslong {}\ 281--297. Oakland, CA, USA, 1967.
+  {}~\btxvolumefont {1} \btxofserieslong {}\ \btxtitlefont {1}, \btxpageslong
+  {}\ 281--297. Oakland, CA, USA, 1967.
 
 \bibitem {zurada}
 \btxnamefont {\btxlastnamefont {Zurada}, Jacek\btxfnamespacelong
@@ -327,11 +321,27 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Ijcai}, \btxvolumelong
   {}~\btxvolumefont {14}, \btxpageslong {}\ 1137--1145. Montreal, Canada, 1995.
 
+\bibitem {martin}
+\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
+  architecture for software defined networking}{AN INTRUSION DETECTION AND
+  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
+  \btxprintmonthyear{.}{04}{2014}{long}.
+
 \bibitem {liddy2001natural}
 \btxnamefont {\btxlastnamefont {Liddy}, Elizabeth\btxfnamespacelong
   D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Natural language
   processing}{Natural language processing}}.
 \newblock 2001.
+
+\bibitem {golbeck2010twitter}
+\btxnamefont {\btxlastnamefont {Golbeck}, Jennifer}, \btxnamefont
+  {Justin\btxfnamespacelong M \btxlastnamefont {Grimes}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Anthony \btxlastnamefont
+  {Rogers}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Twitter use by
+  the us congress}{Twitter use by the US Congress}}.
+\newblock \btxjournalfont {Journal of the American Society for Information
+  Science and Technology}, 61(8):1612--1621, 2010.
 
 \bibitem {ferreirametodo}
 \btxnamefont {\btxlastnamefont {Ferreira}, Lohann\btxfnamespacelong
@@ -343,5 +353,44 @@
   o portugu{\^e}s do brasil}{Um M{\'e}todo para o Pr{\'e}-Processamento de
   Textos na Identifica{\c{c}}{\~a}o Autom{\'a}tica de Emo{\c{c}}{\~o}es para o
   Portugu{\^e}s do Brasil}}.
+
+\bibitem {mcnamee2004character}
+\btxnamefont {\btxlastnamefont {Mcnamee}, Paul} \btxandlong {}\ \btxnamefont
+  {James \btxlastnamefont {Mayfield}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Character n-gram tokenization for european language text
+  retrieval}{Character n-gram tokenization for European language text
+  retrieval}}.
+\newblock \btxjournalfont {Information retrieval}, 7(1-2):73--97, 2004.
+
+\bibitem {bird2004nltk}
+\btxnamefont {\btxlastnamefont {Bird}, Steven} \btxandlong {}\ \btxnamefont
+  {Edward \btxlastnamefont {Loper}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Nltk: the natural language toolkit}{NLTK: the natural
+  language toolkit}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the ACL 2004 on
+  Interactive poster and demonstration sessions}, \btxpagelong {}~31.
+  Association for Computational Linguistics, 2004.
+
+\bibitem {wallach2006topic}
+\btxnamefont {\btxlastnamefont {Wallach}, Hanna\btxfnamespacelong
+  M}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Topic modeling: beyond
+  bag-of-words}{Topic modeling: beyond bag-of-words}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 23rd international
+  conference on Machine learning}, \btxpageslong {}\ 977--984. ACM, 2006.
+
+\bibitem {salton1988term}
+\btxnamefont {\btxlastnamefont {Salton}, Gerard} \btxandlong {}\ \btxnamefont
+  {Christopher \btxlastnamefont {Buckley}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Term-weighting approaches in automatic text
+  retrieval}{Term-weighting approaches in automatic text retrieval}}.
+\newblock \btxjournalfont {Information processing \& management},
+  24(5):513--523, 1988.
+
+\bibitem {sparck1972statistical}
+\btxnamefont {\btxlastnamefont {Sparck~Jones}, Karen}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A statistical interpretation of term
+  specificity and its application in retrieval}{A statistical interpretation of
+  term specificity and its application in retrieval}}.
+\newblock \btxjournalfont {Journal of documentation}, 28(1):11--21, 1972.
 
 \end{thebibliography}

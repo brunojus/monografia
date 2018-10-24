@@ -16,6 +16,8 @@ INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/switch.def
@@ -315,6 +317,7 @@ INPUT ./img/confusion_matrix.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT tex/3_Proposed_framework.tex
 INPUT tex/3_Proposed_framework.tex
 INPUT tex/3_Proposed_framework.tex

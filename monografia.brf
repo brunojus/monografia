@@ -1,5 +1,3 @@
-\backcite {w3techs}{{ix}{(document)}{Doc-Start}}
-\backcite {martin}{{ix}{(document)}{Doc-Start}}
 \backcite {song2014analyzing}{{1}{1}{chapter.1}}
 \backcite {5194581}{{1}{1}{chapter.1}}
 \backcite {ILS}{{1}{1.1}{section.1.1}}
@@ -48,3 +46,8 @@
 \backcite {mcnamee2004character}{{18}{2.2.1.3}{subsubsection.2.2.1.3}}
 \backcite {bird2004nltk}{{18}{2.2.1.3}{subsubsection.2.2.1.3}}
 \backcite {bird2004nltk}{{19}{2.2.1.5}{subsubsection.2.2.1.5}}
+\backcite {wallach2006topic}{{19}{2.2.2}{subsection.2.2.2}}
+\backcite {salton1988term}{{20}{2.2.3}{subsection.2.2.3}}
+\backcite {sparck1972statistical}{{20}{2.2.4}{subsection.2.2.4}}
+\backcite {sparck1972statistical}{{20}{2.2.4}{subsection.2.2.4}}
+\backcite {sparck1972statistical}{{20}{2.2.4}{subsection.2.2.4}}
