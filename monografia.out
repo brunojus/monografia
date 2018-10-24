@@ -11,7 +11,7 @@
 \BOOKMARK [1][-]{section.1.6}{Descri\347\343o dos cap\355tulos}{chapter.1}% 11
 \BOOKMARK [0][-]{chapter.2}{Conceitos em Aprendizado de M\341quina e Minera\347\343o de Texto}{}% 12
 \BOOKMARK [1][-]{section.2.1}{Aprendizado de M\341quina}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.1.1}{Basic Concepts}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{Conceitos B\341sicos}{section.2.1}% 14
 \BOOKMARK [2][-]{subsection.2.1.2}{Paradigmas de Aprendizado de M\341quina}{section.2.1}% 15
 \BOOKMARK [3][-]{subsubsection.2.1.2.1}{Aprendizado Supervisionado}{subsection.2.1.2}% 16
 \BOOKMARK [4][-]{paragraph.2.1.2.1.1}{SVM}{subsubsection.2.1.2.1}% 17
@@ -23,15 +23,15 @@
 \BOOKMARK [3][-]{subsubsection.2.1.2.3}{Aprendizado por refor\347o}{subsection.2.1.2}% 23
 \BOOKMARK [2][-]{subsection.2.1.3}{Medidas de avalia\347\343o}{section.2.1}% 24
 \BOOKMARK [1][-]{section.2.2}{Minera\347\343o de Texto}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.1}{Processamento de Linguagem natural}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.2}{Pre-Processamento}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.3}{Tokeninza\347\343o}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.4}{Stemming}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.5}{Stop Words}{section.2.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.6}{Bag of Words}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.7}{Term Frequency}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.8}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{section.2.2}% 33
-\BOOKMARK [1][-]{section.2.3}{An\341lise de Sentimentos}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.1}{Processamento de Linguagem Natural}{section.2.2}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{An\341lise de Sentimentos}{subsection.2.2.1}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{Pre-Processamento}{subsection.2.2.1}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.1.3}{Tokeniza\347\343o}{subsection.2.2.1}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.1.4}{Stemming}{subsection.2.2.1}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.1.5}{Stop Words}{subsection.2.2.1}% 31
+\BOOKMARK [2][-]{subsection.2.2.2}{Bag of Words}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.3}{Term Frequency}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.4}{Term Frequency - Inverse Document Frequency \(TF-IDF\)}{section.2.2}% 34
 \BOOKMARK [0][-]{chapter.3}{Framework Proposto}{}% 35
 \BOOKMARK [1][-]{section.3.1}{Extra\347\343o de Dados}{chapter.3}% 36
 \BOOKMARK [1][-]{section.3.2}{Pr\351-processamento de dados}{chapter.3}% 37
@@ -44,8 +44,8 @@
 \BOOKMARK [1][-]{section.4.3}{Avalia\347\343o do erro utilizando o modelo}{chapter.4}% 44
 \BOOKMARK [1][-]{section.4.4}{An\341lise Espa\347o-Temporal}{chapter.4}% 45
 \BOOKMARK [1][-]{section.4.5}{Resultado das Elei\347\365es}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Conslus\343o}{}% 47
-\BOOKMARK [0][-]{section*.9}{Refer\352ncias}{}% 48
-\BOOKMARK [0][-]{chapter*.10}{Ap\352ndice}{}% 49
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 47
+\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 48
+\BOOKMARK [0][-]{chapter*.11}{Ap\352ndice}{}% 49
 \BOOKMARK [0][-]{appendix.A}{}{}% 50
 \BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 51

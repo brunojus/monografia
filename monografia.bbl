@@ -327,4 +327,21 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Ijcai}, \btxvolumelong
   {}~\btxvolumefont {14}, \btxpageslong {}\ 1137--1145. Montreal, Canada, 1995.
 
+\bibitem {liddy2001natural}
+\btxnamefont {\btxlastnamefont {Liddy}, Elizabeth\btxfnamespacelong
+  D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Natural language
+  processing}{Natural language processing}}.
+\newblock 2001.
+
+\bibitem {ferreirametodo}
+\btxnamefont {\btxlastnamefont {Ferreira}, Lohann\btxfnamespacelong
+  Paterno\btxfnamespacelong Coutinho}, \btxnamefont {Mariza\btxfnamespacelong
+  Miola \btxlastnamefont {Dosciatti}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {Emerson \btxlastnamefont {Cabrera}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Um m{\'e}todo para o pr{\'e}-processamento
+  de textos na identifica{\c{c}}{\~a}o autom{\'a}tica de emo{\c{c}}{\~o}es para
+  o portugu{\^e}s do brasil}{Um M{\'e}todo para o Pr{\'e}-Processamento de
+  Textos na Identifica{\c{c}}{\~a}o Autom{\'a}tica de Emo{\c{c}}{\~o}es para o
+  Portugu{\^e}s do Brasil}}.
+
 \end{thebibliography}

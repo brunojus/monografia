@@ -138,6 +138,7 @@
 %%
 
 
+\usepackage{indentfirst}
 \RequirePackage[brazil,american]{babel}% Idiomas
 \RequirePackage[fixlanguage]{babelbib}%  Idioma das referências
 \RequirePackage[utf8]{inputenc}%         Arquivos na codificação UTF-8
@@ -159,6 +160,7 @@
 
 	\def\@textscale#1#2{{\addfontfeatures{Scale=#1}#2}}
 }%
+
 
 \RequirePackage{graphicx}\graphicspath{{.}{img/}}%
 \RequirePackage{boites}

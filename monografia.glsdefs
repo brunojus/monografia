@@ -208,3 +208,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{PLN}{}%
+{%
+\gls@defglossaryentry{PLN}%
+{%
+name={PLN},%
+sort={PLN},%
+type={acronym},%
+first={Processamento de Linguagem Natural\glsspace (PLN)},%
+firstplural={Processamento de Linguagem Naturals\glsspace (PLNs)},%
+text={PLN},%
+plural={PLNs},%
+description={Processamento de Linguagem Natural},%
+descriptionplural={Processamento de Linguagem Natural\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Processamento de Linguagem Natural},%
+longplural={Processamento de Linguagem Naturals},%
+short={PLN},%
+shortplural={PLNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

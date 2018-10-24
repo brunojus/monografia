@@ -4,7 +4,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
 
 \section{Aprendizado de Máquina}
-  \subsection{Basic Concepts}
+  \subsection{Conceitos Básicos}
 
     Com o alto volume de informações geradas no dia a dia, a utilização de algoritmos que sejam capazes de identificar padrões tornam-se cada
     vez mais necessários, pois em diversas empresas e órgãos do governo não são capazes de analisar todas as informações existentes ou entregar
@@ -197,7 +197,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           \begin{equation}\label{eq:DT}
             \begin{aligned}
               & Q_{left}(\theta) = (x,y)|x_{j} \leq t_{m} \\
-              & Q_{right}(\theta) = \frac{Q}{Q_{left}(\theta)}
+              & Q_{right}(\theta) = Q \textbackslash Q_{left}(\theta)
           \end{aligned}
           \end{equation}
 
@@ -338,14 +338,99 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           \end{equation}
 
 \section{Mineração de Texto}
-  \subsection{Processamento de Linguagem natural}
-  \subsection{Pre-Processamento}
-  \subsection{Tokeninzação}
-  \subsection{Stemming}
-  \subsection{Stop Words}
+
+          A \acrshort{TM} representa uma parcela da mineração de dados, também pode ser descrita como a forma 
+        de descobrir padrões em textos, que vão desde identificar palavras até mesmo sumarizar o texto ou realizar análise de sentimentos
+        de determinada informação. A sua análise tenta recolher o maior número de informações possíveis para encontrar padrões úteis e também 
+        pode ser utilizada juntamente com algoritmos de \acrshort{AM}. Os textos geralmente são mais difíceis de obter análises, pois em grande
+        parte não são apresentados de forma estruturada, portanto para que o resultado seja satisfatório é necessário uma etapa de pré-processamento
+        dos dados, para que de alguma forma seja possível estruturar o texto.
+
+            O corpus é o conjunto de frases que foram rotulados com a sua saída que será utilizada em um modelo de \acrshort{AM}, ou seja ele é 
+        a base de dados que contém todos os textos disponíveis de forma rotulada.
+
+  \subsection{Processamento de Linguagem Natural}
+
+          O \acrshort{PLN} é uma área de pesquisa que preocupa-se em explorar como um computador pode entender um texto escrito por humanos, com esse tipo 
+          de ferramenta é possível realizar análises morfológicas, sintáticas ou léxicas no texto e também extrair informações de um determinado
+          documento \cite{liddy2001natural}. 
+
+          \subsubsection{Análise de Sentimentos}
+
+          A análise de sentimentos é um campo que envolve outras ciências além da computação, como a psicologia e linguística, pois é necessário 
+          a construção de dicionários para facilitar a classificação de textos, quando por exemplo a intenção é apenas identificar a polaridade
+          de uma palavras, ela poderá ter três saídas conhecidas: Positivo, Negativo e Neutro \cite{wegrzyn2012tweets}. 
+          
+          Existem diversas formas de fazer o uso da análise de sentimentos, a realização dessas tarefas no idioma em português ainda é muito díficil devido 
+          não ter dicionários grandes para realizar o tratamento com um grande volume de dados, também é possível verificar a polaridade de cada frase através
+          da bibliotca \cite{textblob}, mas para isso é necessário traduzir toda a frase para o idioma inglês através da \acrshort{API} aberta da \textit{Google},
+          o que pode implicar um viés durante o processo de análise de sentimentos.
+          
+          É possível utilizar um modelo de \acrshort{AM} para realizar a análise de sentimentos, onde faz o uso do modelo previamente treinado para realizar a predição
+          da polaridade de novas frases que não existiam durante a fase de treinamento \cite{golbeck2010twitter}.
+          
+          
+        \subsubsection{Pre-Processamento}
+
+            O pré-processamento dos dados é a parte mais importante da análise, pois é a etapa onde irá ser tratada as informações e com isso 
+          facilitará o processo de aprendizado da máquina. Onde será indentificado padrões para facilitar a limpeza dos dados, onde pode ser definido
+          que todo o texto deverá estar escrito em letra minúscula, remoção de pontuação e acentos, nessa fase também é possível retirar os textos que não 
+          estão no padrão desejado, por exemplo apresentam \textit{emotions} ao invés de texto, remoção de números, ou seja, o interesse dessa etapa é 
+          filtrar o texto de forma que a máquina obtenha apenas informações que irão ser utilizadas para treinamento \cite{ferreirametodo}.
+
+        \subsubsection{Tokenização}
+
+              Acontece na etapa de pré-processamento e a sua utilização tem como finalidade extrair pequenas informações de um texto livre. Recebe esse nome, 
+            pois cada divisão é nomeada de \textit{token} e que na maioria das vezes é uma palavra que está inserida no texto, mas em outros casos podem 
+            ser separados em letras ou duplas ou trincas de palavras\cite{mcnamee2004character}. Nesse trabalho foi utilizado o \textit{token} em sua forma clássica utilizando 
+            a linguagem de programação \textit{Python} e a biblioteca \textit{NLTK} \cite{bird2004nltk}.
+
+              Por exemplo, caso tenhamos a frase \textit{"Obina é melhor do que Neymar!"}, teremos sete tokens, conforme exemplo abaixo.
+
+                    $[Obina]$  $[é]$  $[melhor]$  $[do]$  $[que]$  $[Neymar]$  $[!]$
+        \subsubsection{Stemming}
+
+            Essa técnica serve para evitar que palavras que tenham o mesmo radical sejam classificadas de maneira distintas, ou seja, essa técnica tem
+            por objetivo reduzir até a menor parte com significado da palavra que no caso é o radical, portanto no processo de \textit{steeming}, palavras
+            como caminhar, caminhada, caminharam, caminharão resultem na mesma palavra final: caminh. A necessário atentar-se na escolha do algoritmo correto 
+            para realizar \textit{steeming}, pois essa etapa está diretamente ligada com o idioma em que o texto está escrito.
+        \subsubsection{Stop Words}
+
+          São os termos não relevantes para a análise do texto, são palavras que na maioria das vezes são conectivos de frases ou preposições, que podem
+          ser consideradas como palavras vazias, não existe uma lista universal de \textit{Stop Words}, mas por padrão é utilizada a lista presente na biblioteca
+          NLTK \cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontra-se algumas das \textit{Stop Words} utilizadas nesse trabalho.
+
+          \begin{table}[h]\label{tb:stopwords}
+            \centering
+            \begin{tabular}{cccccccc}
+            \cline{1-8}
+            de & os & tua & tem & estão & da & lhes & essas \\
+            e & é & foi & nossas & muito & o & se & tuas \\
+            tu & por & as & sua & aquele & entre & não & ele \\
+            delas & minhas & às & nos & pela & havia & me & como \\
+            ser & aqueles & nossa & vocês & eu & ter & tenho & suas \\
+            está & isso & pelos & estes & tinha & depois & foram & este \\
+            para & só & quem & deles & isto & um & eles & do \\
+            vos & mais & mesmo & num & dele & será & minha & a \\
+            no & teus & à & você & em & meus & esses & pelas \\
+            com & ao & dela & há & que & na & nosso & te \\
+            aos & dos & ou & aquela & era & uma & das & esta \\
+            teu & nem & já & até & seja & esse & mas & quando \\
+            aquelas & nossos & têm & também & seus & lhe & meu & seu \\
+            ela & elas & estas & nós & sem & essa & fosse & qual \\
+            & & pelo & nas & numa & aquilo & & \\
+            \cline{1-8}
+            \end{tabular}
+            \caption{\textit{Stop Words} utilizadas nesse trabalho}
+            \label{exemplos-stop-words}
+            \end{table}
+            
+  
+
   \subsection{Bag of Words}
   \subsection{Term Frequency}
   \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
 
-\section{Análise de Sentimentos}
+
+
 
