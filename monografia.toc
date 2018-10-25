@@ -44,11 +44,11 @@
 \contentsline {section}{\numberline {4.4}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{23}{section.4.4}
 \contentsline {section}{\numberline {4.5}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{23}{section.4.5}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{24}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{25}{section*.8}
+\contentsline {chapter}{Refer\^encias}{25}{section*.10}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {brazil}{}
-\contentsline {chapter}{Ap\^endice}{28}{chapter*.9}
+\contentsline {chapter}{Ap\^endice}{28}{chapter*.11}
 \contentsline {chapter}{\numberline {A}}{29}{appendix.A}
 \contentsline {section}{\numberline {A.\textlinf {1}}Appendix}{29}{section.A.1}
