@@ -5,8 +5,7 @@ Conforme mostrado na Figura \ref{diagrama}, o framework é dividido em
 cinco blocos, que são descritos nas subseções de \ref{extract} a \ref{extract_timestamp}.
 
 
-\figuraBib{diagrama}{ Diagrama em blocos do framework proposto para análise preditiva
-espaço-temporal com base nos dados do Twitter}{}{diagrama}{width=0.9\textwidth}%
+\figuraBib{diagrama}{ Diagrama em blocos do framework proposto para análise preditiva espaço-temporal com base nos dados do Twitter}{}{diagrama}{width=0.9\textwidth}%
 
 
 \section{Extração de Dados}
@@ -39,7 +38,7 @@ usados para validar o objetivo e escolher o melhor.
 Além do texto do \textit{tweet}, algumas outras informações coletadas
 incluem autor, data, contagem de retweets, contagem de
 favoritos, localização, menções, hashtags, ID de publicação e
-link de publicação. Essas informações em uma estrutura de dados denominada \textit{dataframa}, que é semelhante a uma matriz, mas contém o nome de cada 
+link de publicação. Essas informações em uma estrutura de dados denominada \textit{dataframe}, que é semelhante a uma matriz, mas contém o nome de cada 
 coluna, na Figura \ref{dataframe} é possível visualizar essa estrutura.
 
 \figuraBib{dataframe}{Dataframe com os dados utilizados para realizar as análises}{}{dataframe}{width=0.9\textwidth}%
@@ -59,7 +58,10 @@ de dados para padronizar as sentenças. Além disso, todos os
 emoticons foram desconsiderados, uma vez que pretendemos
 analisar o léxico da língua portuguesa considerando questões
 sérias como as eleições. O fluxo de limpeza de dados pode
-ser visto na Figura .
+ser visto na Figura ~\ref{limpeza}.
+
+
+ \figuraBib{limpeza}{Fluxo de pré-processamento de dados}{}{limpeza}{width=0.5\textwidth}%
 
 
 O tweet bruto foi usado neste processo de limpeza, definimos
@@ -80,25 +82,26 @@ são reduzidas ao seu radical ~\cite{de2015estrategia}.
 
 
 
-%\begin{table}[tbp]
+
     \begin{table}
+        \label{table1}
         \centering
         \caption{Classificação do tweets através da polaridade usando a
         biblioteca textblob e os dicionários Oplexicon/Sentilex.}
-        \label{table1}
+       
         \begin{tabular}{llll}
         \hline
                   & Positivo & Neutro & Negativo \\ \hline
         TextBlob  & 42.67\%  & 24.01\% & 33.27\%  \\ \hline
         OpLexicon/Sentilex & 25.12\%  & 26.51\% & 48.35\%  \\ \hline
         \end{tabular}
-        \end{table}
+    \end{table}
 
 
 
 \section{Análise de Sentimentos}
 
-Neste trabalho usamos as bibliotecas \textit{TextBlob} ~\cite{textblob}e OpLexicon
+Neste trabalho usamos as bibliotecas \textit{TextBlob} ~\cite{textblob}     e OpLexicon
 ~\cite{souza} para processamento de texto. A Tabela \ref{table1} mostra as
 porcentagens de polaridade para cada biblioteca obtida para
 os tweets extraídos após o pré-processamento.
@@ -125,10 +128,8 @@ categoria morfológica marcada com polaridades positivas,
 negativas e neutras ~\cite{souza2011construction}.
 
 
-%\begin{table}[tbp]
     \begin{table}
         \centering
-        \caption{Análise de Sentimentos Usando Três Tweets Selecionados de Forma Aleatória}
         \label{table2}
         \begin{tabular}{llll}
         \hline
@@ -137,7 +138,9 @@ negativas e neutras ~\cite{souza2011construction}.
         2& Neutro  & Neutro  \\ \hline
         3& Negativo  & Negativo  \\ \hline
         \end{tabular}
-        \end{table}
+        \caption{Análise de Sentimentos Usando Três Tweets Selecionados de Forma Aleatória}
+
+    \end{table}
 
 
 
@@ -148,11 +151,18 @@ A fase treinamento funcionou da seguinte forma, foi utilizado o príncipio de Pa
 separados para validação do modelo e os outros 80\% são usados na fase de treinamento ~\cite{jin2008pareto}. 
 
 
+Foi necessário transformar o \textit{dataframe} obtido ao realizar a extração de dados da rede social em uma matriz utilizando a técnica \textit{Bag-of-Words}, 
+juntamente com a técnica que foi apresentada na seção \ref{sec:tfidf}, onde foi contabilizada a quantidade de informações e normalizado os valores, para 
+que o resultado da análise de sentimentos fosse otimizado.
+
+
 \section{Extração da Localização e Data}
 \label{extract_timestamp}
 
 Nessa seção será detalhado como foi o processo de extração de data e localização que foram usados para a construção das análises espaço-temporal
 desse trabalho, na Figura \ref{tweet} é possível visualizar um exemplo de \textit{tweet} onde aparece a data de publicação e o seu conteúdo. 
+
+
 
 
 
@@ -166,7 +176,10 @@ usuários que apresentam boas ou más opiniões sobre um
 determinado candidato e, consequentemente, intensificar as
 ações de marketing a serem tomadas naquela região. Portanto,
 o objetivo do trabalho é unir a geolocalização com a análise
-sentimental.
+sentimental. Foi utilizada a biblioteca denominada \textit{tweepy}~\cite{roesslein2009tweepy}, o código abaixo representa como é feita a requisição 
+para obter os dados referentes a localização do usuário.
+
+
 
 \figuraBib{tweet}{Exemplo de um tweet extraído da rede social analisada}{}{tweet}{width=0.9\textwidth}%
 
@@ -174,3 +187,5 @@ Na Figura \ref{twitter_profile} é apresentada as informações pessoais desse p
 a cada dia, para que seja possível analisar a série temporal de forma precisa.
 
 \figuraBib{twitter_profile}{Exemplo de um perfil na rede social analisada}{}{twitter_profile}{width=0.5\textwidth}%
+
+

@@ -1,0 +1,10 @@
+PWD /home/bruno/monografia/tex
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/bruno/monografia/tex/3_Proposed_framework.tex
+OUTPUT 3_Proposed_framework.log
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT 3_Proposed_framework.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map

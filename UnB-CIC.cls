@@ -91,6 +91,9 @@
 \DeclareOptionX{12pt}{\gdef\@fontsize{12pt}}
 
 \usepackage{indentfirst}
+
+
+
 %estilos das páginas
 \DeclareOptionX{prestyle}{\gdef\style@pretextual{#1}}
 \DeclareOptionX{textstyle}{\gdef\style@textual{#1}}

@@ -14,8 +14,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama em blocos do framework proposto para an\IeC {\'a}lise preditiva espa\IeC {\c c}o-temporal com base nos dados do Twitter.}}{21}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Dataframe com os dados utilizados para realizar as an\IeC {\'a}lises.}}{21}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemplo de um tweet extra\IeC {\'\i }do da rede social analisada.}}{24}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de um perfil na rede social analisada.}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fluxo de pr\IeC {\'e}-processamento de dados.}}{22}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de um tweet extra\IeC {\'\i }do da rede social analisada.}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemplo de um perfil na rede social analisada.}}{25}{figure.3.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {american}{}

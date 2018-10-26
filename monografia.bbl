@@ -439,4 +439,11 @@
 \newblock \btxjournalfont {IEEE Transactions on Systems, Man, and Cybernetics,
   Part C (Applications and Reviews)}, 38(3):397--415, 2008.
 
+\bibitem {roesslein2009tweepy}
+\btxnamefont {\btxlastnamefont {Roesslein}, Joshua}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {tweepy documentation}{tweepy
+  Documentation}}.
+\newblock \btxjournalfont {Online] http://tweepy. readthedocs. io/en/v3}, 5,
+  2009.
+
 \end{thebibliography}

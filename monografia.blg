@@ -27,45 +27,45 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 Warning--empty journal in ferreirametodo
 Warning--empty year in ferreirametodo
-You've used 46 entries,
+You've used 47 entries,
             2465 wiz_defined-function locations,
-            855 strings with 14280 characters,
-and the built_in function-call counts, 14708 in all, are:
-= -- 1163
-> -- 414
+            859 strings with 14380 characters,
+and the built_in function-call counts, 14892 in all, are:
+= -- 1178
+> -- 418
 < -- 16
-+ -- 159
-- -- 113
-* -- 1655
-:= -- 1768
-add.period$ -- 100
-call.type$ -- 46
-change.case$ -- 43
++ -- 161
+- -- 114
+* -- 1671
+:= -- 1796
+add.period$ -- 102
+call.type$ -- 47
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 936
-empty$ -- 1745
-format.name$ -- 321
-if$ -- 3360
+cite$ -- 56
+duplicate$ -- 949
+empty$ -- 1768
+format.name$ -- 323
+if$ -- 3402
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 60
-newline$ -- 199
-num.names$ -- 47
-pop$ -- 290
+int.to.str$ -- 47
+missing$ -- 62
+newline$ -- 203
+num.names$ -- 48
+pop$ -- 293
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 416
+skip$ -- 422
 stack$ -- 0
 substring$ -- 647
-swap$ -- 455
+swap$ -- 459
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 106
-width$ -- 48
-write$ -- 474
+while$ -- 107
+width$ -- 49
+write$ -- 484
 (There were 16 warnings)

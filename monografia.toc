@@ -34,20 +34,20 @@
 \contentsline {chapter}{\numberline {3}Framework Proposto}{20}{chapter.3}
 \contentsline {section}{\numberline {3.1}Extra\IeC {\c c}\IeC {\~a}o de Dados}{20}{section.3.1}
 \contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento de dados}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lise de Sentimentos}{22}{section.3.3}
-\contentsline {section}{\numberline {3.4}Extra\IeC {\c c}\IeC {\~a}o da Localiza\IeC {\c c}\IeC {\~a}o e Data}{23}{section.3.4}
-\contentsline {chapter}{\numberline {4}Resultados}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Avalia\IeC {\c c}\IeC {\~a}o da Performance dos Algoritmos}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Valida\IeC {\c c}\IeC {\~a}o Cruzada N-Fold}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o do erro utilizando o modelo}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{25}{section.4.4}
-\contentsline {section}{\numberline {4.5}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{25}{section.4.5}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{26}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{27}{section*.10}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lise de Sentimentos}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Extra\IeC {\c c}\IeC {\~a}o da Localiza\IeC {\c c}\IeC {\~a}o e Data}{24}{section.3.4}
+\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Avalia\IeC {\c c}\IeC {\~a}o da Performance dos Algoritmos}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}Valida\IeC {\c c}\IeC {\~a}o Cruzada N-Fold}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o do erro utilizando o modelo}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{26}{section.4.4}
+\contentsline {section}{\numberline {4.5}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{26}{section.4.5}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{27}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{28}{section*.10}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {brazil}{}
-\contentsline {chapter}{Ap\^endice}{30}{chapter*.11}
-\contentsline {chapter}{\numberline {A}}{31}{appendix.A}
-\contentsline {section}{\numberline {A.\textlinf {1}}Appendix}{31}{section.A.1}
+\contentsline {chapter}{Ap\^endice}{31}{chapter*.11}
+\contentsline {chapter}{\numberline {A}}{32}{appendix.A}
+\contentsline {section}{\numberline {A.\textlinf {1}}Appendix}{32}{section.A.1}
