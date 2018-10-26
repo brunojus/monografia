@@ -14,11 +14,9 @@ Warning--entry type for "face" isn't style-file defined
 Warning--entry type for "w3techs" isn't style-file defined
 --line 169 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 197 of file bibliografia.bib
+--line 203 of file bibliografia.bib
 Warning--entry type for "martin" isn't style-file defined
---line 310 of file bibliografia.bib
-Warning--I didn't find a database entry for "de2015estrategia"
-Warning--I didn't find a database entry for "jin2008pareto"
+--line 316 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--empty language in w3techs
 Warning--empty year in lorena2007introduccao
@@ -29,45 +27,45 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 Warning--empty journal in ferreirametodo
 Warning--empty year in ferreirametodo
-You've used 44 entries,
+You've used 46 entries,
             2465 wiz_defined-function locations,
-            846 strings with 13829 characters,
-and the built_in function-call counts, 13856 in all, are:
-= -- 1097
-> -- 386
-< -- 15
-+ -- 149
-- -- 105
-* -- 1550
-:= -- 1670
-add.period$ -- 96
-call.type$ -- 44
-change.case$ -- 41
+            855 strings with 14280 characters,
+and the built_in function-call counts, 14708 in all, are:
+= -- 1163
+> -- 414
+< -- 16
++ -- 159
+- -- 113
+* -- 1655
+:= -- 1768
+add.period$ -- 100
+call.type$ -- 46
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 883
-empty$ -- 1652
-format.name$ -- 297
-if$ -- 3172
+cite$ -- 55
+duplicate$ -- 936
+empty$ -- 1745
+format.name$ -- 321
+if$ -- 3360
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 57
-newline$ -- 191
-num.names$ -- 45
-pop$ -- 278
+int.to.str$ -- 46
+missing$ -- 60
+newline$ -- 199
+num.names$ -- 47
+pop$ -- 290
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 392
+skip$ -- 416
 stack$ -- 0
-substring$ -- 590
-swap$ -- 425
-text.length$ -- 15
+substring$ -- 647
+swap$ -- 455
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 99
-width$ -- 46
-write$ -- 454
-(There were 18 warnings)
+while$ -- 106
+width$ -- 48
+write$ -- 474
+(There were 16 warnings)

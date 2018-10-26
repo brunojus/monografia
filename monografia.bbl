@@ -393,6 +393,20 @@
   term specificity and its application in retrieval}}.
 \newblock \btxjournalfont {Journal of documentation}, 28(1):11--21, 1972.
 
+\bibitem {de2015estrategia}
+\btxnamefont {\btxlastnamefont {Oliveira}, Derick\btxfnamespacelong M~de},
+  \btxnamefont {Roberto\btxfnamespacelong CSNP \btxlastnamefont {Souza}},
+  \btxnamefont {Denise\btxfnamespacelong EF de~\btxlastnamefont {Brito}},
+  \btxnamefont {Wagner \btxlastnamefont {Meira~Jr}}, \btxnamefont
+  {Gisele\btxfnamespacelong L \btxlastnamefont {Pappa}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Belo \btxlastnamefont
+  {Horizonte-MG-Brasil}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Uma
+  estrat{\'e}gia n{\~a}o supervisionada para previs{\~a}o de eventos usando
+  redes sociais.}{Uma Estrat{\'e}gia n{\~a}o Supervisionada para Previs{\~a}o
+  de Eventos usando Redes Sociais.}}
+\newblock \Btxinlong {}\ \btxtitlefont {SBBD}, \btxpageslong {}\ 137--148,
+  2015.
+
 \bibitem {sharma}
 \btxnamefont {\btxlastnamefont {Sharma}, Anuj} \btxandlong {}\ \btxnamefont
   {Shubhamoy \btxlastnamefont {Dey}}\btxauthorcolon\ \btxtitlefont
@@ -415,5 +429,14 @@
   multiple resources}}.
 \newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 8th Brazilian
   Symposium in Information and Human Language Technology}, 2011.
+
+\bibitem {jin2008pareto}
+\btxnamefont {\btxlastnamefont {Jin}, Yaochu} \btxandlong {}\ \btxnamefont
+  {Bernhard \btxlastnamefont {Sendhoff}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Pareto-based multiobjective machine learning: An overview
+  and case studies}{Pareto-based multiobjective machine learning: An overview
+  and case studies}}.
+\newblock \btxjournalfont {IEEE Transactions on Systems, Man, and Cybernetics,
+  Part C (Applications and Reviews)}, 38(3):397--415, 2008.
 
 \end{thebibliography}
