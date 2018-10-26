@@ -1,11 +1,11 @@
 Com a popularização da internet tem revolucionado as sociedades com o passar do tempos,
 pois agora é possível conectar várias pessoas, e realizar trocar de informações em tempo real
-e com o custo muito baixo em relação aos veículos tradicionais de mídia \cite{song2014analyzing}. 
+e com o custo muito baixo em relação aos veículos tradicionais de mídia ~\cite{song2014analyzing}. 
 
 As notícias tem sido compartilhadas de maneira muito rápida e eficente e com a utilização massiva das 
 redes de relacionamento, as pessoas podem trocar ideias e opiniões acerca de determinado assunto e com isso facilitar
 o acesso de todos. Com o passar dos anos as redes sociais já fazem parte da vida de várias pessoas, e com isso as relações 
-interpessoais modificaram-se e esse mundo tem gerado muitos dados de fácil e livre acesso \cite{5194581}.
+interpessoais modificaram-se e esse mundo tem gerado muitos dados de fácil e livre acesso ~\cite{5194581}.
 
 Com as redes sociais é possível comunicar-se com pessoas de diversas nacionalidades e características, com
 a grande amplitude que essas alcançam, o volume de dados é algo imensurável e também é uma fonte de dados
@@ -15,30 +15,30 @@ máquina e outros tipos de análises.
 
 De acordo com o \acrshort{IBGE}, no Brasil mais de 116 milhões de pessoas tem acesso a internet, ou seja, grande parte da população está expressando suas ideias
 de forma livre nas redes sociais. E como as eleições em um evento muito importante em qualquer democracia, realizar análise de sentimentos nos textos 
-provenientes de redes sociais se tornam cada vez mais atrativos. O Brasil ocupa a 4\textsuperscript{\b{a}} no ranking de países com a quantidade de pessoas com acesso a internet\cite{ILS}.
+provenientes de redes sociais se tornam cada vez mais atrativos. O Brasil ocupa a 4\textsuperscript{\b{a}} no ranking de países com a quantidade de pessoas com acesso a internet~\cite{ILS}.
 
 Na Figura \ref{grafico_idioma} é possível visualizar que grande parte do conteúdo disponível na internet está em inglês, ou seja, é por esse motivo que
-existem dicionários léxicos para atividades de \acrshort{TM}, como é o caso do WordNet \cite{miller1995wordnet}, uma das maiores bases de dados do mundo para essa atividade. 
+existem dicionários léxicos para atividades de \acrshort{TM}, como é o caso do WordNet ~\cite{miller1995wordnet}, uma das maiores bases de dados do mundo para essa atividade. 
 
 As pesquisas utilizando \acrshort{TM} com o idioma português ainda são recentes e poucos exploradas, pois a maioria das ferramentas são desenvolvidas para atender o idioma inglês. Mas a análise
 de sentimento em comentários de redes sociais, pode ser útil em diversas áreas como venda de um produto, avaliação de um estabelecimento, marketing e até mesmo realizar predições de eleições que é o objetivo desse trabalho.
 
 
-\figuraBib{idioma}{Idiomas utilizados em conteúdos disponíveis na internet \cite{w3techs}}{}{grafico_idioma}{width=\textwidth}%
+\figuraBib{idioma}{Idiomas utilizados em conteúdos disponíveis na internet ~\cite{w3techs}}{}{grafico_idioma}{width=\textwidth}%
 
 \section{Problemas}
 
 Existem várias redes sociais em funcionamento, e cada uma tem o foco diferente, por exemplo, o \textit{Twitter} é uma rede social com o intuito de formação de opinião, pois
 grande parte dos usuários a utilizam para compartilhar texto pequenos de até 140 caracteres e também apresenta uma \acrshort{API} aberta, mas essa possui limitação 
-em relação ao número de requisições e também ao período que pode efetuar uma busca, que atualmente são de 14 dias \cite{Twitter}.
+em relação ao número de requisições e também ao período que pode efetuar uma busca, que atualmente são de 14 dias ~\cite{Twitter}.
 
-A rede social mais utilizado no Brasil é o \textit{Facebook}, que tem mais de 120 milhões de usuários ativos no Brasil\cite{EBC}, mas após os escândalos das eleições americanas que a envolveram \cite{face}
+A rede social mais utilizado no Brasil é o \textit{Facebook}, que tem mais de 120 milhões de usuários ativos no Brasil~\cite{EBC}, mas após os escândalos das eleições americanas que a envolveram ~\cite{face}
 foram adotadas inúmeras medidas de segurança para evitar a extração de dados da plataforma, atualmente para utilizar a \acrshort{API} da empresa é necessário ser aprovado e também conta com o número limitado
 de requisições que podem ser feitas por cada token de segurança.
 
 É importante citar que os dicionários em língua portuguesa para realizar esse tipo de atividades ainda são pouco desenvolvidos, para esse trabalho foi utilizado dois dicionários em conjunto para melhorar 
-os resultados. O OpLexicon \cite{souza} foi combinado com o Sentilex \cite{Neuenschwander}, pois atualmente são os melhores dicionários abertos em português para realizar análise de sentimentos, também foi utilizada
-uma biblioteca chamada TextBlob \cite{textblob} que é necessário  realizar a tradução para o inglês, o que acaba ocasionando um viés na etapa de processamento dos dados.
+os resultados. O OpLexicon ~\cite{souza} foi combinado com o Sentilex ~\cite{Neuenschwander}, pois atualmente são os melhores dicionários abertos em português para realizar análise de sentimentos, também foi utilizada
+uma biblioteca chamada TextBlob ~\cite{textblob} que é necessário  realizar a tradução para o inglês, o que acaba ocasionando um viés na etapa de processamento dos dados.
 \section{Objetivos}
 
 O objetivo desse trabalho é criar uma forma de predição e um ambiente que expresse a opinião dos usuários da rede social \textit{Twitter} aplicando em textos curtos técnicas de \acrshort{AM},
@@ -59,52 +59,52 @@ B. J. G. Praciano, J. P. C. L. da Costa, J. P. A. Maranhão, J. B. Prettz, R. T.
 
 \section{Trabalhos Relacionados}
 
-Em \cite{8474783} os autores definiram o conceito de análise de sentimento em vários níveis e também utilizaram algoritmos que realizam o reconhecimento de entidades, que é
+Em ~\cite{8474783} os autores definiram o conceito de análise de sentimento em vários níveis e também utilizaram algoritmos que realizam o reconhecimento de entidades, que é
 a detecção de nomes próprios e com isso remover esses substantivos da análise de sentimento para que o os resultados sejam melhores. O dicionário léxico utilizado para a classificação
 dos textos provenientes do \textit{Twitter} foi o SentiWordNet, e as polaridades utilizadas nesse trabalho foram três: Positivo, Negativo e Neutro. Foi abordado duas paradigmas
 de \acrshort{AM}, o supervisionado e o não-supervisionado e com o isso o melhor resultado foi de 90\% na utilização de algoritmos supervisionados.
 
 
-No artigo \cite{6413737} foi utilizado um filtro baseado na mineração de opiniões, que é uma das áreas de análise de sentimentos. Foi utilizadas técnicas de decomposição 
+No artigo ~\cite{6413737} foi utilizado um filtro baseado na mineração de opiniões, que é uma das áreas de análise de sentimentos. Foi utilizadas técnicas de decomposição 
 tensorial para capturar interações intrínsecas, pois como o dado é multidimensional, o autor dividiu entre usuários, filmes e outros aspectos, com a aplicação dessas técnicas,
 houve uma grande redução no esforço computacional do computador na parte de análise de sentimentos, pois o \textit{dataset} utilizado foi reduzido após a decomposição tensorial.
 
 
-Em \cite{song2014analyzing} os autores aplicaram \acrshort{TM} nos dados provenientes do \textit{Twitter} que citavam as eleições presidencias de 2012 da Coréia do Sul. 
+Em ~\cite{song2014analyzing} os autores aplicaram \acrshort{TM} nos dados provenientes do \textit{Twitter} que citavam as eleições presidencias de 2012 da Coréia do Sul. 
 Foram utilizadas distintas técnicas: \textit{topic modeling} para acompanhar as mudanças nos assuntos mais falados do rede sociais, técnicas de análise de rede 
 foram utilizadas para verificar quais pessoas eram citadas e por quem. Os resultados sugeriram que o \textit{Twitter} pode ser um aliado para detectar as mudanças no 
 contexto social enquanto são analisados o texto de quem escreveu.
 
-% In \cite{song2014analyzing} the authors applied text-mining techniques to Twitter data related to the 2012 Korean Presidential Election. 
+% In ~\cite{song2014analyzing} the authors applied text-mining techniques to Twitter data related to the 2012 Korean Presidential Election. 
 % Three primary techniques were used: topic modeling to track changes in topical trends, mention-direction-based user network analysis, a
 % nd term co-occurrence retrieval for further content analysis. The results suggested that Twitter could be a useful way to detect and trace changes in social issues, 
 % while analyzing mention-based user networks could show different aspects of user behaviors.
 
-Em  \cite{wegrzyn2012tweets} é proposto um sistema para acompanhar as eleições francesas através de tópicos escritos no \textit{Twitter} através da análise de sentimentos.
+Em  ~\cite{wegrzyn2012tweets} é proposto um sistema para acompanhar as eleições francesas através de tópicos escritos no \textit{Twitter} através da análise de sentimentos.
 Os resultados obtidos convergiram com os resultados divulgados pelas autoridades da França e foram associados as mudanças de popularidade dos candidatos após a eleição.
 
 
-% In \cite{wegrzyn2012tweets} it is proposed a system which surveys the French Presidential Election trends from Twitter’s discussions through the analysis of polarity and 
+% In ~\cite{wegrzyn2012tweets} it is proposed a system which surveys the French Presidential Election trends from Twitter’s discussions through the analysis of polarity and 
 % intensity of opinion. Another objective of the authors consisted of searching and locating the content corresponding to the 2012 French Presidential Election in posted tweets. 
 % The results show the convergence of the obtained results with the official polling statistics, associated with the change in popularity of candidates after their election 
 % speeches during the campaign.
 
 
-Em \cite{guzman}, o dataset utilizado nesse trabalham foi o da eleição colombiana de 2014, técnicas de aprendizado supervisionado foram implementadas e também foram rotuladas
+Em ~\cite{guzman}, o dataset utilizado nesse trabalham foi o da eleição colombiana de 2014, técnicas de aprendizado supervisionado foram implementadas e também foram rotuladas
 previamente usuários que seriam spam. Foi implementado um sistema com o objetivo de investigar o potencial que uma rede social tem de interferir em uma votação, e de acordo com 
 os resultados obtidos, foi possível afirmar que os dados utilizados não foram consistentes.
 
-% In \cite{guzman}, the authors collected a dataset related to Colombia 2014 Presidential Election tweets and a supervised learning technique was implemented on a labeled 
+% In ~\cite{guzman}, the authors collected a dataset related to Colombia 2014 Presidential Election tweets and a supervised learning technique was implemented on a labeled 
 % collection of users in order to distinguish spammer accounts from non-spammer ones. They developed and applied a sentiment analysis system aiming to investigate the potential 
 % of social media for voting intention inference. According to the experimental results, inference methods based on Twitter data are not consistent, despite obtaining the lowest 
 % mean absolute error and correctly ranking the highest-polling candidates in the first round election with the proposed inference method.
 
 
-Em \cite{joyce} foi usado um dicionário léxico e apenas o algoritmo Naïve Bayes para calcular o sentimento de \textit{tweets} que foram coletados 100 dias antes da eleição americanas
+Em ~\cite{joyce} foi usado um dicionário léxico e apenas o algoritmo Naïve Bayes para calcular o sentimento de \textit{tweets} que foram coletados 100 dias antes da eleição americanas
 de 2016. Os autores classificaram manualmente os textos extraídos do \textit{Twitter}. Os resultados obtids sugerem que essa rede social pode ser considerada ao realizar 
 trabalhos com esse intuito.
 
-% In \cite{joyce} it was used a lexicon and Naïve Bayes machine learning algorithm to calculate the sentiment of political tweets collected 100 days before the 
+% In ~\cite{joyce} it was used a lexicon and Naïve Bayes machine learning algorithm to calculate the sentiment of political tweets collected 100 days before the 
 % 2016 US Presidential Election. The authors used manually and automatically labeled tweets based on hashtag content/topic. The results suggested that Twitter is 
 % becoming a more reliable platform in comparison to previous works.
 

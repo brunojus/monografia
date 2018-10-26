@@ -17,8 +17,10 @@ Warning--entry type for "textblob" isn't style-file defined
 --line 197 of file bibliografia.bib
 Warning--entry type for "martin" isn't style-file defined
 --line 310 of file bibliografia.bib
+Warning--I didn't find a database entry for "de2015estrategia"
+Warning--I didn't find a database entry for "jin2008pareto"
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Warning--empty language in song2014analyzing
+Warning--empty language in w3techs
 Warning--empty year in lorena2007introduccao
 Warning--empty journal in coelhoanalise
 Warning--empty year in coelhoanalise
@@ -27,45 +29,45 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 Warning--empty journal in ferreirametodo
 Warning--empty year in ferreirametodo
-You've used 42 entries,
+You've used 44 entries,
             2465 wiz_defined-function locations,
-            832 strings with 13283 characters,
-and the built_in function-call counts, 13126 in all, are:
-= -- 1042
-> -- 361
-< -- 14
-+ -- 140
-- -- 98
-* -- 1458
-:= -- 1583
-add.period$ -- 90
-call.type$ -- 42
-change.case$ -- 39
+            846 strings with 13829 characters,
+and the built_in function-call counts, 13856 in all, are:
+= -- 1097
+> -- 386
+< -- 15
++ -- 149
+- -- 105
+* -- 1550
+:= -- 1670
+add.period$ -- 96
+call.type$ -- 44
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 832
-empty$ -- 1566
-format.name$ -- 276
-if$ -- 3007
+cite$ -- 53
+duplicate$ -- 883
+empty$ -- 1652
+format.name$ -- 297
+if$ -- 3172
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 55
-newline$ -- 182
-num.names$ -- 43
-pop$ -- 265
+int.to.str$ -- 44
+missing$ -- 57
+newline$ -- 191
+num.names$ -- 45
+pop$ -- 278
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 375
+skip$ -- 392
 stack$ -- 0
-substring$ -- 574
-swap$ -- 400
-text.length$ -- 14
+substring$ -- 590
+swap$ -- 425
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 94
-width$ -- 44
-write$ -- 429
-(There were 16 warnings)
+while$ -- 99
+width$ -- 46
+write$ -- 454
+(There were 18 warnings)

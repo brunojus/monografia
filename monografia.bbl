@@ -13,6 +13,21 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {w3techs}
+\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Historical trends in the usage of content languages for
+  websites.}{Historical trends in the usage of content languages for
+  websites.}}
+\newblock {\latintext
+  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
+
+\bibitem {martin}
+\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
+  architecture for software defined networking}{AN INTRUSION DETECTION AND
+  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
+  \btxprintmonthyear{.}{04}{2014}{long}.
+
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -51,14 +66,6 @@
   A.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Wordnet: a lexical
   database for {E}nglish}{WordNet: a lexical database for {E}nglish}}.
 \newblock \btxjournalfont {Communications of the ACM}, 38(11):39--41, 1995.
-
-\bibitem {w3techs}
-\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Historical trends in the usage of content languages for
-  websites.}{Historical trends in the usage of content languages for
-  websites.}}
-\newblock {\latintext
-  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
 
 \bibitem {Twitter}
 \btxnamefont {\btxlastnamefont {Twitter}}\btxauthorcolon\ \btxtitlefont
@@ -321,13 +328,6 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Ijcai}, \btxvolumelong
   {}~\btxvolumefont {14}, \btxpageslong {}\ 1137--1145. Montreal, Canada, 1995.
 
-\bibitem {martin}
-\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
-  architecture for software defined networking}{AN INTRUSION DETECTION AND
-  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
-  \btxprintmonthyear{.}{04}{2014}{long}.
-
 \bibitem {liddy2001natural}
 \btxnamefont {\btxlastnamefont {Liddy}, Elizabeth\btxfnamespacelong
   D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Natural language
@@ -392,5 +392,28 @@
   specificity and its application in retrieval}{A statistical interpretation of
   term specificity and its application in retrieval}}.
 \newblock \btxjournalfont {Journal of documentation}, 28(1):11--21, 1972.
+
+\bibitem {sharma}
+\btxnamefont {\btxlastnamefont {Sharma}, Anuj} \btxandlong {}\ \btxnamefont
+  {Shubhamoy \btxlastnamefont {Dey}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A comparative study of feature selection and machine
+  learning techniques for sentiment analysis}{A Comparative Study of Feature
+  Selection and Machine Learning Techniques for Sentiment Analysis}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 2012 ACM Research in
+  Applied Computation Symposium}, RACS '12, \btxpageslong {}\ 1--7, New York,
+  NY, USA, 2012. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-1-4503-1492-3}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2401603.2401605}}.
+
+\bibitem {souza2011construction}
+\btxnamefont {\btxlastnamefont {Souza}, M.}, \btxnamefont {R. \btxlastnamefont
+  {Vieira}}, \btxnamefont {D. \btxlastnamefont {Busetti}}, \btxnamefont {R.
+  \btxlastnamefont {Chishman}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {I.\btxfnamespacelong M. \btxlastnamefont {Alves}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Construction of a portuguese opinion lexicon
+  from multiple resources}{Construction of a portuguese opinion lexicon from
+  multiple resources}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 8th Brazilian
+  Symposium in Information and Human Language Technology}, 2011.
 
 \end{thebibliography}

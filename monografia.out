@@ -35,17 +35,16 @@
 \BOOKMARK [0][-]{chapter.3}{Framework Proposto}{}% 35
 \BOOKMARK [1][-]{section.3.1}{Extra\347\343o de Dados}{chapter.3}% 36
 \BOOKMARK [1][-]{section.3.2}{Pr\351-processamento de dados}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.3}{Dicion\341rio L\351xico}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.4}{Classifica\347\343o dos Sentimentos}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.5}{Visualiza\347\343o dos Dados}{chapter.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Avalia\347\343o da Performance dos Algoritmos}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Valida\347\343o Cruzada N-Fold}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{Avalia\347\343o do erro utilizando o modelo}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{An\341lise Espa\347o-Temporal}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Resultado das Elei\347\365es}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 47
-\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 48
-\BOOKMARK [0][-]{chapter*.11}{Ap\352ndice}{}% 49
-\BOOKMARK [0][-]{appendix.A}{}{}% 50
-\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 51
+\BOOKMARK [1][-]{section.3.3}{An\341lise de Sentimentos}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.4}{Extra\347\343o da Localiza\347\343o e Data}{chapter.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Avalia\347\343o da Performance dos Algoritmos}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{Valida\347\343o Cruzada N-Fold}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{Avalia\347\343o do erro utilizando o modelo}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.4}{An\341lise Espa\347o-Temporal}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.5}{Resultado das Elei\347\365es}{chapter.4}% 45
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 46
+\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 47
+\BOOKMARK [0][-]{chapter*.11}{Ap\352ndice}{}% 48
+\BOOKMARK [0][-]{appendix.A}{}{}% 49
+\BOOKMARK [1][-]{section.A.1}{Appendix}{appendix.A}% 50

@@ -8,19 +8,19 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
     Com o alto volume de informações geradas no dia a dia, a utilização de algoritmos que sejam capazes de identificar padrões tornam-se cada
     vez mais necessários, pois em diversas empresas e órgãos do governo não são capazes de analisar todas as informações existentes ou entregar
-    de maneira célere \cite{nasrabadi2007pattern}. 
+    de maneira célere ~\cite{nasrabadi2007pattern}. 
     
     Portanto para realizar esse tipo de atividade é necessário entender o problema existente e também ter um volume de dados razoável para realizar o treinamento do modelo, e com a técnica de \acrshort{AM} é possível automatizar a construção
-    de sistemas inteligentes que podem ser ajustados de acordo com a necessidade de cada tarefa \cite{bonaccorso2017machine}.
+    de sistemas inteligentes que podem ser ajustados de acordo com a necessidade de cada tarefa ~\cite{bonaccorso2017machine}.
 
     Em outras palavras o \acrshort{AM} é um conjunto de regras, que possibilitam uma máquina a tomar decisões baseadas em experiências passadas ao invés
     de um software que teve que ser definido anteriormente como tratar cada tipo de regra, também existe a possibilidade desses modelos serem desenvolvidos
-    e melhorarem quando expostos a novos dados \cite{zurada1995review}.
+    e melhorarem quando expostos a novos dados ~\cite{zurada1995review}.
 
 
     O conceito de \acrshort{AM} pode ser sintetizado como a capacidade de um programa de computador aprender com a experiencia (E) relacionada a alguma 
     classe de tarefas (T), baseada em uma medida de desempenho (P). Dessa forma, o desempenho em tarefas (T), quando medido por (P), melhora com a 
-    experiencia em (E) \cite{mitchell}
+    experiencia em (E) ~\cite{mitchell}
 
     Essas técnicas tem sido utilizadas amplamente para resolução de diversos problemas, atualmente o assunto está em alta e existem diversas oportunidade
     para colocar em prática a matemática que foi desenvolvida para a criação desses algoritmos. Gigantes da indústria tem investido severamente para
@@ -37,7 +37,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
       O aprendizado supervisionado é uma das formas em ensinar uma tarefa para a máquina, onde existe uma entrada e uma saída desejada que já foi 
       anteriormente rotulada, esse processo pode ser feito de forma manual ou utilizar de dicionários, quando a informação de entrada é um texto.
-      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas \cite{mitchell}. Na Figura \ref{supervisionado} é possível visualizar 
+      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas ~\cite{mitchell}. Na Figura \ref{supervisionado} é possível visualizar 
       a forma que é realizada etapa de treinamento do modelo, onde é fornecida uma informação, juntamente com o que ela significa, pois esse tipo de aprendizado 
       é necessário rotular todas as informações que serão utilizadas para que a máquina consiga distinguir o que é gato e o que é cachorro.
       
@@ -55,9 +55,9 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
       \paragraph{SVM}
 
         A máquina de vetor de suportes, do inglês support vector machine (\acrshort{SVM}), faz parte do aprendizado supervisionado, com ele é possível
-        classificar grupos de dados separando as suas margens. Essas margens são delineadas pela fração dos dados de treinamento, são chamadas de vetores de suporte \cite{chang2011libsvm}.
+        classificar grupos de dados separando as suas margens. Essas margens são delineadas pela fração dos dados de treinamento, são chamadas de vetores de suporte ~\cite{chang2011libsvm}.
 
-        As vantagens de utilizar \acrshort{SVM} são \cite{pedregosa2011scikit}:
+        As vantagens de utilizar \acrshort{SVM} são ~\cite{pedregosa2011scikit}:
 
         \begin{itemize}
 
@@ -68,7 +68,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
         \end{itemize}
 
-        Como desvantagens, temos \cite{pedregosa2011scikit}:
+        Como desvantagens, temos ~\cite{pedregosa2011scikit}:
 
         The disadvantages of support vector machines include:
 
@@ -81,7 +81,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         O \acrshort{SVM} é construido em um hiper-plano ou em vários hiper-planos em um espaço de infinitas dimensões, que podem ser
         usadas classificação ou regressão. Na Figura \ref{SVM} é detalhado um hiper-plano que mostra uma boa separação das variáveis
         que possui a maior distância até os pontos dos dados de treinamento mais próximos de qualquer classe, pois é conhecido no \acrshort{SVM}
-        que quanto maior for a margem, menor será o erro do classificador\cite{vieira2017plantrna_sniffer}. 
+        que quanto maior for a margem, menor será o erro do classificador~\cite{vieira2017plantrna_sniffer}. 
         
         \figuraBib{SVM}{Exemplo de vetores de suporte com dimensão 2}{}{SVM}{width=.6\textwidth}%
 
@@ -99,7 +99,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         \end{aligned}
         \end{equation}
 
-        A partir do espaço de Hilbert, temos que o dual de um espaço de Hilbert é um espaço de Hilbert \cite{lorena2007introduccao}, 
+        A partir do espaço de Hilbert, temos que o dual de um espaço de Hilbert é um espaço de Hilbert ~\cite{lorena2007introduccao}, 
         
         na Equação \ref{eq:svmdual}, temos:
 
@@ -130,7 +130,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
         O Naive Bayes é um outro algoritmo \acrshort{AM} supervisionado, a sua formulação matemática é sustentada pelo teorema estatístico de
         Bayes com um pouco de ingenuidade, pois assume-se que a suposição de independência condicional entre cada par de recursos, dado o valor da
-        variável de classe \cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
+        variável de classe ~\cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
         \ref{eq:Bayes}
 
         \begin{equation}\label{eq:Bayes}
@@ -170,13 +170,13 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
 
         O classificador Naive Bayes pode ser extremamente rápido em comparação a outros algoritmos mais sofisticados, pois existe o desacoplamento
-        das distribuições de características condicionais de classe que significa que cada uma pode ser estimada independentemente com uma distribuição unidimensional\cite{zhang2004optimality}.
+        das distribuições de características condicionais de classe que significa que cada uma pode ser estimada independentemente com uma distribuição unidimensional~\cite{zhang2004optimality}.
 
 
         \paragraph{Árvores de Decisão}
 
           A árvore de decisão funciona quando as classes presentes no conjunto de dados de treinamento se dividem, ou seja, esse algoritmo seleciona
-          um problema mais complexo e divide em subproblemas mais simples e de forma recursiva a mesma estratégia é a aplicada a cada subproblema \cite{coelhoanalise}.
+          um problema mais complexo e divide em subproblemas mais simples e de forma recursiva a mesma estratégia é a aplicada a cada subproblema ~\cite{coelhoanalise}.
 
 
           Na Figura \ref{decisionTree}, é um exemplo de como uma árvore de decisão poderia realizar uma análise de crédito de forma rápida. 
@@ -187,7 +187,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
 
           Tendo como entrada os vetores de treinamento $x_{i} \in \mathbb{R}^{n}$, $i=1,\cdots, n$, e o vetor com os rótulos de saída $y \in \mathbb{R}^{n}$,
-          a árvore de decisão divide recursivamente o espaço de forma que as amostras com os mesmos rótulos sejam agrupadas\cite{breiman2017classification}.
+          a árvore de decisão divide recursivamente o espaço de forma que as amostras com os mesmos rótulos sejam agrupadas~\cite{breiman2017classification}.
 
           Considerando os dados no nó $m$ que pode ser representado pela letra $Q$. Para cada candidato é dividido $\theta = (j,t_{m})$ consistindo 
           a entrada como $j$ e o \textit{threshold} $t_{m}$, dividindo os dados entre $Q_{left}(\theta)$ e $Q_{right}(\theta)$ e esses subconjuntos pode ser vistos na
@@ -226,7 +226,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         \paragraph{Regressão Logística}
 
           Apesar do nome, é um modelo de classificação linear e não de regressão como sugere o seu nome. Neste modelo, os dados
-          são descritos, através de um único teste e são modeladas a partir de uma função logística \cite{nasrabadi2007pattern}.
+          são descritos, através de um único teste e são modeladas a partir de uma função logística ~\cite{nasrabadi2007pattern}.
 
           Seja a probabilidade P(X), na Equação \ref{eq:LogReg1}
 
@@ -245,7 +245,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           Nesse tipo de aprendizado não existe a necessidade de um vetor contendo os rótulos de cada medida, ou seja, não é 
           necessário avisar a máquina o tipo de cada dado. A essa não inserção de rótulos faz com que o algoritmo aprenda de acordo 
           com as características dos dados de entrada. Esse tipo de paradigma não tem certos benefícios que existem  no aprendizado supervisionado, 
-          para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada \cite{bonaccorso2017machine}. Esse tipo de algoritmo 
+          para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada ~\cite{bonaccorso2017machine}. Esse tipo de algoritmo 
           é muito interessante em base de dados que ainda não foram exploradas e que necessita-se visualizar os dados agrupados.
 
           A Figura \ref{unsupervised} é ilustrado o exemplo que foi exposto ao falar sobre aprendizado supervisionado, mas agora levando em consideração o 
@@ -256,7 +256,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
           \paragraph{K-means}
           O algoritmo mais utilizado no aprendizado não-supervisionado é o \textit{k-means}, pois a sua implementação é muito simples, pois basta comprovar
-          o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência \cite{macqueen1967some}. Na 
+          o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência ~\cite{macqueen1967some}. Na 
           Equação \ref{kmeans} é possível visualizar como é realizada a seleção de clusters através do número de amostras $X$, descrito pela média $\mu_{j}$ de 
           cada amostra nos clusters. 
 
@@ -272,9 +272,9 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
           O último paradigma é baseado na forma em que o modelo reage de acordo com o que o ambiente passa para ele, é possível aprender
           continuamente. Esse aprendizado é realizado através das ações que são executadas, caso seja a decisão correta o modelo ganha uma recompensa, caso
-          contrário pode ser imposta algum tipo de penalidade \cite{zurada}. Esse paradigma de aprendizado é necessário ajustar os parâmetros de forma
+          contrário pode ser imposta algum tipo de penalidade ~\cite{zurada}. Esse paradigma de aprendizado é necessário ajustar os parâmetros de forma
           contínua com o intuito de maximar ou minimizar um determinado índice, e sempre há um "treinador" nessa fase verificando se os estímulos proporcionados
-          estão tendo a saída correta, pois caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo \cite{mazurowski2008training}.
+          estão tendo a saída correta, pois caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo ~\cite{mazurowski2008training}.
 
 
           Na aprendizagem por reforço, o modelo só aprende com uma série de estímulos, que podem ser recompensas ou punições no decorrer da aprendizagem, 
@@ -289,22 +289,22 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           Ao utilizar um modelo \acrshort{AM} é necessário que existam parâmetros para demonstrar se o modelo está correto ou não. Pois existem 
           possibilidade do modelo ter um \textit{overfitting} que é quando o modelo se ajusta perfeitamente ao conjunto de dados de teste, mas não é capaz
           de prever novos resultados, já no \textit{underfitting} é quando não há dados suficientes ou com baixa qualidade e não é possível treinar o modelo 
-          da maneira correta \cite{van2010process}.
+          da maneira correta ~\cite{van2010process}.
           
           Na validação cruzada, os dados são dividos de forma aleatória em $n$ grupos de tamanho aproximadamente iguais. E este processo 
           é realizado por várias vezes, e em cada rodada do teste é considerado um novo valor. O seu desempenho é calculado a partir da média
           dos desempenhos calculados em cada uma das divisões, o número que $n$ pode assumir é variável, depende da situação, os valores
-          mais utilizados são $5$ e $10$\cite{kohavi1995study}
+          mais utilizados são $5$ e $10$~\cite{kohavi1995study}
 
 
           A matriz de confusão é outra forma de verificar a qualidade do modelo, pois ela fornece métricas importantes 
           para medir o desempenho. Essa é baseada em classes relacionadas à assertividade da previsão das classes. Os positivos verdadeiros (VP) e verdadeiros negativos (VN)
           que são os valores corretos que o sistema previu de forma correta, e também existe outras duas medidas que são os falsos negativos (FN) e falsos positivos (FP) que são 
-          as entradas que foram classificadas de forma errada e tiveram sua saída trocada \cite{martin}. Na Figura \ref{confusion_matrix} é possível visualizar
+          as entradas que foram classificadas de forma errada e tiveram sua saída trocada ~\cite{martin}. Na Figura \ref{confusion_matrix} é possível visualizar
           as classes de uma matriz de confusão.
 
 
-          \figuraBib{confusion_matrix}{Matriz de confusão \cite{martin}}{}{confusion_matrix}{width=0.6\textwidth}%
+          \figuraBib{confusion_matrix}{Matriz de confusão ~\cite{martin}}{}{confusion_matrix}{width=0.6\textwidth}%
 
 
           Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo, 
@@ -353,21 +353,21 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
           O \acrshort{PLN} é uma área de pesquisa que preocupa-se em explorar como um computador pode entender um texto escrito por humanos, com esse tipo 
           de ferramenta é possível realizar análises morfológicas, sintáticas ou léxicas no texto e também extrair informações de um determinado
-          documento \cite{liddy2001natural}. 
+          documento ~\cite{liddy2001natural}. 
 
           \subsubsection{Análise de Sentimentos}
 
           A análise de sentimentos é um campo que envolve outras ciências além da computação, como a psicologia e linguística, pois é necessário 
           a construção de dicionários para facilitar a classificação de textos, quando por exemplo a intenção é apenas identificar a polaridade
-          de uma palavras, ela poderá ter três saídas conhecidas: Positivo, Negativo e Neutro \cite{wegrzyn2012tweets}. 
+          de uma palavras, ela poderá ter três saídas conhecidas: Positivo, Negativo e Neutro ~\cite{wegrzyn2012tweets}. 
           
           Existem diversas formas de fazer o uso da análise de sentimentos, a realização dessas tarefas no idioma em português ainda é muito díficil devido 
           não ter dicionários grandes para realizar o tratamento com um grande volume de dados, também é possível verificar a polaridade de cada frase através
-          da bibliotca \cite{textblob}, mas para isso é necessário traduzir toda a frase para o idioma inglês através da \acrshort{API} aberta da \textit{Google},
+          da bibliotca ~\cite{textblob}, mas para isso é necessário traduzir toda a frase para o idioma inglês através da \acrshort{API} aberta da \textit{Google},
           o que pode implicar um viés durante o processo de análise de sentimentos.
           
           É possível utilizar um modelo de \acrshort{AM} para realizar a análise de sentimentos, onde faz o uso do modelo previamente treinado para realizar a predição
-          da polaridade de novas frases que não existiam durante a fase de treinamento \cite{golbeck2010twitter}.
+          da polaridade de novas frases que não existiam durante a fase de treinamento ~\cite{golbeck2010twitter}.
           
           
         \subsubsection{Pré-Processamento}
@@ -376,14 +376,14 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           facilitará o processo de aprendizado da máquina. Onde será indentificado padrões para facilitar a limpeza dos dados, onde pode ser definido
           que todo o texto deverá estar escrito em letra minúscula, remoção de pontuação e acentos, nessa fase também é possível retirar os textos que não 
           estão no padrão desejado, por exemplo apresentam \textit{emotions} ao invés de texto, remoção de números, ou seja, o interesse dessa etapa é 
-          filtrar o texto de forma que a máquina obtenha apenas informações que irão ser utilizadas para treinamento \cite{ferreirametodo}.
+          filtrar o texto de forma que a máquina obtenha apenas informações que irão ser utilizadas para treinamento ~\cite{ferreirametodo}.
 
         \subsubsection{Tokenização}
 
               Acontece na etapa de pré-processamento e a sua utilização tem como finalidade extrair pequenas informações de um texto livre. Recebe esse nome, 
             pois cada divisão é nomeada de \textit{token} e que na maioria das vezes é uma palavra que está inserida no texto, mas em outros casos podem 
-            ser separados em letras ou duplas ou trincas de palavras\cite{mcnamee2004character}. Nesse trabalho foi utilizado o \textit{token} em sua forma clássica utilizando 
-            a linguagem de programação \textit{Python} e a biblioteca \textit{NLTK} \cite{bird2004nltk}.
+            ser separados em letras ou duplas ou trincas de palavras~\cite{mcnamee2004character}. Nesse trabalho foi utilizado o \textit{token} em sua forma clássica utilizando 
+            a linguagem de programação \textit{Python} e a biblioteca \textit{NLTK} ~\cite{bird2004nltk}.
 
               Por exemplo, caso tenhamos a frase \textit{"Obina é melhor do que Neymar!"}, teremos sete tokens, conforme exemplo abaixo.
 
@@ -398,7 +398,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
           São os termos não relevantes para a análise do texto, são palavras que na maioria das vezes são conectivos de frases ou preposições, que podem
           ser consideradas como palavras vazias, não existe uma lista universal de \textit{Stop Words}, mas por padrão é utilizada a lista presente na biblioteca
-          NLTK \cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontra-se algumas das \textit{Stop Words} utilizadas nesse trabalho.
+          NLTK ~\cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontra-se algumas das \textit{Stop Words} utilizadas nesse trabalho.
 
           \begin{table}[h]\label{tb:stopwords}
             \centering
@@ -431,7 +431,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
             Os dados utilizados nesse trabalho são textos, ou seja, é um formato que não existe um padrão conhecido, o que dificulta
             a extração de informações. Por isso é necessário alguma técnica que organize esse conjunto de dados e extraia informações
-            relevantes deles\cite{wallach2006topic}.
+            relevantes deles~\cite{wallach2006topic}.
 
             Portanto é necessário utilizar o \textit{bag of words} para realizar a estruturação do texto que será analisado. No caso mais simples,
             seria uma matriz que apenas indica se determinado termo existe ou não naquela frase, dessa forma seria uma abordagem booleana. Onde temos duas
@@ -451,7 +451,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
   \subsection{Term Frequency}
 
             A medida de \textit{Term Frequency} é uma outra forma de representar os dados na matriz do modelo estudado, ele considera 
-            a quantidade de ocorrência que um determinado termo $n_{t}$, o que difere drásticamente do primeiro tipo de \textit{bag of words}\cite{salton1988term}.
+            a quantidade de ocorrência que um determinado termo $n_{t}$, o que difere drásticamente do primeiro tipo de \textit{bag of words}~\cite{salton1988term}.
             Esse modelo tem uma performance superior ao booleano que foi apresentado na subseção anterior, a sua fórmula matemática é descrita na
             Equação \ref{eq:tf}.
             
@@ -467,9 +467,9 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
             \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
                Uma abordagem mais eficaz é a TF-IDF, pois quando se utiliza a \textit{Term Frequency} ele considera todas as palavras 
                tendo a mesma importância, portanto é necessário normalizar esses valores, para diminuir a influência que esses termos irão 
-               ter no processo de análise textual \cite{sparck1972statistical}. Para isso é necessário utilizar a equação descrita por \cite{sparck1972statistical},
+               ter no processo de análise textual ~\cite{sparck1972statistical}. Para isso é necessário utilizar a equação descrita por ~\cite{sparck1972statistical},
                onde é apresentada uma função inversa que irá calcular a importância de cada termo. É possível visualizar a Equação \ref{eq:idf} que é descrita por
-               \cite{sparck1972statistical}.
+               ~\cite{sparck1972statistical}.
                
 
                \begin{equation}\label{eq:idf}
