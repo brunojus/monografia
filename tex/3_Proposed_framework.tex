@@ -2,7 +2,7 @@ Neste capítulo, é detalhado o framework proposto para análise
 preditiva das tendências das eleições presidenciais no Brasil
 com base na análise de sentimentos dos dados do Twitter.
 Conforme mostrado na Figura \ref{diagrama}, o framework é dividido em
-cinco blocos, que são descritos nas subseções de \ref{extract} a \ref{extract_timestamp}.
+cinco blocos, que são descritos nas subseções de \ref{extract} a \ref{sec:am}.
 
 
 \figuraBib{diagrama}{ Diagrama em blocos do framework proposto para análise preditiva espaço-temporal com base nos dados do Twitter}{}{diagrama}{width=0.9\textwidth}%
@@ -31,48 +31,53 @@ Linguagem Natural (PLN) em português, a preferência foi
 dada aos conteúdos escritos naquela língua. Como mencionado
 no capítulo I, o objetivo deste trabalho é prever as tendências
 das eleições presidenciais brasileiras com base no \textit{Twitter} para
-isso que usamos Mais de 100.000 tweets para desenvolver o
+isso que usamos mais de 100.000 tweets para desenvolver o
 modelo de aprendizado de máquina e quatro algoritmos serão
-usados para validar o objetivo e escolher o melhor.
+usados para validar o modelo e escolher o melhor a ser utilizado em trabalhos futuros.
 
 Além do texto do \textit{tweet}, algumas outras informações coletadas
 incluem autor, data, contagem de retweets, contagem de
 favoritos, localização, menções, hashtags, ID de publicação e
 link de publicação. Essas informações em uma estrutura de dados denominada \textit{dataframe}, que é semelhante a uma matriz, mas contém o nome de cada 
-coluna, na Figura \ref{dataframe} é possível visualizar essa estrutura.
+coluna.
+
+
+Para manipular os dados em formato de \textit{dataframe}, foi utilziada a biblioteca \textit{Pandas},
+que é facilita todo o processo de manipulação de dados ~\cite{mckinney2011pandas}. Na Figura \ref{dataframe} é possível visualizar essa estrutura.
 
 \figuraBib{dataframe}{Dataframe com os dados utilizados para realizar as análises}{}{dataframe}{width=0.9\textwidth}%
 
 
 \section{Pré-processamento de dados}
+\label{sec:limpeza}
 
 O segundo bloco da Figura \ref{diagrama} corresponde ao pré-processamento
 de dados. As redes sociais apresentam múltiplos
 públicos e a intensidade da emoção é o fator que diferencia um tweet de outro, onde intensidade se refere ao
-grau ou quantidade de uma emoção, como raiva ou tristeza.
+grau ou quantidade de uma emoção, como positivo, negativo ou neutro.
 Uma estratégia usual é considerar que todas as mensagens
 coletadas têm a mesma importância ~\cite{de2015estrategia}.
 Não há padrão de escrita definido para ser usado em redes
 sociais. Consequentemente, foi necessário realizar a limpeza
 de dados para padronizar as sentenças. Além disso, todos os
-emoticons foram desconsiderados, uma vez que pretendemos
-analisar o léxico da língua portuguesa considerando questões
-sérias como as eleições. O fluxo de limpeza de dados pode
+\textit{emoticons} foram desconsiderados, uma vez que pretendemos
+analisar o léxico da língua portuguesa e como estamos estamos analisando um processo sério, que são as eleições
+considerando questões, é necessário que tenhamos um certo padrão a seguir para evitar viés nas análises. O fluxo de limpeza de dados pode
 ser visto na Figura ~\ref{limpeza}.
 
 
- \figuraBib{limpeza}{Fluxo de pré-processamento de dados}{}{limpeza}{width=0.5\textwidth}%
+ \figuraBib{limpeza}{Fluxo de pré-processamento de dados}{}{limpeza}{width=0.8\textwidth}%
 
 
 O tweet bruto foi usado neste processo de limpeza, definimos
 6 etapas para sanitizar os dados, todos os blocos
 descritos nesse parágrafo correspondem ao diagrama de blocos
-da Figura  primeiro bloco é responsável por remover tags de
+da Figura ~\ref{limpeza} primeiro bloco é responsável por remover tags de
 retweet e menções de profile, no segundo precisa remover links
 de sites, o terceiro remover acentos e pontuações, o quarto
 remover todas as stopwords portuguesas, o quinto remover
-espaço desnecessário e o último transformar o tweet a diminuir
-caso.
+espaço desnecessário e por último deve-se transformar o tweet para letra minúscula.
+
 As \textit{Stop Words} são freqüentemente usadas em sentenças
 que desempenham um papel muito pequeno na análise de sentimento e, consequentemente, devem ser removidas ~\cite{sharma}.
 Eles não contribuem para o processo de análise de sentimento
@@ -80,22 +85,33 @@ e apenas retardam o processo. Além disso, os dados devem ser
 submetidos a um processo de stemming em que as palavras
 são reduzidas ao seu radical ~\cite{de2015estrategia}.
 
+    Na Tabela \ref{tb:limpeza}, mostra como foi feita a limpeza de dados para um 
+\textit{tweet} selecionado aleatoriamente do \textit{dataframe} utilizado para análises. Todas as etapas de pré-processamento
+estão descritas na Figura \ref{limpeza}
 
 
-
-    \begin{table}
-        \label{table1}
-        \centering
-        \caption{Classificação do tweets através da polaridade usando a
-        biblioteca textblob e os dicionários Oplexicon/Sentilex.}
-       
-        \begin{tabular}{llll}
-        \hline
-                  & Positivo & Neutro & Negativo \\ \hline
-        TextBlob  & 42.67\%  & 24.01\% & 33.27\%  \\ \hline
-        OpLexicon/Sentilex & 25.12\%  & 26.51\% & 48.35\%  \\ \hline
-        \end{tabular}
+\begin{table}
+    \centering
+    \caption{Limpeza dos textos extraídos do \textit{Twitter}}
+    \label{tb:limpeza}
+    
+    \begin{tabular}{|l|p{8cm}|} 
+    \hline
+    Etapa Inicial       & Mais uma vez @AecioNeves perde em Minas.   Não seria a hora de ele se desculpar com o estado,   ao invés de continuar.  \#Eleições https:/bit.ly/twitter \\ \hline
+    Remoção de Hashtags  e Menções a Perfis  & Mais uma vez    perde em Minas. Não seria a hora de ele se desculpar com o estado, ao invés de continuar. https:/bit.ly/twitter \\ \hline
+    Remoção de Links                                                                  & Mais uma      vez perde em Minas. Não seria a hora de ele se desculpar com o estado, ao invés de continuar.   \\ \hline                                                                                                                                                    
+    Remoção de Pontuação e  Acentuação                                               & Mais uma      vez perde em Minas Nao seria a hora de ele se desculpar com o estado ao inves de continuar  \\ \hline                                                                                                                                             
+    Remoção de Stopwords                                                              & perde em Minas  seria  hora  desculpar  estado  inves continuar \\ \hline                                                                                                                                                                                         
+    Remoção de Espaços Desnecessários                                             & perde em Minas seria hora desculpar estado invés continuar   \\ \hline                                                                                                                                                                                            
+    Converter para minúsculo                                                          & perde em minas seria hora desculpar estado invés continuar  \\ \hline                                                                                                                                                                                                   
+    \end{tabular}
     \end{table}
+
+
+
+No apêndice \ref{cod:limpeza} código utilizado para a limpeza e estruturação dos dados é apresentado, 
+foi utilizada expressões regulares para substituir os carácteres especiais que o idioma português tem, 
+foi feito isso para que seja possível realizar o processo de \textit{steeming} na seção \ref{sec:am}.
 
 
 
@@ -108,9 +124,47 @@ os tweets extraídos após o pré-processamento.
 Após a classificação dos dados, é necessário criar dois
 bancos de dados distintos para que o \textit{TextBlob} e o OpLexicon
 possam ser comparados usando modelos de aprendizado de
-máquina. Tabela \ref{table2} mostra um exemplo da análise de sentimento
+máquina. 
+
+
+\begin{table}
+    \label{table1}
+    \centering
+    \caption{Classificação do tweets através da polaridade usando a
+    biblioteca textblob e os dicionários Oplexicon/Sentilex.}
+   
+    \begin{tabular}{llll}
+    \hline
+              & Positivo & Neutro & Negativo \\ \hline
+    TextBlob  & 42.67\%  & 24.01\% & 33.27\%  \\ \hline
+    OpLexicon/Sentilex & 25.12\%  & 26.51\% & 48.35\%  \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+
+Na Tabela \ref{table2} mostra um exemplo da análise de sentimento
 de uma amostra aleatória com três tweets para comparar
 os resultados obtidos com as duas bibliotecas.
+
+
+\begin{table}
+    \label{table2}
+    \centering
+    \caption{Análise de sentimentos usando três tweets selecionados de forma aleatória}
+    \begin{tabular}{llll}
+    \hline
+    \textit{Tweet}          & TextBlob & Oplexicon/Sentilex \\ \hline
+    1  & Negativo & Positivo  \\ \hline
+    2& Neutro  & Neutro  \\ \hline
+    3& Negativo  & Negativo  \\ \hline
+    \end{tabular}
+
+
+\end{table}
+
+
 
 
 Em primeiro lugar, tentamos usar a biblioteca \textit{TextBlob} na
@@ -121,39 +175,18 @@ inglês com um método presente na biblioteca e depois verificar
 a polaridade da frase. Nesse processo, as palavras podem
 perder seu significado, porque o processo de tradução pode
 aprensentar um alto viés, visto que o português tem várias maneiras de expressar a mesma ideia.
-O OpLexicon com os melhores resultados foi constituído
+
+
+O OpLexicon em conjunto com o Sentilex com os melhores resultados foi constituído
 por 30.322 palavras (23.433 adjetivos e 6.889 verbos) e foi
 baseado no português brasileiro. Foi classificada por sua
 categoria morfológica marcada com polaridades positivas,
 negativas e neutras ~\cite{souza2011construction}.
 
 
-    \begin{table}
-        \centering
-        \label{table2}
-        \begin{tabular}{llll}
-        \hline
-        \textit{Tweet}          & TextBlob & Oplexicon/Sentilex \\ \hline
-        1  & Negativo & Positivo  \\ \hline
-        2& Neutro  & Neutro  \\ \hline
-        3& Negativo  & Negativo  \\ \hline
-        \end{tabular}
-        \caption{Análise de Sentimentos Usando Três Tweets Selecionados de Forma Aleatória}
-
-    \end{table}
-
-
-
-Os algoritmos utilizados para criar o modelo de \acrshort{AM} supervisionado foram detalhados nas seções 2.1.2.1.1 a 2.1.2.1.4, esses algoritmos foram 
-utilizados para classificar novos dados que irão ser extraídos. 
-
-A fase treinamento funcionou da seguinte forma, foi utilizado o príncipio de Pareto para realização do treinamento, onde 20\% dos dados foram 
-separados para validação do modelo e os outros 80\% são usados na fase de treinamento ~\cite{jin2008pareto}. 
-
-
-Foi necessário transformar o \textit{dataframe} obtido ao realizar a extração de dados da rede social em uma matriz utilizando a técnica \textit{Bag-of-Words}, 
-juntamente com a técnica que foi apresentada na seção \ref{sec:tfidf}, onde foi contabilizada a quantidade de informações e normalizado os valores, para 
-que o resultado da análise de sentimentos fosse otimizado.
+A automação desse processo é necessária, pois torna-se inviável rotular mais de 100,000 entradas. 
+O código utilizado para análise de sentimentos usando os dicionários pode ser visualizado no Apêndice
+\ref{cod:analise}.
 
 
 \section{Extração da Localização e Data}
@@ -176,7 +209,7 @@ usuários que apresentam boas ou más opiniões sobre um
 determinado candidato e, consequentemente, intensificar as
 ações de marketing a serem tomadas naquela região. Portanto,
 o objetivo do trabalho é unir a geolocalização com a análise
-sentimental. Foi utilizada a biblioteca denominada \textit{tweepy}~\cite{roesslein2009tweepy}, o código abaixo representa como é feita a requisição 
+sentimental. Foi utilizada a biblioteca denominada \textit{tweepy}~\cite{roesslein2009tweepy}, o código na seção \ref{cod:geo} detalha como é feita a requisição 
 para obter os dados referentes a localização do usuário.
 
 
@@ -188,4 +221,45 @@ a cada dia, para que seja possível analisar a série temporal de forma precisa.
 
 \figuraBib{twitter_profile}{Exemplo de um perfil na rede social analisada}{}{twitter_profile}{width=0.5\textwidth}%
 
+\newpage
 
+\section{Aprendizado de Máquina Supervisionado}
+\label{sec:am}
+
+Após realizar o tratamento dos dados, o texto está pronto para ser utilizado para treinamento. Esse \textit{dataset} será utilizado 
+como treinamento inicial dos classificadores que serão utilizados para analisar os textos futuros.
+
+
+Os algoritmos utilizados para criar o modelo de \acrshort{AM} supervisionado foram detalhados nas seções 2.1.2.1.1 a 2.1.2.1.4, esses algoritmos foram 
+utilizados para classificar novos dados que irão ser extraídos. 
+
+A fase treinamento funcionou da seguinte forma, foi utilizado o príncipio de Pareto para realização do treinamento, onde 20\% dos dados foram 
+separados para validação do modelo e os outros 80\% são usados na fase de treinamento ~\cite{jin2008pareto}. 
+
+
+
+Foi necessário transformar o \textit{dataframe} obtido ao realizar a extração de dados da rede social em uma matriz utilizando a técnica \textit{Bag-of-Words}, 
+juntamente com a técnica que foi apresentada na seção \ref{sec:tfidf}, onde foi contabilizada a quantidade de informações e normalizado os valores, para 
+que o resultado da análise de sentimentos fosse otimizado.
+
+
+Após transformar todos de dados disponíveis para o formato vetorial e divisão dos dados entre conjunto de testes e treinamento, utilizou-se
+os algoritmos biblioteca \textit{Scikit-Learn} que foram detalhados nas Seções \ref{par:svm} a \ref{par:reglog}  ~\cite{pedregosa2011scikit}.
+
+
+O primeiro algoritmo a ser utilizado na fase de treinamento foi o \acrshort{SVM}, que segundo a literatura é o algoritmo que melhor tem resultados
+para classificação de textos. Nessa etapa utilizou-se o kernel linear, e utilizou-se de funções de \textit{gridsearch} para encontrar o valor da constante
+$C$ que é uma variável que de normalização para minimizar os erros no conjunto de treinamento e obter as melhores métricas de análise ~\cite{lorena2007introduccao}. 
+O valor encontrado foi para $C=100$ e para otimizar a fase de treinamentos, foi utilizada uma função de paralelismo para que o treinamento não fosse longo e consumisse
+muitos recursos computacionais.
+
+O algoritmo de Naive Bayes (NB) foi o segundo a ser utilizado para treinamento. A implementação desse algoritmo acontece de forma simples, pois é 
+computada apenas a probabilidade condicional para cada valor de saída a partir do texto de entrada.
+
+
+ As árvores de decisão foi o classificador que mais consumiu recursos e tempo na fase de treinamento, pois o dataset apresenta muitas linhas para análise
+ e a variável de entrada pode ter até 140 caracteres, mesmo otimizando os dados através dos processos apresentados na Seção \ref{sec:limpeza}, 
+ a árvore construída teve uma alta profundidade tornando-se extremamente custoso ao computador que realiza o treinamento.
+ 
+ Por último utilizou-se a regressão logística que o tempo de treinamento é considerável ao ser comparado com a árvore de decisão e esse classificador,
+ também já tem uma função implementada na biblioteca utilizada nessa etapa.

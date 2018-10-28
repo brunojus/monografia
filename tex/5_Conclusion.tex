@@ -1,6 +1,36 @@
-Este documento serve de exemplo da utilização da classe \unbcic\ para escrever
-um texto cujo objetivo é apresentar os resultados de um trabalho científico. A
-sequência de ideias apresentada deve fluir claramente, de modo que o leitor
-consiga compreender os principais conceitos e resultados apresentados, bem como
-encontrar informações sobre conceitos secundários.
+Neste trabalho foi desenvolvido um \textit{framework} capaz de
+analisar dados extraídos de uma rede social utilizando técnicas
+de processamento de linguagem natural. Nosso objetivo foi
+explorar a análise de sentimento em textos em língua portuguesa e
+validar os dados, cruzando os dados disponíveis pelo Tribunal
+responsável pela condução das eleições no Brasil.
 
+
+Foi possível verificar nesse trabalho que quanto melhor for o pré-processamento dos 
+dados melhor será o resultado final. Durante o trabalho foram feitos vários ajustes nessa
+etapa para que o dado chegasse ao classificador da melhor maneira possível.
+
+Para as eleições de 2014, os modelos propostos conseguiram prever de forma eficaz o resultado 
+daquela eleição, foi uma eleição onde grande parte da sociedade esteve crítica a reeleição daquele governo,
+portanto é possível entender o elevado número de \textit{tweets} negativos naquele cenário. E dois anos após a 
+reeleição, a então presidente eleita sofreu um \textit{impeachment}, assim então validando todo o nosso estudo 
+no que diz respeito a identificação de texto com a polaridade negativa.
+
+Ao comparar os resultados obtidos pela análise de sentimento
+com os resultados que os dicionários proporcionaram e comparar os dados do Tribunal
+Superior Eleitoral, foi possível constatar que o \textit{framework} teve
+um bom resultado.
+
+Ademais o trabalho propõe estudar outras áreas além da política, pois tem o intuito de aquecer 
+as pesquisas na área de análise de sentimentos no idioma português. 
+
+Após a utilização de quatro classificadores distintos para a criação de modelos de aprendizado de máquina,
+podemos dizer que o algoritmo que teve melhores resultados foi o \acrshort{SVM} que obteve mais de 90\% de acurácia
+na fase de validação do modelo e árvore de decisões foi o que se mostrou ineficiente para essa tarefa de 
+análise de sentimento de textos provenientes de redes sociais.
+
+
+De contribuições ao meio científico, entende-se que o desenvolvimento desse \textit{framework} e do modelo treinado facilita
+pesquisas nessa áreas e um artigo foi publicado para que outras pessoas possam replicar as etapas que foram aplicadas nesse trabalho.
+
+\section{Trabalhos Futuros}

@@ -1,0 +1,47 @@
+\section{Código para extração da localização do usuário}
+\label{cod:geo}
+\begin{python}
+    # coding: utf-8
+    import pandas as pd  
+    import tweepy
+    
+    consumer_key = ""
+    
+    consumer_secret = ""
+    
+    access_token_secret = ""
+    
+    access_token = ""
+    
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    
+    api = tweepy.API(auth)
+
+    location = []
+    for tweet in entrada['username']:
+        try:
+            user = api.get_user(tweet)
+            print(user.location)
+            location.append(user.location)
+        except tweepy.TweepError as e:
+            location.append('Error')
+
+    entrada['local'] = location
+    entrada.to_csv(saida, sep=';', mode='a',index=False)
+    
+    
+    \end{python}
+
+\section{Código para geração da séries temporais}
+\label{cod:time}
+\begin{python}
+    import pandas as pd     # To handle data
+import numpy as np      # For number computing
+
+# For plotting and visualization:
+from IPython.display import display
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+\end{python}

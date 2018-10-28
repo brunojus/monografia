@@ -1,10 +1,169 @@
+Esta seção apresenta a validação do framework proposto.
+Comparamos as previsões do framework com os resultados das
+eleições presidenciais de 2014 extraídos do banco de dados do
+Tribunal Superior Eleitoral Brasileiro. Analisamos apenas os
+resultados referentes aos dois candidatos com maior número
+de votos obtidos no primeiro turno, Dilma Rousseff e Aécio
+Neves, que consequentemente se classificaram para o segundo
+turno
+
 \section{Avaliação da Performance dos Algoritmos}
 
+O desempenho dos algoritmos Naive Bayes (NB), Máquina de
+Vetores de Suporte (SVM), Regressão Logística (LR) e Árvores de Decisão (DT)
+foram avaliados através das seguintes métricas: precisão, F1-Score,
+recall e precisão. Essas informações podem ser visualizadas
+na Tabela \ref{tb:metricas}.
+O algoritmo de árvore de decisão apresentou os piores resultados em todas
+as métricas avaliadas e também apresentou maior custo
+computacional. Os algoritmos com os melhores resultados
+em termos de precisão e custo computacional foi o \acrshort{SVM}, pois foi utilizada a função de \textit{gridsearch} para
+diminuir os erros.
+Os dados de texto são ideais para classificação de SVM
+devido à natureza esparsa do texto, em que poucos recursos
+são irrelevantes, mas tendem a ser correlacionados entre si e
+geralmente organizados em categorias linearmente separáveis
+~\cite{medhat}.
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{Performance dos classificadores utilizados}
+    \label{tb:metricas}
+    \begin{tabular}{@{}cccc@{}}
+    \\    \hline
+    Métricas & Classificador & TextBlob & OpLexicon/Sentilex \\  \hline
+    \multirow{4}{*}{Acurácia} & NB & 0.82 & 0.93 \\  
+     & SVM & 0.94 & 0.98 \\ 
+     & LR & 0.70 & 0.65 \\
+     & DT & 0.64 & 0.85 \\ \hline
+    \multirow{4}{*}{Precisão} & NB & 0.83 & 0.92 \\ 
+     & SVM & 0.94 & 0.98 \\ 
+     & LR & 0.79 & 0.83 \\ 
+     & DT & 0.69 & 0.89 \\ \hline
+    \multirow{4}{*}{Recall} & NB & 0.79 & 0.92 \\ 
+     & SVM & 0.93 & 0.97 \\ 
+     & LR & 0.60 & 0.58 \\ 
+     & DT & 0.56 & 0.81 \\ \hline
+    \multirow{4}{*}{F1-score} & NB & 0.80 & 0.92 \\ 
+     & SVM & 0.94 & 0.98 \\ 
+     & LR & 0.55 & 0.60 \\ 
+     & DT & 0.55 & 0.84 \\ \hline
+    \end{tabular}
+    \end{table}
+    
 \section{Validação Cruzada N-Fold}
+
+Na validação cruzada de $N-fold$, o conjunto de dados é
+particionado em subconjuntos mutuamente exclusivos de N.
+Um subconjunto é usado como dados de validação para testar
+o modelo, e os subconjuntos $N −1$ restantes são usados como
+dados de treinamento. Como o conjunto de dados tem mais
+de $100.000$ \textit{tweets}, a validação cruzada de $N-fold$ apresentaria
+um alto custo computacional se um grande valor de N fosse
+escolhido. Consequentemente, usamos $N = 5$. Os dados do
+teste podem ser visualizados na Tabela \ref{tb:fold}.
+Usando validação cruzada de 5 vezes, obtivemos resultados
+semelhantes na primeira análise e o SVM permaneceu como
+o melhor algoritmo para mineração de texto em português.
+
+
+\begin{table}[tbp]
+    \centering
+    \caption{Validação cruzada $N-Fold$ com $N=5$ }
+    \label{tb:fold}
+    \begin{tabular}{@{}cccc@{}}
+    \toprule  \hline
+    Métrica & Algorithm & TextBlob & OpLexicon/Sentilex \\  \hline
+    \multirow{4}{*}{Acurácia} & NB & 0.81 & 0.92 \\ 
+     & SVM & 0.93 & 0.98 \\ 
+     & LR & 0.86 & 0.66 \\ 
+     & DT & 0.64 & 0.84  \\  \hline
+    \multirow{4}{*}{Precisão} & NB & 0.82 & 0.92 \\ 
+     & SVM & 0.92 & 0.98 \\ 
+     & LR & 0.78 & 0.83 \\ 
+     & DT & 0.70  & 0.88  \\ \hline
+    \multirow{4}{*}{Recall} & NB & 0.86 & 0.94 \\ 
+     & SVM & 0.93 & 0.98 \\ 
+     & LR & 0.90 & 0.80 \\ 
+     & DT & 0.54  & 0.81  \\ \hline 
+    \multirow{4}{*}{F1-score} & NB & 0.79 & 0.91 \\ 
+     & SVM & 0.92 & 0.98 \\ 
+     & LR & 0.54 & 0.58 \\
+     & DT & 0.56 & 0.84  \\ \hline
+    \end{tabular}
+    \end{table}
+
+\newpage
 
 \section{Avaliação do erro utilizando o modelo}
 
-\section{Análise Espaço-Temporal}
-
 \section{Resultado das Eleições}
 
+Finalmente, nessa seção ocorre a comparação
+entre os resultados obtidos pelo classificador e os dados
+reais das eleições anteriores fornecidas pelo Tribunal Superior
+Eleitoral brasileiro ~\cite{TSE} para obter a previsão eleitoral. Como
+estamos observando apenas as eleições presidenciais, os candidatos
+em análise são aqueles que obtiveram, no primeiro
+turno, votos suficientes para participar do segundo turno.
+
+\begin{table}[tbp]
+    \centering
+    \caption{Distribuição dos resultados da eleição presidencial de 2014}
+    \label{tb:eleicoes2014}
+    \begin{tabular}{ll}
+    \hline
+    Dilma Roussef & 51,64\% \\ \hline
+    Aécio Neves & 48,36\% \\ \hline
+    \end{tabular}
+\end{table}
+
+A Tabela \ref{tb:eleicoes2014} mostra um exemplo da distribuição dos votos
+dos candidatos às eleições presidenciais brasileiras de 2014,
+Aécio Neves e Dilma Rousseff, obtidos do banco de dados do
+Tribunal Superior Eleitoral.
+
+
+
+
+\section{Análise Espaço-Temporal}
+
+
+Usando a análise temporal, é possível observar a intensidade
+de cada candidato no dia da eleição, e serviu para demonstrar
+como as reações dos brasileiros estavam acompanhando os
+resultados do Tribunal Superior Eleitoral em tempo real. E na
+Figura \ref{time_series} apresenta a quantidade de tweets classificados
+em três categorias para os candidatos Dilma Roussef e
+Aécio Neves.
+
+\figuraBib{time_series}{Série temporal utilizando os tweets classificados durante o segundo turno com suas polaridades}{}{time_series}{width=0.8\textwidth}%
+
+
+O segundo turno das eleições presidenciais de 2014, ocorreu no dia 26 de outubro. É possível visualizar na Figura \ref{time_series} que nesse dia
+a quantidade de informações rotuladas como positiva para a candidata Dilma Roussef é superior com uma pequena distância em relação ao oponente Aécio
+Neves. A queda na popularidade da candidata que ganhou as eleições está ligado ao fato da operação da Polícia Federal, denominada Lava Jato, onde
+vários político foram presos. 
+
+É possível visualizar o aumento de mensagens de teor negativo a partir do dia 24 de outubro de 2014, isso se dá ao fato do doleiro 
+responsável pelo esquema de corrupção desse governo ter realizado declarações de que a presidente Dilma Roussef e o ex-presidente Lula tinham 
+conhecimento de todo o esquema de corrupção na empresa estatal Petrobras e no dia 28 o executivo de uma empresa envolvida em esquemas de proprina
+ter fechado um acordo de delação premiada com os procuradores da força tarefa da operação ~\cite{LavaJato}. 
+
+
+A localização dos votos de cada seção eleitoral são disponibilizada pelo \acrshort{TSE}
+combinadas com o quantitativo de votos na Figura 6. As cores
+vermelha e azul representam, respectivamente, as regiões onde
+os candidatos Dilma Rousseff e Aécio Neves tiveram maior número de votos nas eleições presidenciais de 2014.
+
+A idéia principal é comparar com um local extraído do \textit{twitter}
+conjuntamente com a análise de sentimentos.
+Utilizando a geolocalização extraída é possível gerar o mapa
+com a localização e o envio dos \textit{tweets} daquela região. Na
+Figura 7 é apresentada a distribuição da polaridade do tweet
+para a candidata Dilma Roussef para cada Estado, a cor
+verde significa um sentimento positivo, o laranja é neutro e
+o vermelho representa os \textit{tweets} negativos.
+
+\section{Plataforma de Análise de Sentimentos \textit{Online}}

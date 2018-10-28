@@ -393,6 +393,14 @@
   term specificity and its application in retrieval}}.
 \newblock \btxjournalfont {Journal of documentation}, 28(1):11--21, 1972.
 
+\bibitem {mckinney2011pandas}
+\btxnamefont {\btxlastnamefont {McKinney}, Wes}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {pandas: a foundational python library for data analysis
+  and statistics}{pandas: a foundational Python library for data analysis and
+  statistics}}.
+\newblock \btxjournalfont {Python for High Performance and Scientific
+  Computing}, \btxpageslong {}\ 1--9, 2011.
+
 \bibitem {de2015estrategia}
 \btxnamefont {\btxlastnamefont {Oliveira}, Derick\btxfnamespacelong M~de},
   \btxnamefont {Roberto\btxfnamespacelong CSNP \btxlastnamefont {Souza}},
@@ -430,6 +438,13 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 8th Brazilian
   Symposium in Information and Human Language Technology}, 2011.
 
+\bibitem {roesslein2009tweepy}
+\btxnamefont {\btxlastnamefont {Roesslein}, Joshua}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {tweepy documentation}{tweepy
+  Documentation}}.
+\newblock \btxjournalfont {Online] http://tweepy. readthedocs. io/en/v3}, 5,
+  2009.
+
 \bibitem {jin2008pareto}
 \btxnamefont {\btxlastnamefont {Jin}, Yaochu} \btxandlong {}\ \btxnamefont
   {Bernhard \btxlastnamefont {Sendhoff}}\btxauthorcolon\ \btxjtitlefont
@@ -439,11 +454,31 @@
 \newblock \btxjournalfont {IEEE Transactions on Systems, Man, and Cybernetics,
   Part C (Applications and Reviews)}, 38(3):397--415, 2008.
 
-\bibitem {roesslein2009tweepy}
-\btxnamefont {\btxlastnamefont {Roesslein}, Joshua}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {tweepy documentation}{tweepy
-  Documentation}}.
-\newblock \btxjournalfont {Online] http://tweepy. readthedocs. io/en/v3}, 5,
-  2009.
+\bibitem {medhat}
+\btxnamefont {\btxlastnamefont {Medhat}, Walaa}, \btxnamefont {Ahmed
+  \btxlastnamefont {Hassan}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Hoda
+  \btxlastnamefont {Korashy}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Sentiment analysis algorithms and applications: A survey}{Sentiment analysis
+  algorithms and applications: A survey}}.
+\newblock \btxjournalfont {Ain Shams Engineering Journal}, 5(4):1093 -- 1113,
+  2014\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {2090-4479}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.sciencedirect.com/science/article/pii/S2090447914000550}}.
+
+\bibitem {TSE}
+\btxnamefont {\btxlastnamefont
+  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
+  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
+\newblock {\latintext
+  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}}.
+
+\bibitem {LavaJato}
+\btxnamefont {\btxlastnamefont {São~Paulo}, Folha~de}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Entenda a operação lava jato, da polícia
+  federal}{Entenda a Operação Lava Jato, da Polícia Federal}}.
+\newblock {\latintext
+  \btxurlfont{https://www1.folha.uol.com.br/poder/2014/11/1548049-entenda-a-operacao-lava-jato-da-policia-federal.shtmls}},
+  Acessado em 20.10.2018.
 
 \end{thebibliography}

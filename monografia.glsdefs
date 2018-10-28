@@ -238,3 +238,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{TSE}{}%
+{%
+\gls@defglossaryentry{TSE}%
+{%
+name={TSE},%
+sort={TSE},%
+type={acronym},%
+first={Tribunal Superior Eleitoral\glsspace (TSE)},%
+firstplural={Tribunal Superior Eleitorals\glsspace (TSEs)},%
+text={TSE},%
+plural={TSEs},%
+description={Tribunal Superior Eleitoral},%
+descriptionplural={Tribunal Superior Eleitoral\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Tribunal Superior Eleitoral},%
+longplural={Tribunal Superior Eleitorals},%
+short={TSE},%
+shortplural={TSEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

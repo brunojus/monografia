@@ -1,1 +1,203 @@
-\section{Appendix}
+\UseRawInputEncoding
+
+\section{Código para limpeza dos dados}
+\label{cod:limpeza}
+
+\begin{python}
+import pandas as pd  
+import numpy as np
+from nltk.tokenize import WordPunctTokenizer
+tok = WordPunctTokenizer()
+
+def removestopwords(texto):
+    frases = []
+   
+    for palavras in texto:
+        
+        palavras = palavras.lower()
+        palavras = palavras.replace('?',' ')
+        palavras = palavras.replace('#','')
+        palavras = palavras.replace('!',' ')
+        palavras = palavras.replace('%',' ')
+        palavras = palavras.replace('. ',' ')
+        palavras = palavras.replace(')',' ')
+        palavras = palavras.replace('(',' ')
+        palavras = palavras.replace('-',' ')
+        palavras = palavras.replace(',',' ')
+        palavras = palavras.replace('/ ',' ')
+        palavras = palavras.replace('*',' ')
+        palavras = palavras.replace('=',' ')
+        palavras = palavras.replace(':','')
+        
+        palavras = palavras.replace('r\$',' ')
+               
+        palavras = palavras.replace('á','a')
+        palavras = palavras.replace('à','a')
+        palavras = palavras.replace('â','a')
+        palavras = palavras.replace('ã','a')
+        
+        palavras = palavras.replace('é','e')
+        palavras = palavras.replace('è','e')
+        palavras = palavras.replace('ê','e')
+        
+        
+        palavras = palavras.replace('í','i')
+        palavras = palavras.replace('ì','i')
+        palavras = palavras.replace('î','i')
+                       
+        palavras = palavras.replace('ó','o')
+        palavras = palavras.replace('ò','o')
+        palavras = palavras.replace('ô','o')
+        palavras = palavras.replace('õ','o')
+        
+        palavras = palavras.replace('ú','u')
+        palavras = palavras.replace('ù','u')
+        palavras = palavras.replace('û','u')
+               
+        palavras = palavras.replace('ç','c')
+              
+        frases.append(palavras)
+                                    
+        
+    return frases
+    
+dataset['text'] = removestopwords(dataset['text'])
+\end{python}
+
+
+\section{Código para análise de sentimentos usando dicionário}
+\label{cod:analise}
+
+\begin{python}
+
+dicionario = open("dicionario.txt", 'r')
+
+# Criamos um dicionário para receber as informações
+dic_palavra_polaridade = {} 
+
+# Neste trecho atribuímos a cada palavra uma Polaridade
+for i in dicionario.readlines(): 
+    pos_ponto = i.find('.')
+    palavra = (i[:pos_ponto])
+    pol_pos = i.find('POL')
+    polaridade = (i[pol_pos+4:pol_pos+6]).replace(';','')
+    dic_palavra_polaridade[palavra] = polaridade
+
+
+def Pontuação_sentimento(frase):
+    frase = frase.lower()
+    l_sentimento = []
+
+    for p in frase.split():
+        l_sentimento.append(int(dic_palavra_polaridade.get(p, 0)))
+
+    if sum(l_sentimento) > 0:
+        return 'Positivo, Pontuação: {}'.format(sum(l_sentimento))
+    elif sum(l_sentimento) == 0:
+        return 'Neutro, Pontuação:{}'.format(sum(l_sentimento))
+    elif sum(l_sentimento) < 0:
+        return 'Negativo, Pontuação:{}'.format(sum(l_sentimento))
+
+
+frase = Pontuação_sentimento('Sua mãe é feliz')
+print(frase)
+\end{python}
+\section{Código para extração da localização do usuário}
+\label{cod:geo}
+\begin{python}
+    # coding: utf-8
+    import pandas as pd  
+    import tweepy
+    
+    consumer_key = ""
+    
+    consumer_secret = ""
+    
+    access_token_secret = ""
+    
+    access_token = ""
+    
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    
+    api = tweepy.API(auth)
+
+    location = []
+    for tweet in entrada['username']:
+        try:
+            user = api.get_user(tweet)
+            print(user.location)
+            location.append(user.location)
+        except tweepy.TweepError as e:
+            location.append('Error')
+
+    entrada['local'] = location
+    entrada.to_csv(saida, sep=';', mode='a',index=False)
+    
+    
+    \end{python}
+
+\section{Código para geração da séries temporais}
+\label{cod:time}
+\begin{python}
+import pandas as pd     # To handle data
+import numpy as np      # For number computing
+
+# For plotting and visualization:
+from IPython.display import display
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+dataset=pd.read_csv("/home/bruno/Documents/artigo/Dados Brutos/Dilma_final_prog1.csv",delimiter=",",encoding='latin-1').set_index('Date')
+dataset1=pd.read_csv("/home/bruno/Documents/artigo/Dados Brutos/Aecio_final_prog1.csv",delimiter=",",encoding='latin-1').set_index('Date')
+
+positivo = dataset.loc[dataset['Sentiment'] == 'Positive']
+negativo = dataset.loc[dataset['Sentiment'] == 'Negative']
+neutro  = dataset.loc[dataset['Sentiment'] == 'Neutral']
+
+positivo1 = dataset1.loc[dataset1['Sentiment'] == 'Positive']
+negativo1 = dataset1.loc[dataset1['Sentiment'] == 'Negative']
+neutro1  = dataset1.loc[dataset1['Sentiment'] == 'Neutral']
+
+positivo.index = pd.to_datetime(positivo.index)
+negativo.index = pd.to_datetime(negativo.index)
+neutro.index = pd.to_datetime(neutro.index)
+
+
+positivo1.index = pd.to_datetime(positivo1.index)
+negativo1.index = pd.to_datetime(negativo1.index)
+neutro1.index = pd.to_datetime(neutro1.index)
+
+positivo = positivo.rename(columns={"Sentiment":"Positive - Dilma"})
+positivo1 = positivo1.rename(columns={"Sentiment":"Positive - Aecio"})
+positivo_plot = positivo['Positive - Dilma'].groupby( [positivo.index.day] ).count()
+positivo_plot1 = positivo1['Positive - Aecio'].groupby( [positivo1.index.day] ).count()
+
+negativo = negativo.rename(columns={"Sentiment":"Negative - Dilma"})
+negativo1 = negativo1.rename(columns={"Sentiment":"Negative - Aecio"})
+negative_plot = negativo['Negative - Dilma'].groupby( [negativo.index.day] ).count()
+negative_plot1 = negativo1['Negative - Aecio'].groupby( [negativo1.index.day] ).count()
+
+neutro = neutro.rename(columns={"Sentiment":"Neutral - Dilma"})
+neutral_plot = neutro['Neutral - Dilma'].groupby( [neutro.index.day] ).count()
+neutro1 = neutro1.rename(columns={"Sentiment":"Neutral - Aecio"})
+neutral_plot1 = neutro1['Neutral - Aecio'].groupby( [neutro1.index.day] ).count()
+
+#Criação do Gráfico Temporal
+import matplotlib.dates as mdates
+negative_plot1.plot(marker='o')
+neutral_plot1.plot(marker='.')
+positivo_plot1.plot(marker='D')
+
+
+negative_plot.plot(marker='v')
+neutral_plot.plot(marker='p')
+positivo_plot.plot(marker='s')
+
+plt.ylabel("Sentiment Count")
+plt.xlabel("Day")
+plt.legend()
+plt.grid(True)
+
+\end{python}

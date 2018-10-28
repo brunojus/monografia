@@ -33,21 +33,27 @@
 \contentsline {subsection}{\numberline {2.2.4}Term Frequency - Inverse Document Frequency (TF-IDF)}{19}{subsection.2.2.4}
 \contentsline {chapter}{\numberline {3}Framework Proposto}{20}{chapter.3}
 \contentsline {section}{\numberline {3.1}Extra\IeC {\c c}\IeC {\~a}o de Dados}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento de dados}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lise de Sentimentos}{23}{section.3.3}
+\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento de dados}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lise de Sentimentos}{24}{section.3.3}
 \contentsline {section}{\numberline {3.4}Extra\IeC {\c c}\IeC {\~a}o da Localiza\IeC {\c c}\IeC {\~a}o e Data}{24}{section.3.4}
-\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Avalia\IeC {\c c}\IeC {\~a}o da Performance dos Algoritmos}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}Valida\IeC {\c c}\IeC {\~a}o Cruzada N-Fold}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o do erro utilizando o modelo}{26}{section.4.3}
-\contentsline {section}{\numberline {4.4}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{26}{section.4.4}
-\contentsline {section}{\numberline {4.5}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{26}{section.4.5}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{27}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{28}{section*.10}
+\contentsline {section}{\numberline {3.5}Aprendizado de M\IeC {\'a}quina Supervisionado}{26}{section.3.5}
+\contentsline {chapter}{\numberline {4}Resultados}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Avalia\IeC {\c c}\IeC {\~a}o da Performance dos Algoritmos}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}Valida\IeC {\c c}\IeC {\~a}o Cruzada N-Fold}{28}{section.4.2}
+\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o do erro utilizando o modelo}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{30}{section.4.4}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{30}{section.4.5}
+\contentsline {section}{\numberline {4.6}Plataforma de An\IeC {\'a}lise de Sentimentos \textit {Online}}{32}{section.4.6}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{34}{section.5.1}
+\contentsline {chapter}{Refer\^encias}{35}{section*.10}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {brazil}{}
-\contentsline {chapter}{Ap\^endice}{31}{chapter*.11}
-\contentsline {chapter}{\numberline {A}}{32}{appendix.A}
-\contentsline {section}{\numberline {A.\textlinf {1}}Appendix}{32}{section.A.1}
+\contentsline {chapter}{Ap\^endice}{39}{chapter*.11}
+\contentsline {chapter}{\numberline {A}}{40}{appendix.A}
+\contentsline {section}{\numberline {A.\textlinf {1}}Código para limpeza dos dados}{40}{section.A.1}
+\contentsline {section}{\numberline {A.\textlinf {2}}Código para análise de sentimentos usando dicionário}{41}{section.A.2}
+\contentsline {section}{\numberline {A.\textlinf {3}}Código para extração da localização do usuário}{42}{section.A.3}
+\contentsline {section}{\numberline {A.\textlinf {4}}Código para geração da séries temporais}{43}{section.A.4}

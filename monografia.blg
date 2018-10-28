@@ -3,20 +3,24 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: monografia.aux
 The style file: babunsrt.bst
 Database file #1: bibliografia.bib
-Warning--entry type for "ILS" isn't style-file defined
+Warning--entry type for "TSE" isn't style-file defined
+--line 139 of file bibliografia.bib
+Warning--entry type for "LavaJato" isn't style-file defined
 --line 145 of file bibliografia.bib
+Warning--entry type for "ILS" isn't style-file defined
+--line 152 of file bibliografia.bib
 Warning--entry type for "Twitter" isn't style-file defined
---line 151 of file bibliografia.bib
+--line 158 of file bibliografia.bib
 Warning--entry type for "EBC" isn't style-file defined
---line 157 of file bibliografia.bib
+--line 164 of file bibliografia.bib
 Warning--entry type for "face" isn't style-file defined
---line 163 of file bibliografia.bib
+--line 170 of file bibliografia.bib
 Warning--entry type for "w3techs" isn't style-file defined
---line 169 of file bibliografia.bib
+--line 176 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 203 of file bibliografia.bib
+--line 210 of file bibliografia.bib
 Warning--entry type for "martin" isn't style-file defined
---line 316 of file bibliografia.bib
+--line 323 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--empty language in w3techs
 Warning--empty year in lorena2007introduccao
@@ -27,45 +31,45 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 Warning--empty journal in ferreirametodo
 Warning--empty year in ferreirametodo
-You've used 47 entries,
+You've used 51 entries,
             2465 wiz_defined-function locations,
-            859 strings with 14380 characters,
-and the built_in function-call counts, 14892 in all, are:
-= -- 1178
-> -- 418
-< -- 16
-+ -- 161
-- -- 114
-* -- 1671
-:= -- 1796
-add.period$ -- 102
-call.type$ -- 47
-change.case$ -- 44
+            882 strings with 15186 characters,
+and the built_in function-call counts, 15948 in all, are:
+= -- 1264
+> -- 441
+< -- 17
++ -- 171
+- -- 120
+* -- 1778
+:= -- 1929
+add.period$ -- 111
+call.type$ -- 51
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 949
-empty$ -- 1768
-format.name$ -- 323
-if$ -- 3402
+cite$ -- 60
+duplicate$ -- 1008
+empty$ -- 1904
+format.name$ -- 338
+if$ -- 3650
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 62
-newline$ -- 203
-num.names$ -- 48
-pop$ -- 293
+int.to.str$ -- 51
+missing$ -- 66
+newline$ -- 220
+num.names$ -- 52
+pop$ -- 318
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 422
+skip$ -- 452
 stack$ -- 0
-substring$ -- 647
-swap$ -- 459
-text.length$ -- 16
+substring$ -- 696
+swap$ -- 484
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 107
-width$ -- 49
-write$ -- 484
-(There were 16 warnings)
+while$ -- 115
+width$ -- 53
+write$ -- 524
+(There were 18 warnings)
