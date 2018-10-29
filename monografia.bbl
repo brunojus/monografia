@@ -13,29 +13,6 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {w3techs}
-\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Historical trends in the usage of content languages for
-  websites.}{Historical trends in the usage of content languages for
-  websites.}}
-\newblock {\latintext
-  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}}.
-
-\bibitem {martin}
-\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
-  architecture for software defined networking}{AN INTRUSION DETECTION AND
-  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
-  \btxprintmonthyear{.}{04}{2014}{long}.
-
-\bibitem {TSE}
-\btxnamefont {\btxlastnamefont
-  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
-  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
-\newblock {\latintext
-  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}}.
-
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -75,10 +52,20 @@
   database for {E}nglish}{WordNet: a lexical database for {E}nglish}}.
 \newblock \btxjournalfont {Communications of the ACM}, 38(11):39--41, 1995.
 
+\bibitem {w3techs}
+\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Historical trends in the usage of content languages for
+  websites.}{Historical trends in the usage of content languages for
+  websites.}}
+\newblock {\latintext
+  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}},
+  Acessado em 18.10.2018.
+
 \bibitem {Twitter}
 \btxnamefont {\btxlastnamefont {Twitter}}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Twitter developer platform}{Twitter Developer Platform}}.
-\newblock {\latintext \btxurlfont{https://developer.twitter.com}}.
+\newblock {\latintext \btxurlfont{https://developer.twitter.com}}, Acessado em
+  20.08.2018.
 
 \bibitem {EBC}
 \btxnamefont {\btxlastnamefont {Comunicação}, Empresa\btxfnamespacelong
@@ -86,7 +73,8 @@
   127 milhões de usuários no brasil}{Facebook chega a 127 milhões de
   usuários no Brasil}}.
 \newblock {\latintext
-  \btxurlfont{http://agenciabrasil.ebc.com.br/economia/noticia/2018-07/facebook-chega-127-milhoes-de-usuarios-no-brasil}}.
+  \btxurlfont{http://agenciabrasil.ebc.com.br/economia/noticia/2018-07/facebook-chega-127-milhoes-de-usuarios-no-brasil}},
+  Acessado em 20.10.2018.
 
 \bibitem {face}
 \btxnamefont {\btxlastnamefont {País}, El}\btxauthorcolon\ \btxtitlefont
@@ -94,7 +82,8 @@
   facebook, é fechada}{Cambridge Analytica, empresa pivô no escândalo do
   Facebook, é fechada}}.
 \newblock {\latintext
-  \btxurlfont{https://brasil.elpais.com/brasil/2018/05/02/internacional/1525285885_691249.html}}.
+  \btxurlfont{https://brasil.elpais.com/brasil/2018/05/02/internacional/1525285885_691249.html}},
+  Acessado em 20.10.2018.
 
 \bibitem {souza}
 \btxnamefont {\btxlastnamefont {Souza}, Marlo} \btxandlong {}\ \btxnamefont
@@ -264,10 +253,9 @@
   classification}}, 1998.
 
 \bibitem {zhang2004optimality}
-\btxnamefont {\btxlastnamefont {Zhang}, Harry}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {The optimality of naive bayes}{The optimality of naive
-  Bayes}}.
-\newblock \btxjournalfont {AA}, 1(2):3, 2004.
+\btxnamefont {\btxlastnamefont {Zhang}, Harry}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {The optimality of naive bayes}{The Optimality of Naive
+  Bayes}}, \btxprintmonthyear{.}{01}{2004}{long}.
 
 \bibitem {coelhoanalise}
 \btxnamefont {\btxlastnamefont {Coelho}, Vin{\'\i}cius\btxfnamespacelong
@@ -278,9 +266,14 @@
   educacional corporativo via minera{\c{c}}{\~a}o de dados educacionais}}.
 
 \bibitem {breiman2017classification}
-\btxnamefont {\btxlastnamefont {Breiman}, Leo}\btxauthorcolon\ \btxtitlefont
-  {Classification and regression trees}.
-\newblock \btxpublisherfont {Routledge}, 2017.
+\btxnamefont {\btxlastnamefont {{Breiman}}, Leo}, \btxnamefont
+  {J.\btxfnamespacelong H. \btxlastnamefont {{Friedman}}}, \btxnamefont
+  {R.\btxfnamespacelong A. \btxlastnamefont {{Olshen}}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {C.\btxfnamespacelong J. \btxlastnamefont
+  {{Stone}}}\btxauthorcolon\ \btxtitlefont {Classification and Regression
+  Trees}.
+\newblock Statistics/Probability Series. \btxpublisherfont {Wadsworth
+  Publishing Company}, Belmont, California, U.S.A., 1984.
 
 \bibitem {macqueen1967some}
 \btxnamefont {\btxlastnamefont {MacQueen}, James} \btxetalfont {\btxetalshort
@@ -336,6 +329,13 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Ijcai}, \btxvolumelong
   {}~\btxvolumefont {14}, \btxpageslong {}\ 1137--1145. Montreal, Canada, 1995.
 
+\bibitem {martin}
+\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
+  architecture for software defined networking}{AN INTRUSION DETECTION AND
+  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
+  \btxprintmonthyear{.}{04}{2014}{long}.
+
 \bibitem {liddy2001natural}
 \btxnamefont {\btxlastnamefont {Liddy}, Elizabeth\btxfnamespacelong
   D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Natural language
@@ -352,15 +352,14 @@
   Science and Technology}, 61(8):1612--1621, 2010.
 
 \bibitem {ferreirametodo}
-\btxnamefont {\btxlastnamefont {Ferreira}, Lohann\btxfnamespacelong
-  Paterno\btxfnamespacelong Coutinho}, \btxnamefont {Mariza\btxfnamespacelong
-  Miola \btxlastnamefont {Dosciatti}}\btxandcomma {} \btxandlong {}\
-  \btxnamefont {Emerson \btxlastnamefont {Cabrera}}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {Um m{\'e}todo para o pr{\'e}-processamento
-  de textos na identifica{\c{c}}{\~a}o autom{\'a}tica de emo{\c{c}}{\~o}es para
-  o portugu{\^e}s do brasil}{Um M{\'e}todo para o Pr{\'e}-Processamento de
-  Textos na Identifica{\c{c}}{\~a}o Autom{\'a}tica de Emo{\c{c}}{\~o}es para o
-  Portugu{\^e}s do Brasil}}.
+\btxnamefont {\btxlastnamefont {Ferreira}, Coutinho}, \btxnamefont {Mariza
+  \btxlastnamefont {Dosciatti}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Emerson \btxlastnamefont {Paraíso}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Um método para o pré-processamento de textos na
+  identificação automática de emoções para o português do brasil}{Um
+  Método para o Pré-Processamento de Textos na Identificação Automática de
+  Emoções para o Português do Brasil}},
+  \btxprintmonthyear{.}{10}{2013}{long}.
 
 \bibitem {mcnamee2004character}
 \btxnamefont {\btxlastnamefont {Mcnamee}, Paul} \btxandlong {}\ \btxnamefont
@@ -472,6 +471,15 @@
   2014\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {2090-4479}}}.
 \newblock {\latintext
   \btxurlfont{http://www.sciencedirect.com/science/article/pii/S2090447914000550}}.
+
+\bibitem {TSE}
+\btxnamefont {\btxlastnamefont
+  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
+  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
+\newblock {\latintext
+  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}},
+  Acessado em 28.10.2018.
 
 \bibitem {LavaJato}
 \btxnamefont {\btxlastnamefont {São~Paulo}, Folha~de}\btxauthorcolon\

@@ -8,9 +8,9 @@ expressivo, pois as pessoas podem trocar ideias e opiniões acerca de determinad
 o acesso de todos. Com o passar dos anos as redes sociais já fazem parte da vida de várias pessoas, e com isso as relações 
 interpessoais modificaram-se e esse mundo tem gerado muitos dados de fácil e livre acesso ~\cite{5194581}.
 
-Com as redes sociais é possível comunicar-se com pessoas de diversas nacionalidades e características, com
-a grande amplitude que essas alcançam, o volume de dados é algo imensurável e também é uma fonte de dados
-inesgotável. Com todo esse volume de informações, o ambiente torna-se atrativo para aplicar técnicas de aprendizado de
+Com as redes sociais é possível comunicar-se com pessoas de diversas nacionalidades e características, devido
+a grande amplitude que essa tem, o volume de dados gerados é algo imensurável. 
+Com todo esse volume de informações, o ambiente torna-se atrativo para aplicar técnicas de aprendizado de
 máquina e outros tipos de análises.
 \section{Motivação}
 
@@ -19,7 +19,7 @@ de forma livre nas redes sociais. E como as eleições em um evento muito import
 provenientes de redes sociais se tornam cada vez mais atrativos. O Brasil ocupa a 4\textsuperscript{\b{a}} no ranking de países com a quantidade de pessoas com acesso a internet~\cite{ILS}.
 
 Na Figura \ref{grafico_idioma} é possível visualizar que grande parte do conteúdo disponível na internet está em inglês, ou seja, é por esse motivo que
-existem dicionários léxicos para atividades de \acrshort{TM}, como é o caso do WordNet ~\cite{miller1995wordnet}, uma das maiores bases de dados do mundo para essa atividade. 
+existem dicionários léxicos para atividades de mineração de texto (\acrshort{TM}), como é o caso do WordNet ~\cite{miller1995wordnet}, uma das maiores bases de dados do mundo para essa atividade. 
 
 As pesquisas utilizando \acrshort{TM} com o idioma português ainda são recentes e poucos exploradas, pois a maioria das ferramentas são desenvolvidas para atender o idioma inglês. Mas a análise
 de sentimento em comentários de redes sociais, pode ser útil em diversas áreas como venda de um produto, avaliação de um estabelecimento, marketing e até mesmo realizar predições de eleições que é o objetivo desse trabalho.
@@ -42,14 +42,19 @@ os resultados. O OpLexicon ~\cite{souza} foi combinado com o Sentilex ~\cite{Neu
 uma biblioteca chamada TextBlob ~\cite{textblob} que é necessário  realizar a tradução para o inglês, o que acaba ocasionando um viés na etapa de processamento dos dados.
 \section{Objetivos}
 
-O objetivo desse trabalho é criar uma forma de predição e um ambiente que expresse a opinião dos usuários da rede social \textit{Twitter} aplicando em textos curtos técnicas de \acrshort{AM},
-o intuito principal desse trabalho é a utilização do framework proposto em textos que falam sobre políticos que estão concorrendo a cargos eletivos, mas com a inserção de outros textos na fase de treinamento do modelo de \acrshort{AM} é possível
+O objetivo desse trabalho é criar um \textit{framework} de predição e um ambiente que expresse a opinião dos usuários da rede social \textit{Twitter},
+aplicando em textos curtos técnicas de \acrshort{AM}.
+
+O intuito principal desse trabalho é a utilização do \textit{framework} proposto em textos,
+que falem sobre políticos que estão concorrendo a cargos eletivos, 
+mas com a inserção de outros gêneros textuais na fase de treinamento do modelo de \acrshort{AM} é possível
 ampliar as opções e realizar diversas análises para distintas áreas.
 
 
 \section{Trabalho Publicado}
 
-Durante o desenvolvimento desse trabalho de graduação, foi desenvolvido um artigo científico cujo o intuito era validar a ideia e verificar se apresentava
+Durante o desenvolvimento desse trabalho de graduação, foi desenvolvido um artigo científico cujo o intuito era validar o \textit{framework} desenvolvido
+e verificar se apresentava
 algum tipo de inovação, onde foi apresentado os primeiros resultados do trabalho. 
 
 O artigo publicado é entitulado \textit{Spatio-Temporal Trend Analysis of the Brazilian Elections based on Twitter Data} foi aceito em uma das maiores

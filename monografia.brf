@@ -4,7 +4,7 @@
 \backcite {song2014analyzing}{{1}{1}{chapter.1}}
 \backcite {5194581}{{1}{1}{chapter.1}}
 \backcite {ILS}{{1}{1.1}{section.1.1}}
-\backcite {miller1995wordnet}{{2}{1.1}{section.1.1}}
+\backcite {miller1995wordnet}{{1}{1.1}{section.1.1}}
 \backcite {w3techs}{{2}{1.1}{figure.1.1}}
 \backcite {Twitter}{{2}{1.2}{section.1.2}}
 \backcite {EBC}{{2}{1.2}{section.1.2}}
@@ -23,8 +23,8 @@
 \backcite {zurada1995review}{{6}{2.1.1}{subsection.2.1.1}}
 \backcite {mitchell}{{7}{2.1.1}{subsection.2.1.1}}
 \backcite {mitchell}{{7}{2.1.2.1}{subsubsection.2.1.2.1}}
-\backcite {chang2011libsvm}{{7}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
-\backcite {pedregosa2011scikit}{{7}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
+\backcite {chang2011libsvm}{{8}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
+\backcite {pedregosa2011scikit}{{8}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
 \backcite {pedregosa2011scikit}{{8}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
 \backcite {vieira2017plantrna_sniffer}{{9}{2.1.2.1.1}{paragraph.2.1.2.1.1}}
 \backcite {lorena2007introduccao}{{9}{2.1.2.1.1}{equation.2.1.1}}

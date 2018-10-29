@@ -1,9 +1,36 @@
-\UseRawInputEncoding
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2,
+  extendedchars=false,
+  inputencoding=utf8
+}
+
+
+\lstset{style=mystyle}
 
 \section{Código para limpeza dos dados}
 \label{cod:limpeza}
 
-\begin{python}
+\begin{lstlisting}[language=Python]
 import pandas as pd  
 import numpy as np
 from nltk.tokenize import WordPunctTokenizer
@@ -62,17 +89,17 @@ def removestopwords(texto):
     return frases
     
 dataset['text'] = removestopwords(dataset['text'])
-\end{python}
+\end{lstlisting}
 
 
 \section{Código para análise de sentimentos usando dicionário}
 \label{cod:analise}
 
-\begin{python}
+\begin{lstlisting}[language=Python]
 
 dicionario = open("dicionario.txt", 'r')
 
-# Criamos um dicionário para receber as informações
+
 dic_palavra_polaridade = {} 
 
 # Neste trecho atribuímos a cada palavra uma Polaridade
@@ -101,10 +128,12 @@ def Pontuação_sentimento(frase):
 
 frase = Pontuação_sentimento('Sua mãe é feliz')
 print(frase)
-\end{python}
+\end{lstlisting}
+
+
 \section{Código para extração da localização do usuário}
 \label{cod:geo}
-\begin{python}
+\begin{lstlisting}[language=Python]
     # coding: utf-8
     import pandas as pd  
     import tweepy
@@ -135,11 +164,11 @@ print(frase)
     entrada.to_csv(saida, sep=';', mode='a',index=False)
     
     
-    \end{python}
+\end{lstlisting}
 
 \section{Código para geração da séries temporais}
 \label{cod:time}
-\begin{python}
+\begin{lstlisting}[language=Python]
 import pandas as pd     # To handle data
 import numpy as np      # For number computing
 
@@ -200,4 +229,50 @@ plt.xlabel("Day")
 plt.legend()
 plt.grid(True)
 
-\end{python}
+\end{lstlisting}
+
+
+\section{Código para utilização do modelo de aprendizado de máquina persistivo}
+\label{cod:geo}
+\begin{lstlisting}[language=Python]
+import pandas as pd
+import numpy as np
+from sklearn.externals import joblib
+
+model = joblib.load('svm.pkl')
+
+bolsonaro = pd.read_csv('bolsonaro_use.csv',sep=';',encoding='utf-8')
+haddad = pd.read_csv('haddad_use.csv',sep=';',encoding='utf-8')
+
+
+bolsonaro['text'] = palavras
+palavras1 = []
+
+for index, row in bolsonaro.iterrows():
+    palavras1.append(' '.join(bolsonaro['text'][index].split()))
+
+bolsonaro['text'] = removestopwords(palavras1)
+bolsonaro['text'] = bolsonaro['text'].str.strip()
+
+sentiment = []
+for tweet in bolsonaro['text']:
+    sentiment.append(model.predict([tweet]))
+bolsonaro['sentiment'] = sentiment
+
+
+
+haddad['text'] =  removestopwords(palavras)
+palavras1 = []
+for index, row in haddad.iterrows():
+    palavras1.append(' '.join(haddad['text'][index].split()))
+
+haddad['text'] = palavras1
+haddad['text'] = haddad['text'].str.strip()
+
+sentiment = []
+for tweet in haddad['text']:
+    sentiment.append(model.predict([tweet]))
+haddad['sentiment'] = sentiment
+
+    
+\end{lstlisting}
