@@ -42,18 +42,18 @@
 \contentsline {section}{\numberline {4.2}Valida\IeC {\c c}\IeC {\~a}o Cruzada N-Fold}{28}{section.4.2}
 \contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o do erro utilizando o modelo}{30}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultado das Elei\IeC {\c c}\IeC {\~o}es}{30}{section.4.4}
-\contentsline {section}{\numberline {4.5}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{30}{section.4.5}
-\contentsline {section}{\numberline {4.6}Plataforma de An\IeC {\'a}lise de Sentimentos \textit {Online}}{32}{section.4.6}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{34}{section.5.1}
-\contentsline {chapter}{Refer\^encias}{35}{section*.10}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lise Espa\IeC {\c c}o-Temporal}{31}{section.4.5}
+\contentsline {section}{\numberline {4.6}Plataforma de An\IeC {\'a}lise de Sentimentos \textit {Online}}{33}{section.4.6}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{37}{chapter.5}
+\contentsline {chapter}{\numberline {6}Trabalhos Futuros}{39}{chapter.6}
+\contentsline {chapter}{Refer\^encias}{40}{section*.10}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {american}{}
 \babel@toc {brazil}{}
-\contentsline {chapter}{Ap\^endice}{39}{chapter*.11}
-\contentsline {chapter}{\numberline {A}}{40}{appendix.A}
-\contentsline {section}{\numberline {A.\textlinf {1}}Código para limpeza dos dados}{40}{section.A.1}
-\contentsline {section}{\numberline {A.\textlinf {2}}Código para análise de sentimentos usando dicionário}{41}{section.A.2}
-\contentsline {section}{\numberline {A.\textlinf {3}}Código para extração da localização do usuário}{42}{section.A.3}
-\contentsline {section}{\numberline {A.\textlinf {4}}Código para geração da séries temporais}{43}{section.A.4}
+\contentsline {chapter}{Ap\^endice}{44}{chapter*.11}
+\contentsline {chapter}{\numberline {A}}{45}{appendix.A}
+\contentsline {section}{\numberline {A.\textlinf {1}}Código para limpeza dos dados}{45}{section.A.1}
+\contentsline {section}{\numberline {A.\textlinf {2}}Código para análise de sentimentos usando dicionário}{46}{section.A.2}
+\contentsline {section}{\numberline {A.\textlinf {3}}Código para extração da localização do usuário}{47}{section.A.3}
+\contentsline {section}{\numberline {A.\textlinf {4}}Código para geração da séries temporais}{48}{section.A.4}

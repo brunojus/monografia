@@ -98,6 +98,22 @@ o melhor algoritmo para mineração de texto em português.
 
 \section{Avaliação do erro utilizando o modelo}
 
+Sabendo que o algoritmo \acrshort{SVM} apresentou os melhores resultados entre todos os classificadores utilizados, 
+ele foi utilizado para a avaliar o erro da análise de sentimento. O conjunto de dados de treinamento consiste
+de 3000 tweets que foram divididos em três grupos de
+1000 tweets cada, onde cada grupo apresenta uma determinada polaridade
+(positivo, neutro ou negativo). Como descrito na matriz de confusão da Figura \ref{confusion_teste}, o \textit{framework} classificou corretamente
+tweets positivos, negativos e neutros com taxas de 99,50%,
+86.90 \% e 70.60 \%, respectivamente. Neste caso, usamos o
+termos-chave "Aécio" e "Dilma", que se referem ao candidato
+nomes Aécio Neves e Dilma Rousseff.
+
+Confusion matrix for manual classification with SVM considering the
+key terms "Dilma" and "Aécio" and 3000 tweets in total
+
+\figuraBib{confusion_teste}{Matriz de confusão comparando a classificação manual com \acrshort{SVM} considerando os termos chaves Dilma e Aécio}{}{confusion_teste}{width=0.8\textwidth}%
+
+
 \section{Resultado das Eleições}
 
 Finalmente, nessa seção ocorre a comparação
@@ -138,7 +154,7 @@ Figura \ref{time_series} apresenta a quantidade de tweets classificados
 em três categorias para os candidatos Dilma Roussef e
 Aécio Neves.
 
-\figuraBib{time_series}{Série temporal utilizando os tweets classificados durante o segundo turno com suas polaridades}{}{time_series}{width=0.8\textwidth}%
+\figuraBib{time_series}{Série temporal utilizando os tweets classificados durante o segundo turno com suas polaridades}{}{time_series}{width=0.6\textwidth}%
 
 
 O segundo turno das eleições presidenciais de 2014, ocorreu no dia 26 de outubro. É possível visualizar na Figura \ref{time_series} que nesse dia
@@ -153,17 +169,86 @@ ter fechado um acordo de delação premiada com os procuradores da força tarefa
 
 
 A localização dos votos de cada seção eleitoral são disponibilizada pelo \acrshort{TSE}
-combinadas com o quantitativo de votos na Figura 6. As cores
+combinadas com o quantitativo de votos na Figura \ref{mapaTse}. As cores
 vermelha e azul representam, respectivamente, as regiões onde
 os candidatos Dilma Rousseff e Aécio Neves tiveram maior número de votos nas eleições presidenciais de 2014.
+
+\figuraBib{mapaTse}{Resultado das eleições presidencias de 2014 pelo \acrshort{TSE} ~\cite{TSE}}{}{mapaTse}{width=0.6\textwidth}%
+
 
 A idéia principal é comparar com um local extraído do \textit{twitter}
 conjuntamente com a análise de sentimentos.
 Utilizando a geolocalização extraída é possível gerar o mapa
 com a localização e o envio dos \textit{tweets} daquela região. Na
-Figura 7 é apresentada a distribuição da polaridade do tweet
-para a candidata Dilma Roussef para cada Estado, a cor
-verde significa um sentimento positivo, o laranja é neutro e
-o vermelho representa os \textit{tweets} negativos.
+Figura \ref{Prediction} é apresentada a distribuição da polaridade do tweet
+para cada candidato, a cor vermelha representa a candidata Dilma Roussef 
+e a cor azul representa o candidato Aécio Neves.
+
+
+\figuraBib{Prediction}{Predição da distribuição de votos utilizando o \textit{framework} desenvolvido}{}{Prediction}{width=0.6\textwidth}%
+
+
 
 \section{Plataforma de Análise de Sentimentos \textit{Online}}
+
+Como resultado desse trabalho foi desenvolvida uma interface online para classificação automática de novos textos
+extraídos de redes sociais. Na Figura \ref{tela_principal} é detalhada a tela principal que serve para que o usuário
+envie o arquivo extraído do \textit{twitter} para análise. Foi utilizado o modelo criado de forma persistiva do algoritmo 
+\acrshort{SVM}.
+
+
+\figuraBib{tela_principal}{Tela principal do protótipo de classificação automática de textos provenientes de redes sociais}{}{tela_principal}{width=0.8\textwidth}%
+
+
+Durante o dia do segundo turno das eleições presidenciais de 2018, foram extraídos textos que contivessem referências aos dois candidatos, Fernando Haddas
+e Jair Bolsonaro, a metodologia utilizada foi extrair dados a cada uma hora para agrupar um grande volume de dados para classificação. Nesse processo
+foram extraídos mais de 200,000 \textit{tweets} para cada candidato, o que totaliza mais de 400,000 linhas de informações. Na Figura \ref{frame_classificador} 
+apresenta as informações dos dados analisados.
+
+\figuraBib{frame_classificador}{Tela com o resultado das análises utilizando o modelo desenvolvido}{}{frame_classificador}{width=\textwidth}%
+
+A avaliação de cada sentimento no decorrer da eleição pode ser visualizada na Figura \ref{bolsonaro_haddad}, onde é possível ver a diferença 
+entre os dois candidatos no que diz respeito a polaridade positiva, podemos considerar palavras de cunho positivo como pessoas que votam 
+no candidato Bolsonaro e negativa pode-se entender como críticas dos eleitores de outros candidatos.
+
+\figuraBib{bolsonaro_haddad}{Evolução do sentimento referente a cada candidato ao longo do dia da votação}{}{bolsonaro_haddad}{width=0.8\textwidth}%
+
+A contabilização dessa análise pode ser vista na Tabela \ref{tb:bolso_haddad}, onde o resultado é favorável ao candidato Jair Bolsonaro.
+
+
+\begin{table}
+    \label{tb:bolso_haddad}
+    \centering
+    \caption{Classificação dos dados utilizando o modelo construído para o segundo turno das eleições presidenciais de 2018}
+   
+    \begin{tabular}{llll}
+    \hline
+              & Positivo & Neutro & Negativo \\ \hline
+    Bolsonaro  & 54.47\%  & 30.88\% & 14.63\%  \\ \hline
+    Haddad     & 41.38\%  & 42.95\% & 15.66\%  \\ \hline
+    \end{tabular}
+\end{table}
+
+
+Como as eleições brasileiras utilizam as urnas eletrônicas durante o processo eleitoral, é possível saber 
+quem ganhou, após a finalização da votação no último colégio eleitoral do Brasil, que é o estado do Acre. Na Tabela
+\ref{tb:tse2018} é o resultado oficial do \acrshort{TSE}.
+
+
+\begin{table}[tbp]
+    \centering
+    \caption{Distribuição dos resultados da eleição presidencial de 2018}
+    \label{tb:tse2018}
+    \begin{tabular}{ll}
+    \hline
+    Bolsonaro & 55,13\% \\ \hline
+    Haddad & 44,87\% \\ \hline
+    \end{tabular}
+\end{table}
+
+
+Ao comparar o resultado do \textit{framework} com o resultado oficial das eleições brasileira, é possível ver 
+que o resultado foi satisfatório. A utilização da geolocalização nessa etapa não ofereceu bons resultados, visto que
+a \acrshort{API} do \textit{Twitter} passou por várias atualizações e limitou as requisições para 5,000 por dia, impossibilitando 
+uma análise detalhada da localização de cada \textit{tweet} postado, outra limitação é que por se tratar de redes sociais, as pessoas
+não tem uma obrigação legal de inserir a sua localização exata.

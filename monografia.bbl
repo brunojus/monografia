@@ -28,6 +28,14 @@
   PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
   \btxprintmonthyear{.}{04}{2014}{long}.
 
+\bibitem {TSE}
+\btxnamefont {\btxlastnamefont
+  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
+  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
+\newblock {\latintext
+  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}}.
+
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -464,14 +472,6 @@
   2014\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {2090-4479}}}.
 \newblock {\latintext
   \btxurlfont{http://www.sciencedirect.com/science/article/pii/S2090447914000550}}.
-
-\bibitem {TSE}
-\btxnamefont {\btxlastnamefont
-  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
-  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
-\newblock {\latintext
-  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}}.
 
 \bibitem {LavaJato}
 \btxnamefont {\btxlastnamefont {São~Paulo}, Folha~de}\btxauthorcolon\

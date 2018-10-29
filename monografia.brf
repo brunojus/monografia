@@ -1,5 +1,6 @@
-\backcite {w3techs}{{ix}{(document)}{Doc-Start}}
-\backcite {martin}{{ix}{(document)}{Doc-Start}}
+\backcite {w3techs}{{x}{(document)}{Doc-Start}}
+\backcite {martin}{{x}{(document)}{Doc-Start}}
+\backcite {TSE}{{x}{(document)}{Doc-Start}}
 \backcite {song2014analyzing}{{1}{1}{chapter.1}}
 \backcite {5194581}{{1}{1}{chapter.1}}
 \backcite {ILS}{{1}{1.1}{section.1.1}}
@@ -67,4 +68,5 @@
 \backcite {lorena2007introduccao}{{26}{3.5}{section.3.5}}
 \backcite {medhat}{{28}{4.1}{section.4.1}}
 \backcite {TSE}{{30}{4.4}{section.4.4}}
-\backcite {LavaJato}{{31}{4.5}{figure.4.1}}
+\backcite {LavaJato}{{32}{4.5}{figure.4.2}}
+\backcite {TSE}{{33}{4.3}{figure.4.3}}
