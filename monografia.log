@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  29 OCT 2018 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  30 OCT 2018 08:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,42 +1002,42 @@ number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 4):  117.49832pt
 text indent by \l@... (toc, 4):  58.74916pt
-number indent by parent (toc, 4):  110.6413pt
+number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
-number indent calculated (toc, 4): 113.84406pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 4):  117.49832pt
 text indent by \l@... (toc, 4):  58.74916pt
-number indent by parent (toc, 4):  110.6413pt
+number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
-number indent calculated (toc, 4): 113.84406pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 4):  117.49832pt
 text indent by \l@... (toc, 4):  58.74916pt
-number indent by parent (toc, 4):  110.6413pt
+number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
-number indent calculated (toc, 4): 113.84406pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 4):  117.49832pt
 text indent by \l@... (toc, 4):  58.74916pt
-number indent by parent (toc, 4):  110.6413pt
+number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
-number indent calculated (toc, 4): 113.84406pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 4):  117.49832pt
 text indent by \l@... (toc, 4):  58.74916pt
-number indent by parent (toc, 4):  110.6413pt
+number indent by parent (toc, 4):  109.96054pt
 text indent calculated (toc, 4): 48.3058pt
-number indent calculated (toc, 4): 113.84406pt
+number indent calculated (toc, 4): 109.96054pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 2):  44.64938pt
 text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
@@ -1057,27 +1057,27 @@ number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 3):  82.24883pt
 text indent by \l@... (toc, 3):  48.17438pt
 number indent by parent (toc, 3):  70.79372pt
 text indent calculated (toc, 3): 39.16682pt
-number indent calculated (toc, 3): 71.47447pt
+number indent calculated (toc, 3): 70.79372pt
 number indent by \l@... (toc, 2):  44.64938pt
 text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  40.76587pt
@@ -1428,7 +1428,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
-<img/idioma.png, id=450, 630.85687pt x 367.3725pt>
+<img/idioma.png, id=452, 630.85687pt x 367.3725pt>
 File: img/idioma.png Graphic file (type png)
 <use img/idioma.png>
 Package pdftex.def Info: img/idioma.png  used on input line 28.
@@ -1490,7 +1490,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 35.
-<img/supervisionado.png, id=518, 770.88pt x 578.16pt>
+<img/supervisionado.png, id=520, 770.88pt x 578.16pt>
 File: img/supervisionado.png Graphic file (type png)
 <use img/supervisionado.png>
 Package pdftex.def Info: img/supervisionado.png  used on input line 44.
@@ -1500,7 +1500,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
  [7 <./img/supervisionado.png>]
-<img/supervisionado_predicao.png, id=528, 770.88pt x 578.16pt>
+<img/supervisionado_predicao.png, id=530, 770.88pt x 578.16pt>
 File: img/supervisionado_predicao.png Graphic file (type png)
 <use img/supervisionado_predicao.png>
 Package pdftex.def Info: img/supervisionado_predicao.png  used on input line 49
@@ -1513,7 +1513,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
  [8 <./img/supervisionado_predicao.png>]
-<img/SVM.png, id=546, 461.725pt x 320.19624pt>
+<img/SVM.png, id=548, 461.725pt x 320.19624pt>
 File: img/SVM.png Graphic file (type png)
 <use img/SVM.png>
 Package pdftex.def Info: img/SVM.png  used on input line 86.
@@ -1552,7 +1552,7 @@ Package babel Info: Redefining portuges shorthand "|
  [10]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
-<img/decision_tree.png, id=584, 770.88pt x 578.16pt>
+<img/decision_tree.png, id=586, 770.88pt x 578.16pt>
 File: img/decision_tree.png Graphic file (type png)
 <use img/decision_tree.png>
 Package pdftex.def Info: img/decision_tree.png  used on input line 186.
@@ -1591,7 +1591,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 251.
 [12]
-<img/unsupervised.png, id=611, 770.88pt x 578.16pt>
+<img/unsupervised.png, id=613, 770.88pt x 578.16pt>
 File: img/unsupervised.png Graphic file (type png)
 <use img/unsupervised.png>
 Package pdftex.def Info: img/unsupervised.png  used on input line 256.
@@ -1605,7 +1605,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 279.
  [13 <./img/unsupervised.png>]
-<img/reforco.png, id=626, 770.88pt x 578.16pt>
+<img/reforco.png, id=628, 770.88pt x 578.16pt>
 File: img/reforco.png Graphic file (type png)
 <use img/reforco.png>
 Package pdftex.def Info: img/reforco.png  used on input line 287.
@@ -1617,7 +1617,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 299.
  [14 <./img/reforco.png>]
-<img/confusion_matrix.png, id=640, 765.86125pt x 576.1525pt>
+<img/confusion_matrix.png, id=642, 765.86125pt x 576.1525pt>
 File: img/confusion_matrix.png Graphic file (type png)
 <use img/confusion_matrix.png>
 Package pdftex.def Info: img/confusion_matrix.png  used on input line 308.
@@ -1693,7 +1693,7 @@ Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 (./tex/3_Proposed_framework.tex
-<img/diagrama.png, id=712, 378.66469pt x 309.40594pt>
+<img/diagrama.png, id=714, 378.66469pt x 309.40594pt>
 File: img/diagrama.png Graphic file (type png)
 <use img/diagrama.png>
 Package pdftex.def Info: img/diagrama.png  used on input line 8.
@@ -1707,7 +1707,7 @@ Package babel Info: Redefining portuges shorthand "|
  [20
 
 ]
-<img/dataframe.png, id=722, 630.10406pt x 243.15843pt>
+<img/dataframe.png, id=724, 630.10406pt x 243.15843pt>
 File: img/dataframe.png Graphic file (type png)
 <use img/dataframe.png>
 Package pdftex.def Info: img/dataframe.png  used on input line 48.
@@ -1719,7 +1719,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 67.
  [21 <./img/diagrama.png (PNG copy)>]
-<limpeza.png, id=732, 458.46281pt x 389.20406pt>
+<limpeza.png, id=734, 458.46281pt x 389.20406pt>
 File: limpeza.png Graphic file (type png)
 <use limpeza.png>
 Package pdftex.def Info: limpeza.png  used on input line 69.
@@ -1748,12 +1748,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
  [24]
-<img/tweet.png, id=766, 361.35pt x 121.95563pt>
+<img/tweet.png, id=768, 361.35pt x 121.95563pt>
 File: img/tweet.png Graphic file (type png)
 <use img/tweet.png>
 Package pdftex.def Info: img/tweet.png  used on input line 217.
 (pdftex.def)             Requested size: 409.71692pt x 138.28088pt.
-<img/twitter_profile.png, id=768, 222.8325pt x 199.49532pt>
+<img/twitter_profile.png, id=770, 222.8325pt x 199.49532pt>
 File: img/twitter_profile.png Graphic file (type png)
 <use img/twitter_profile.png>
 Package pdftex.def Info: img/twitter_profile.png  used on input line 222.
@@ -1819,7 +1819,7 @@ Overfull \hbox (20.56413pt too wide) in paragraph at lines 111--113
 si-de-ring the key terms "Dilma"and
  []
 
-<img/confusion_teste.png, id=808, 256.70906pt x 221.32687pt>
+<img/confusion_teste.png, id=810, 256.70906pt x 221.32687pt>
 File: img/confusion_teste.png Graphic file (type png)
 <use img/confusion_teste.png>
 Package pdftex.def Info: img/confusion_teste.png  used on input line 114.
@@ -1833,7 +1833,7 @@ Package babel Info: Redefining portuges shorthand "|
 [30]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
-<img/time_series.png, id=818, 399.4925pt x 266.9975pt>
+<img/time_series.png, id=820, 399.4925pt x 266.9975pt>
 File: img/time_series.png Graphic file (type png)
 <use img/time_series.png>
 Package pdftex.def Info: img/time_series.png  used on input line 157.
@@ -1843,12 +1843,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 164.
  [31 <./img/confusion_teste.png>]
-<img/mapaTse.png, id=829, 319.1925pt x 364.36125pt>
+<img/mapaTse.png, id=832, 319.1925pt x 364.36125pt>
 File: img/mapaTse.png Graphic file (type png)
 <use img/mapaTse.png>
 Package pdftex.def Info: img/mapaTse.png  used on input line 176.
 (pdftex.def)             Requested size: 273.14923pt x 311.80452pt.
-<img/Prediction.png, id=833, 361.35pt x 331.99031pt>
+<img/Prediction.png, id=836, 361.35pt x 331.99031pt>
 File: img/Prediction.png Graphic file (type png)
 <use img/Prediction.png>
 Package pdftex.def Info: img/Prediction.png  used on input line 188.
@@ -1860,17 +1860,17 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
  [32 <./img/time_series.png>]
-<img/tela_principal.png, id=843, 647.41875pt x 379.4175pt>
+<img/tela_principal.png, id=845, 647.41875pt x 379.4175pt>
 File: img/tela_principal.png Graphic file (type png)
 <use img/tela_principal.png>
 Package pdftex.def Info: img/tela_principal.png  used on input line 200.
 (pdftex.def)             Requested size: 364.19667pt x 213.43918pt.
-<img/frame_classificador.png, id=845, 652.68843pt x 468.24937pt>
+<img/frame_classificador.png, id=847, 652.68843pt x 468.24937pt>
 File: img/frame_classificador.png Graphic file (type png)
 <use img/frame_classificador.png>
 Package pdftex.def Info: img/frame_classificador.png  used on input line 208.
 (pdftex.def)             Requested size: 455.24411pt x 326.61484pt.
-<img/bolsonaro_haddad.png, id=847, 548.0475pt x 266.9975pt>
+<img/bolsonaro_haddad.png, id=849, 548.0475pt x 266.9975pt>
 File: img/bolsonaro_haddad.png Graphic file (type png)
 <use img/bolsonaro_haddad.png>
 Package pdftex.def Info: img/bolsonaro_haddad.png  used on input line 214.
@@ -1941,86 +1941,116 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-! Misplaced alignment tab character &.
-<argument> ...ions population division, internet &
-                                                   mobile association of ind...
-l.48 
-     
-? 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 48.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 5161) in paragraph at lines 48--48
-[]\T1/lmr/m/n/12 Stats, In-ter-net Live: \T1/lmr/m/it/12 Elab-o-ra-tion of data
- by in-ter-na-tional telecom-mu-ni-ca-
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 48--48
-\T1/lmr/m/it/12 tion union (itu), united na-tions pop-u-la-tion di-vi-sion, in-
-ter-net  mo-bile as-so-
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 48--48
-\T1/lmr/m/it/12 ci-a-tion of in-dia (ia-mai), world bank.  []$\T1/lmtt/m/n/12 h
-ttp : / / www . internetlivestats . com /
- []
-
-
-Underfull \hbox (badness 4024) in paragraph at lines 78--78
-\T1/lmr/m/it/12 no brasil\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 http : / / agenci
-abrasil . ebc . com . br / economia / noticia / 2018-[]07 /
- []
-
-
-Underfull \hbox (badness 6412) in paragraph at lines 87--87
-[]\T1/lmr/m/n/12 País, El: \T1/lmr/m/it/12 Cam-bridge an-a-lyt-ica, em-presa pi
-vô no es-cân-dalo do face-book,
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 87--87
-\T1/lmr/m/it/12 é fechada\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / brasi
-l . elpais . com / brasil / 2018 / 05 / 02 / internacional /
- []
-
-[40
-
-
-] [41] [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []\T1/lmr/m/n/12 Eleitoral Tri-bunal Su-pe-rior: \T1/lmr/m/it/12 Es-tatís-ti-ca
 s Eleitorais: eleições an-te-ri-ores\T1/lmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []$\T1/lmtt/m/n/12 http : / / www . tse . jus . br / eleitor-[]e-[]eleicoes / e
 statisticas / eleicoes /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 \T1/lmtt/m/n/12 eleicoes-[]anteriores / estatisticas-[]eleitorais-[]anos-[]ante
 riores$[]\T1/lmr/m/n/12 , Aces-sado
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]\T1/lmr/m/n/12 IBGE: \T1/lmr/m/it/12 https://agenciadenoticias.ibge.gov.br/ag
+encia-noticias/2012-agencia-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/lmr/m/it/12 de-noticias/noticias/20077-nove-entre-dez-usuarios-de-internet-
+no-pais-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/lmr/m/it/12 utilizam-aplicativos-de-mensagens\T1/lmr/m/n/12 .  []$\T1/lmtt/
+m/n/12 https : / / agenciadenoticias . ibge .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/lmtt/m/n/12 gov . br / agencia-[]noticias / 2012-[]agencia-[]de-[]noticias 
+/ noticias /
+ []
+
+
+Overfull \hbox (90.69803pt too wide) in paragraph at lines 70--70
+\T1/lmtt/m/n/12 20077-[]nove-[]entre-[]dez-[]usuarios-[]de-[]internet-[]no-[]pa
+is-[]utilizam-[]aplicativos-[]de-[]mensagens$[]\T1/lmr/m/n/12 ,
+ []
+
+! Misplaced alignment tab character &.
+<argument> ...ions population division, internet &
+                                                   mobile association of ind...
+l.81 
+     
+? 
+
+Underfull \hbox (badness 5161) in paragraph at lines 81--81
+[]\T1/lmr/m/n/12 Stats, In-ter-net Live: \T1/lmr/m/it/12 Elab-o-ra-tion of data
+ by in-ter-na-tional telecom-mu-ni-ca-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 81--81
+\T1/lmr/m/it/12 tion union (itu), united na-tions pop-u-la-tion di-vi-sion, in-
+ter-net  mo-bile as-so-
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 81--81
+\T1/lmr/m/it/12 ci-a-tion of in-dia (ia-mai), world bank.  []$\T1/lmtt/m/n/12 h
+ttp : / / www . internetlivestats . com /
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 102--102
+\T1/lmr/m/it/12 no brasil\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 http : / / agenci
+abrasil . ebc . com . br / economia / noticia / 2018-[]07 /
+ []
+
+[40
+
+
+]
+Underfull \hbox (badness 6412) in paragraph at lines 111--111
+[]\T1/lmr/m/n/12 País, El: \T1/lmr/m/it/12 Cam-bridge an-a-lyt-ica, em-presa pi
+vô no es-cân-dalo do face-book,
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 111--111
+\T1/lmr/m/it/12 é fechada\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / brasi
+l . elpais . com / brasil / 2018 / 05 / 02 / internacional /
+ []
+
+[41] [42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
 []\T1/lmr/m/n/12 São Paulo, Folha de: \T1/lmr/m/it/12 En-tenda a op-er-ação lav
 a jato, da polí-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
 \T1/lmr/m/it/12 cia fed-eral\T1/lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / ww
 w1 . folha . uol . com . br / poder / 2014 / 11 /
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 491--491
+Underfull \hbox (badness 6001) in paragraph at lines 499--499
 \T1/lmtt/m/n/12 1548049-[]entenda-[]a-[]operacao-[]lava-[]jato-[]da-[]policia-[
 ]federal . shtmls$[]\T1/lmr/m/n/12 , Aces-
  []
@@ -2098,7 +2128,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
 (rerunfilecheck)             Checksum: A9F43B765B7A4F7077980419A213BA0C;4296.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: D0416CFA99A29C25D8EC31E9C97E03B6;3964.
+(rerunfilecheck)             Checksum: 946252209C76F4BE23EC52C01B1DECB6;4007.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2114,10 +2144,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  )
 (\end occurred when \iffalse on line 123 was incomplete) 
 Here is how much of TeX's memory you used:
- 18234 strings out of 492642
- 289093 string characters out of 6135566
- 768930 words of memory out of 5000000
- 21211 multiletter control sequences out of 15000+600000
+ 18239 strings out of 492642
+ 289147 string characters out of 6135566
+ 770276 words of memory out of 5000000
+ 21215 multiletter control sequences out of 15000+600000
  78421 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,12n,74p,1988b,1321s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2138,10 +2168,10 @@ ts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy
 8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (62 pages, 1291632 bytes).
+Output written on monografia.pdf (62 pages, 1292601 bytes).
 PDF statistics:
- 1407 PDF objects out of 1440 (max. 8388607)
- 1280 compressed objects within 13 object streams
- 457 named destinations out of 1000 (max. 500000)
+ 1417 PDF objects out of 1440 (max. 8388607)
+ 1290 compressed objects within 13 object streams
+ 458 named destinations out of 1000 (max. 500000)
  562 words of extra memory for PDF output out of 10000 (max. 10000000)
 

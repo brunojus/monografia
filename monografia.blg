@@ -7,76 +7,78 @@ Warning--entry type for "zhang2004optimality" isn't style-file defined
 --line 95 of file bibliografia.bib
 Warning--entry type for "TSE" isn't style-file defined
 --line 146 of file bibliografia.bib
+Warning--entry type for "notibge" isn't style-file defined
+--line 154 of file bibliografia.bib
 Warning--entry type for "LavaJato" isn't style-file defined
---line 153 of file bibliografia.bib
-Warning--entry type for "ILS" isn't style-file defined
 --line 160 of file bibliografia.bib
-I was expecting a `,' or a `}'---line 164 of file bibliografia.bib
+Warning--entry type for "ILS" isn't style-file defined
+--line 167 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 171 of file bibliografia.bib
  :  
  :  note = {Acessado em 20.10.2018}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "Twitter" isn't style-file defined
---line 167 of file bibliografia.bib
-Warning--entry type for "EBC" isn't style-file defined
 --line 174 of file bibliografia.bib
-Warning--entry type for "face" isn't style-file defined
+Warning--entry type for "EBC" isn't style-file defined
 --line 181 of file bibliografia.bib
-Warning--entry type for "w3techs" isn't style-file defined
+Warning--entry type for "face" isn't style-file defined
 --line 188 of file bibliografia.bib
+Warning--entry type for "w3techs" isn't style-file defined
+--line 195 of file bibliografia.bib
 Warning--entry type for "textblob" isn't style-file defined
---line 222 of file bibliografia.bib
+--line 229 of file bibliografia.bib
 Warning--entry type for "ferreirametodo" isn't style-file defined
---line 277 of file bibliografia.bib
+--line 284 of file bibliografia.bib
 Warning--entry type for "martin" isn't style-file defined
---line 338 of file bibliografia.bib
+--line 345 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Warning--empty language in song2014analyzing
+Warning--empty language in w3techs
 Warning--empty year in lorena2007introduccao
 Warning--empty journal in coelhoanalise
 Warning--empty year in coelhoanalise
 Warning--can't use both volume and number fields in macqueen1967some
 Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
-You've used 51 entries,
+You've used 52 entries,
             2465 wiz_defined-function locations,
-            892 strings with 15554 characters,
-and the built_in function-call counts, 16068 in all, are:
-= -- 1273
-> -- 451
+            895 strings with 15737 characters,
+and the built_in function-call counts, 16262 in all, are:
+= -- 1287
+> -- 455
 < -- 17
-+ -- 174
-- -- 123
-* -- 1804
-:= -- 1937
-add.period$ -- 111
-call.type$ -- 51
-change.case$ -- 48
++ -- 176
+- -- 124
+* -- 1819
+:= -- 1961
+add.period$ -- 113
+call.type$ -- 52
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 1009
-empty$ -- 1920
-format.name$ -- 348
-if$ -- 3680
+cite$ -- 59
+duplicate$ -- 1020
+empty$ -- 1951
+format.name$ -- 350
+if$ -- 3728
 int.to.chr$ -- 0
-int.to.str$ -- 51
+int.to.str$ -- 52
 missing$ -- 62
-newline$ -- 219
-num.names$ -- 52
-pop$ -- 341
+newline$ -- 223
+num.names$ -- 53
+pop$ -- 352
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 434
+skip$ -- 439
 stack$ -- 0
 substring$ -- 693
-swap$ -- 491
+swap$ -- 495
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 114
-width$ -- 53
-write$ -- 529
+while$ -- 115
+width$ -- 54
+write$ -- 538
 (There was 1 error message)
