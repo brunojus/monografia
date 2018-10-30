@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  30 OCT 2018 08:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.30)  30 OCT 2018 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2168,7 +2168,7 @@ ts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy
 8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (62 pages, 1292601 bytes).
+Output written on monografia.pdf (62 pages, 1292600 bytes).
 PDF statistics:
  1417 PDF objects out of 1440 (max. 8388607)
  1290 compressed objects within 13 object streams
