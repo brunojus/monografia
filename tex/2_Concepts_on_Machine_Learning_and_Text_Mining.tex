@@ -1,44 +1,44 @@
-Neste capítulo é feita uma introdução sobre o \acrshort{AM}, tema principal dessa monografia. E está dividido da seguinte
-maneira na seção 2.1 são apresentados os conceitos básicos para o entendimento inicial do tema. Na seção 2.2 são apresentados
-os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito de análise de sentimentos e a sua aplicação.
+O presente capítulo apresenta conceitos relacionados a Aprendizado de Máquina e Mineração de Texto, temas principais desta monografia. O capítulo
+está dividido da seguinte maneira. Na seção 2.1 são introduzidos os conceitos básicos para o entendimento inicial do tema. A seção 2.2 apresenta os 
+conceitos principais acerca de mineração de texto. Por fim, a seção 2.3 ilustra os conceitos de análise de sentimentos e sua aplicação.
+
 
 
 \section{Aprendizado de Máquina}
   \subsection{Conceitos Básicos}
 
-    Com o alto volume de informações geradas no dia a dia, a utilização de algoritmos que sejam capazes de identificar padrões tornam-se cada
-    vez mais necessários, pois em diversas empresas e órgãos do governo não são capazes de analisar todas as informações existentes ou entregar
+    Com o alto volume de informações geradas no dia a dia, torna-se cada vez mais necessária a utilização de algoritmos que sejam capazes de identificar padrões, pois  diversas empresas e órgãos do governo não são capazes de analisar todas as informações existentes ou entregar
     de maneira célere ~\cite{nasrabadi2007pattern}. 
     
-    Portanto para realizar esse tipo de atividade é necessário entender o problema existente e também ter um volume de dados razoável para realizar o treinamento do modelo, e com a técnica de \acrshort{AM} é possível automatizar a construção
-    de sistemas inteligentes que podem ser ajustados de acordo com a necessidade de cada tarefa ~\cite{bonaccorso2017machine}.
+  Portanto, para realizar esse tipo de atividade, é necessário entender o problema existente e ter um volume de dados razoável para realizar o treinamento do modelo. Com
+a técnica de AM é possível automatizar a construção de sistemas inteligentes que podem
+ser ajustados de acordo com a necessidade de cada tarefa ~\cite{bonaccorso2017machine}.
 
-    Em outras palavras o \acrshort{AM} é um conjunto de regras, que possibilitam uma máquina a tomar decisões baseadas em experiências passadas ao invés
-    de um software que teve que ser definido anteriormente como tratar cada tipo de regra, também existe a possibilidade desses modelos serem desenvolvidos
-    e melhorarem quando expostos a novos dados ~\cite{zurada1995review}.
 
+Em outras palavras, \acrshort{AM} é um conjunto de regras que possibilitam a uma máquina tomar decisões baseadas em experiências anteriores, diferentemente de um software, 
+o qual é previamente definido para tratar cada tipo de regra. Além disso, modelos de AM podem ser aperfeiçoados e apresentar melhor desempenho quando expostos a novos dados ~\cite{zurada1995review}.
 
     O conceito de \acrshort{AM} pode ser sintetizado como a capacidade de um programa de computador aprender com a experiencia (E) relacionada a alguma 
     classe de tarefas (T), baseada em uma medida de desempenho (P). Dessa forma, o desempenho em tarefas (T), quando medido por (P), melhora com a 
-    experiencia em (E) ~\cite{mitchell}
+    experiencia em (E) ~\cite{mitchell}.
 
-    Essas técnicas tem sido utilizadas amplamente para resolução de diversos problemas, atualmente o assunto está em alta e existem diversas oportunidade
-    para colocar em prática a matemática que foi desenvolvida para a criação desses algoritmos. Gigantes da indústria tem investido severamente para
-    o desenvolvimento de novas tecnologias, como os veículos autônomos, robôs advogados, veículos não tripulados e na identificação de doenças.
+Essas técnicas têm sido amplamente utilizadas para a resolução de diversos problemas. Atualmente, o assunto está em alta e existem diversas oportunidades para colocar em prática a matemática desenvolvida para a criação desses algoritmos. Gigantes da indústria têm investido severamente para o desenvolvimento de novas tecnologias, como os veículos autônomos, robôs advogados, veículos não tripulados e na identificação de doenças.
 
-    Existem distintos paradigmas para ensinar uma máquina, esse trabalho irá focar apenas nos tipos de \acrshort{AM} que estão sendo utilizados no desenvolvimento do framework,
-    portanto não será abordados temas como aprendizado estatístico ou redes bayesianas.
+Existem distintos paradigmas utilizados para o ensinamento de máquinas. 
+Entretanto, este trabalho focará apenas nos algoritmos de \acrshort{AM} utilizados no desenvolvimento do \textit{framework}, ou seja, 
+não serão abordados temas como aprendizado estatístico ou redes bayesianas.
 
   \subsection{Paradigmas de Aprendizado de Máquina}
 
 
     \subsubsection{Aprendizado Supervisionado}
 
-      O aprendizado supervisionado é uma das formas em ensinar uma tarefa para a máquina, onde existe uma entrada e uma saída desejada que já foi 
-      anteriormente rotulada, esse processo pode ser feito de forma manual ou utilizar de dicionários, quando a informação de entrada é um texto.
-      Tendo os dados detalhados a máquina é capaz de classificar novas entradas a partir de experiências antigas ~\cite{mitchell}. Na Figura \ref{supervisionado} é possível visualizar 
-      a forma que é realizada etapa de treinamento do modelo, onde é fornecida uma informação, juntamente com o que ela significa, pois esse tipo de aprendizado 
-      é necessário rotular todas as informações que serão utilizadas para que a máquina consiga distinguir o que é gato e o que é cachorro.
+      O aprendizado supervisionado é uma das formas de ensinar uma tarefa para a máquina, onde existe uma entrada e uma saída desejada que já foi 
+      anteriormente rotuladas. Esse processo pode ser feito de forma manual ou por meio de dicionários, quando a informação de entrada é um texto.
+      Com os dados detalhados, a máquina é capaz de classificar novas entradas a partir de experiências antigas ~\cite{mitchell}. Na Figura \ref{supervisionado}  está ilustrada
+       a etapa de treinamento do modelo. No aprendizado supervisionado, todos os dados de entrada do modelo devem ser rotuladas. 
+       No exemplo, são fornecidos três dados ao modelo, sendo dois rotulados como "cão" e um rotulado como "gato". Tendo por base as 
+       características ou \textit{features} de cada dado de entrada, o modelo passa por uma fase de treinamento.
       
 
       \figuraBib{supervisionado}{Treinamento de um modelo de aprenzidado de máquina supervisionado}{}{supervisionado}{width=.6\textwidth}%
@@ -46,50 +46,51 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
       Na Figura \ref{supervisionado_predicao} é possível visualizar o modelo preditivo em funcionamento, onde o usuário fornece uma informação de entrada
       e o sistema o responde com a classe que foi identificada através da entrada.
 
+      Após o treinamento descrito na Figura \ref{supervisionado}, o modelo é capaz de prever se um dado de entrada não rotulado pode ser classificada como "cão" ou "gato". 
+      Na Figura \ref{supervisionado_predicao} é possível visualizar o modelo preditivo em funcionamento, onde o usuário fornece um dado de entrada não rotulado e o sistema responde 
+      com a classe que foi identificada.
+
       \figuraBib{supervisionado_predicao}{Utilização do modelo para realizar predição a partir de classes previamente treinadas}{}{supervisionado_predicao}{width=.6\textwidth}%
 
 
-      Algum dos algoritmos mais utilizados para esse paradigma serão detalhados durante essa subseção.
+      Os algoritmos mais utilizados no aprendizado supervisionado serão detalhados a seguir.
 
       \paragraph{SVM}
       \label{par:svm}
 
-        A máquina de vetor de suportes, do inglês support vector machine (\acrshort{SVM}), faz parte do aprendizado supervisionado, com ele é possível
-        classificar grupos de dados separando as suas margens. Essas margens são delineadas pela fração dos dados de treinamento, são chamadas de vetores de suporte ~\cite{chang2011libsvm}.
+        A máquina de vetor de suportes, do inglês Support Vector Machine (\acrshort{SVM}), faz parte do aprendizado supervisionado, e permite
+        classificar grupos de dados separando as suas margens. Essas margens são delineadas pela fração dos dados de treinamento, sendo chamadas de vetores de suporte ~\cite{chang2011libsvm}.
 
         As vantagens de utilizar \acrshort{SVM} são ~\cite{pedregosa2011scikit}:
 
         \begin{itemize}
 
           \item Efetivos em espaços multidimensionais
-          \item Continua eficaz em casos onde o número de dimensões é maior que o número de amostras.
-          \item Utiliza os vetores de suporte, que otimiza o uso de memória do computador.
+          \item Eficaz em casos onde o número de dimensões é maior que o número de amostras.
+          \item Utiliza os vetores de suporte, o que otimiza o uso de memória do computador.
           \item É possível utilizar diversos kernels para a função de decisão.
 
         \end{itemize}
 
         Como desvantagens, temos ~\cite{pedregosa2011scikit}:
 
-        As disvantagens do \acrshort{SVM}:
-
         \begin{itemize}
 
-          \item Se o número de entradas for muito maior que o número de amostras, pois existe a possibilidade de overfitting.
+          \item Se o número de entradas for muito maior que o número de amostras, existe a possibilidade de overfitting.
 
         \end{itemize}
         
         O \acrshort{SVM} é construido em um hiper-plano ou em vários hiper-planos em um espaço de infinitas dimensões, que podem ser
-        usadas classificação ou regressão. Na Figura \ref{SVM} é detalhado um hiper-plano que mostra uma boa separação das variáveis
-        que possui a maior distância até os pontos dos dados de treinamento mais próximos de qualquer classe, pois é conhecido no \acrshort{SVM}
-        que quanto maior for a margem, menor será o erro do classificador~\cite{vieira2017plantrna_sniffer}. 
+        usadas para classificação ou regressão. Na Figura \ref{SVM} é detalhado um hiper-plano que mostra uma boa separação das variáveis, possuindo a maior distância 
+        até os pontos dos dados de treinamento mais próximos de qualquer classe. No \acrshort{SVM}, quanto maior a margem de separação, 
+        menor será o erro do classificador~\cite{vieira2017plantrna_sniffer}. 
         
         \figuraBib{SVM}{Exemplo de vetores de suporte com dimensão 2}{}{SVM}{width=.6\textwidth}%
 
-        Nesse trabalho foi utilizado esse algoritmo para classificar dados multi-classes, pois foi utilizadas três classes distintas, para
-        desenvolvimento do modelo: Positivo, Negativo e Neutro. 
+        Neste trabalho, o SVM foi utilizado para classificar dados multi-classes, visto que foram consideradas três classes distintas durante o desenvolvimento do modelo: Positivo, Negativo e Neutro.
         
-        Tendo como os dados de treinamento $x_{i} \in \mathbb{R}^{p}$, onde i$=$1,\cdots, n. Onde $ y \in \left \{ 1,-1 \right \}^{n}$, na Equação \ref{eq:SVM} é
-        possível visualizar a solução matemática para esse algoritmo.
+        Tendo como os dados de treinamento $x_{i} \in \mathbb{R}^{p}$, onde $i = 1,...,n$. Onde $y \in {1,-1}^n$, na Equação \ref{eq:SVM} é
+        possível visualizar a solução matemática para esse algoritmo:
 
         \begin{equation}\label{eq:SVM}
           \begin{aligned}
@@ -99,22 +100,21 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         \end{aligned}
         \end{equation}
 
-        A partir do espaço de Hilbert, temos que o dual de um espaço de Hilbert é um espaço de Hilbert ~\cite{lorena2007introduccao}, 
-        
-        na Equação \ref{eq:svmdual}, temos:
+        Considerando que o dual de um espaço de Hilbert também é um espaço de Hilbert ~\cite{lorena2007introduccao}, tem-se que:
+
 
         \begin{equation}\label{eq:svmdual}
           \begin{aligned}
             & \min_{\alpha} \frac{1}{2}\alpha^{T}Q\alpha - e^{T}\alpha\\ \\
-            & \textup{sujeito } a y^{T}\alpha = 0 \\ \\
+            & \textup{sujeito a }  y^{T}\alpha = 0 \\ \\
             & 0\leq \alpha_{i}\leq C, i= 1\cdots, n 
         \end{aligned}
         \end{equation}
 
-        onde $e$ é o vetor com todos os valores, $C>0$ é o limite superior, $Q$ é uma matriz semidefinida positiva de tamanho n por n,
-        $Q_{ij}\equiv y_{i}y_{j}K(x_{i},x_{j})$, onde $K(x_{i},x_{j}) = \phi(x_{i})^{T}\phi(x_{j})$ é a função kernel do \acrshort{SVM}. Onde os 
+        onde \textbf{e} é o vetor com todos os valores, $C>0$ é o limite superior, $Q$ é uma matriz semidefinida positiva de tamanho n por n,
+        $Q_{ij}\equiv y_{i}y_{j}K(x_{i},x_{j})$, onde $K(x_{i},x_{j}) = \phi(x_{i})^{T}\phi(x_{j})$ é a função kernel do \acrshort{SVM}. Os 
         vetores de treinamento são definidos em um espaço dimensional maior pela função $\phi$.
-         E por fim na Equação \ref{eq:predSVM}, temos a função de decisão:
+        Por fim na Equação \ref{eq:predSVM}, temos a função de decisão:
 
          \begin{equation}\label{eq:predSVM}
           \begin{aligned}
@@ -128,9 +128,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
         \paragraph{Naive Bayes}
 
-        O Naive Bayes é um outro algoritmo \acrshort{AM} supervisionado, a sua formulação matemática é sustentada pelo teorema estatístico de
-        Bayes com um pouco de ingenuidade, pois assume-se que a suposição de independência condicional entre cada par de recursos, dado o valor da
-        variável de classe ~\cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
+        O Naive Bayes é outro exemplo de algoritmo de \acrshort{AM} supervisionado. Sua formulação matemática é sustentada pelo teorema estatístico de Bayes e assume-se a independência condicional entre cada par de recursos, dado o valor da variável de classe ~\cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
         \ref{eq:Bayes}
 
         \begin{equation}\label{eq:Bayes}
@@ -170,16 +168,19 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
 
         O classificador Naive Bayes pode ser extremamente rápido em comparação a outros algoritmos mais sofisticados, pois existe o desacoplamento
-        das distribuições de características condicionais de classe que significa que cada uma pode ser estimada independentemente com uma distribuição unidimensional~\cite{zhang2004optimality}.
+        das distribuições de características condicionais de classe. Deste modo, cada uma pode ser estimada independentemente
+         com uma distribuição unidimensional~\cite{zhang2004optimality}.
 
 
         \paragraph{Árvores de Decisão}
 
           A árvore de decisão funciona quando as classes presentes no conjunto de dados de treinamento se dividem, ou seja, esse algoritmo seleciona
-          um problema mais complexo e divide em subproblemas mais simples e de forma recursiva a mesma estratégia é a aplicada a cada subproblema ~\cite{coelhoanalise}.
+          um problema mais complexo e divide em subproblemas mais simples e, de forma recursiva a mesma estratégia é a aplicada a cada subproblema ~\cite{coelhoanalise}.
 
-
-          Na Figura \ref{decisionTree}, é um exemplo de como uma árvore de decisão poderia realizar uma análise de crédito de forma rápida. 
+          A Figura ~\ref{decisionTree} ilustra um exemplo de como uma árvore de decisão poderia ser utilizada para realizar análise de crédito de um cliente que deseja contrair empréstimo financeiro
+           em um banco. O primeiro fator verificado é o salário do cliente. Caso o salário seja superior a R$ 20.000,00, o empréstimo é concedido; 
+          caso contrário, um segundo fator é analisado: grau de escolaridade. O empréstimo é concedido apenas se o cliente possui como escolaridade mínima graduação
+           em nível universitário.
 
 
           \figuraBib{decision_tree}{Árvore de decisão para análise de crédito de um cliente que deseja empréstimo alto no banco, levando em consideração 
@@ -190,7 +191,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           a árvore de decisão divide recursivamente o espaço de forma que as amostras com os mesmos rótulos sejam agrupadas~\cite{breiman2017classification}.
 
           Considerando os dados no nó $m$ que pode ser representado pela letra $Q$. Para cada candidato é dividido $\theta = (j,t_{m})$ consistindo 
-          a entrada como $j$ e o \textit{threshold} $t_{m}$, dividindo os dados entre $Q_{left}(\theta)$ e $Q_{right}(\theta)$ e esses subconjuntos pode ser vistos na
+          a entrada como $j$ e o \textit{threshold} $t_{m}$, dividindo os dados entre $Q_{left}(\theta)$ e $Q_{right}(\theta)$ e esses subconjuntos podem ser vistos na
           Equação \ref{eq:DT}
 
 
@@ -202,7 +203,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
           \end{equation}
 
 
-          A impureza no nó apresentado é calculada utilizando uma função de impureza denotada de $K()$, que pode ser escolhida dependendo se o 
+          A impureza no nó apresentado é calculada utilizando uma função de impureza denotada por $K()$, que pode ser escolhida dependendo se o 
           problema for de classificação ou regressão. Na Equação \ref{eq:DT2} é calculada essa impureza:
 
           \begin{equation}\label{eq:DT2}
@@ -227,7 +228,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         \label{par:reglog}
 
           Apesar do nome, é um modelo de classificação linear e não de regressão como sugere o seu nome. Neste modelo, os dados
-          são descritos, através de um único teste e são modeladas a partir de uma função logística ~\cite{nasrabadi2007pattern}.
+          são descritos através de um único teste e são modelados a partir de uma função logística ~\cite{nasrabadi2007pattern}.
 
           Seja a probabilidade P(X), na Equação \ref{eq:LogReg1}
 
@@ -244,21 +245,19 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
     \subsubsection{Aprendizado não-supervisionado}
 
           Nesse tipo de aprendizado não existe a necessidade de um vetor contendo os rótulos de cada medida, ou seja, não é 
-          necessário avisar a máquina o tipo de cada dado. A essa não inserção de rótulos faz com que o algoritmo aprenda de acordo 
-          com as características dos dados de entrada. Esse tipo de paradigma não tem certos benefícios que existem  no aprendizado supervisionado, 
-          para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada ~\cite{bonaccorso2017machine}. Esse tipo de algoritmo 
+          necessário informar à máquina o tipo de cada dado. Essa não inserção de rótulos faz com que o algoritmo aprenda de acordo 
+          com as características dos dados de entrada. Esse tipo de paradigma não tem certos benefícios que existem  no aprendizado supervisionado. 
+          Para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada ~\cite{bonaccorso2017machine}. Esse tipo de algoritmo 
           é muito interessante em base de dados que ainda não foram exploradas e que necessita-se visualizar os dados agrupados.
 
-          A Figura \ref{unsupervised} é ilustrado o exemplo que foi exposto ao falar sobre aprendizado supervisionado, mas agora levando em consideração o 
-          não-supervisionado. E é possível ver que o modelo foi capaz de agrupar as características semelhantes que os cachorros têm e agrupá-los em um
-          único cluster e também foi formado um outro cluster contendo apenas o gato, pois não tem características semelhantes aos cães.
+          A Figura \ref{unsupervised} ilustra um exemplo do funcionamento do algoritmo não supervisionado. São fornecidos quatro dados ao modelo, sendo três com características de cães e um com características de gato. O modelo verifica os dados de entrada e forma dois clusters, sendo um referente aos cães e outro relativo ao gato. Desse modo, o modelo é capaz de agrupar em um único cluster dados de entrada que possuem características semelhantes, independentemente de rótulos.
 
           \figuraBib{unsupervised}{Treinamento de um modelo de aprendizado de máquina não-supervisionado}{}{unsupervised}{width=0.6\textwidth}%
 
           \paragraph{K-means}
           O algoritmo mais utilizado no aprendizado não-supervisionado é o \textit{k-means}, pois a sua implementação é muito simples, pois basta comprovar
           o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência ~\cite{macqueen1967some}. Na 
-          Equação \ref{kmeans} é possível visualizar como é realizada a seleção de clusters através do número de amostras $X$, descrito pela média $\mu_{j}$ de 
+          Equação \ref{kmeans} é possível visualizar como é realizada a seleção de clusters através do número de amostras $X = {x_1,x_2,...,x_n} $, descrito pela média $\mu_{j}$ de 
           cada amostra nos clusters. 
 
           \begin{equation}\label{kmeans}
@@ -271,57 +270,52 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
     \subsubsection{Aprendizado por reforço}
 
-          O último paradigma é baseado na forma em que o modelo reage de acordo com o que o ambiente passa para ele, é possível aprender
-          continuamente. Esse aprendizado é realizado através das ações que são executadas, caso seja a decisão correta o modelo ganha uma recompensa, caso
-          contrário pode ser imposta algum tipo de penalidade ~\cite{zurada}. Esse paradigma de aprendizado é necessário ajustar os parâmetros de forma
+          O último paradigma, conhecido como aprendizado por reforço, baseia-se na forma com a qual o modelo reage de acordo com os dados passados a ele pelo ambiente, ou seja, o modelo aprende continuamente. 
+          Esse aprendizado é realizado através das ações que são executadas; caso seja a decisão correta, o modelo ganha uma recompensa, caso
+          contrário pode ser imposta algum tipo de penalidade ~\cite{zurada}. Nesse paradigma de aprendizado é necessário ajustar os parâmetros de forma
           contínua com o intuito de maximar ou minimizar um determinado índice, e sempre há um "treinador" nessa fase verificando se os estímulos proporcionados
-          estão tendo a saída correta, pois caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo ~\cite{mazurowski2008training}.
+          estão tendo a saída correta. Caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo ~\cite{mazurowski2008training}.
 
 
-          Na aprendizagem por reforço, o modelo só aprende com uma série de estímulos, que podem ser recompensas ou punições no decorrer da aprendizagem, 
-          um exemplo do mundo real seria, avaliar um motorista com nota baixa em um aplicativo de locomoção urbana, nesse caso ele irá saber que existiu
-          alguma condunta ruim. Um caso em que recebe um estímulo positivo pode ser dar um biscoito a um cachorro após fazer de forma correta o que foi pedido.
+          Na aprendizagem por reforço, o modelo só aprende com uma série de estímulos, que podem ser recompensas ou punições no decorrer da aprendizagem. No mundo real, por exemplo, um estímulo negativo seria um cliente avaliar um motorista com nota baixa em um aplicativo de locomoção urbana, de modo que o mesmo saiba que realizou alguma conduta inadequada durante a viagem. Por outro lado, um exemplo de estímulo positivo seria um adestrador dar ao seu cão um biscoito após o mesmo realizar de forma correta algo que lhe foi solicitado.
 
-          Na Figura \ref{reforco} é possível ver um fluxograma de treinamento de um modelo utilizando o reforço.
+          Na Figura \ref{reforco} é possível ver um fluxograma de treinamento de um modelo utilizando o aprendizado por reforço.
 
           \figuraBib{reforco}{Fluxograma de treinamento de um modelo de aprendizado de máquina por reforço}{}{reforco}{width=0.6\textwidth}%
 
   \subsection{Medidas de avaliação}
-          Ao utilizar um modelo \acrshort{AM} é necessário que existam parâmetros para demonstrar se o modelo está correto ou não. Pois existem 
-          possibilidade do modelo ter um \textit{overfitting} que é quando o modelo se ajusta perfeitamente ao conjunto de dados de teste, mas não é capaz
-          de prever novos resultados, já no \textit{underfitting} é quando não há dados suficientes ou com baixa qualidade e não é possível treinar o modelo 
-          da maneira correta ~\cite{van2010process}.
+          Ao utilizar um modelo \acrshort{AM} é necessário que existam parâmetros para demonstrar se o modelo está correto ou não. Existe a possibilidade de o modelo apresentar
+           um \textit{overfitting}, ou seja, quando o modelo se ajusta perfeitamente ao conjunto de dados de teste, mas não é capaz de prever novos resultados. 
+           Por outro lado, o modelo apresenta um \textit{underfitting} quando não há dados suficientes ou os dados possuem baixa qualidade, não sendo possível realizar o 
+           seu treinamento de maneira correta. ~\cite{van2010process}.
           
-          Na validação cruzada, os dados são dividos de forma aleatória em $n$ grupos de tamanho aproximadamente iguais. E este processo 
-          é realizado por várias vezes, e em cada rodada do teste é considerado um novo valor. O seu desempenho é calculado a partir da média
-          dos desempenhos calculados em cada uma das divisões, o número que $n$ pode assumir é variável, depende da situação, os valores
-          mais utilizados são $5$ e $10$~\cite{kohavi1995study}
+          Na validação cruzada, os dados são divididos de forma aleatória em $n$ grupos de tamanho aproximadamente iguais. Este processo é realizado várias vezes, sendo que, a cada rodada do teste, considera-se um valor diferente para n. O desempenho final do algoritmo é calculado a partir da média dos desempenhos calculados em cada uma das divisões. O valor assumido por $n$ é variável, sendo os mais comuns são $5$ e $10$~\cite{kohavi1995study}
 
 
           A matriz de confusão é outra forma de verificar a qualidade do modelo, pois ela fornece métricas importantes 
-          para medir o desempenho. Essa é baseada em classes relacionadas à assertividade da previsão das classes. Os positivos verdadeiros (VP) e verdadeiros negativos (VN)
-          que são os valores corretos que o sistema previu de forma correta, e também existe outras duas medidas que são os falsos negativos (FN) e falsos positivos (FP) que são 
-          as entradas que foram classificadas de forma errada e tiveram sua saída trocada ~\cite{martin}. Na Figura \ref{confusion_matrix} é possível visualizar
+          para avaliar o desempenho. Essa métrica é baseada em classes relacionadas à assertividade da previsão das classes. Os verdadeiros positivos  (VP) e verdadeiros negativos (VN)
+          são os valores que o sistema previu de forma correta, enquanto que os falsos negativos (FN) e falsos positivos (FP)  são 
+          as entradas que foram classificadas de forma errada e tiveram suas saídas invertidas ~\cite{martin}. Na Figura \ref{confusion_matrix} é possível visualizar
           as classes de uma matriz de confusão.
 
 
           \figuraBib{confusion_matrix}{Matriz de confusão ~\cite{martin}}{}{confusion_matrix}{width=0.6\textwidth}%
 
 
-          Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo, 
-          na Equação \ref{acuracia} é calculada a acurácia do modelo, na Equação \ref{precision} é calculada a precisão do modelo, na Equação \ref{recall} é
-          calculada a frequência que o modelo encontra os exemplos de uma determinada classe e por fim na Equação \ref{f1score}, temos o F1-score que é uma métrica
-          que indica a qualidade geral do modelo.
+          Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo. As Equações 2.13, 2,15, 2,15 e 2.16 apresentam os cálculos das métricas Accuracy, Precision, Recall e F1-Score, respectivamente. 
+          Accuracy ilustra basicamente o percentual de acertos do modelo. A métrica Precision, por sua vez, reflete quantos dados são verdadeiramente corretos 
+          dentre todos aqueles classificados como corretos pelo modelo. O Recall, por outro lado, mostra quantos dados são verdadeiramente corretos
+           dentre todos os dados verdadeiramente positivos. Por fim, o F1-Score combina as métricas Precision e Recall, gerando um número único que indica a qualidade geral do modelo.
 
           \begin{equation}\label{acuracia}
             \begin{aligned}
-              \textup{Acurácia} = \frac{VP+VN}{VP+VN+FP+FN}
+              \textup{Accuracy} = \frac{VP+VN}{VP+VN+FP+FN}
           \end{aligned} 
           \end{equation}
 
           \begin{equation}\label{precision}
             \begin{aligned}
-              \textup{Precisão} = \frac{VP}{VP+VN+FP+FN}
+              \textup{Precision} = \frac{VP}{VP+FP}
           \end{aligned} 
           \end{equation}
 
@@ -334,7 +328,7 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
           \begin{equation}\label{f1score}
             \begin{aligned}
-              \textup{F$1$-Score} = \frac{2*\textup{Precisão}*\textup{Recall}}{\textup{Precisão}+\textup{Recall}}
+              \textup{F$1$-Score} = \frac{2*\textup{Precision}*\textup{Recall}}{\textup{Precision}+\textup{Recall}}
           \end{aligned} 
           \end{equation}
 
@@ -344,46 +338,42 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
         de descobrir padrões em textos, que vão desde identificar palavras até mesmo sumarizar o texto ou realizar análise de sentimentos
         de determinada informação. A sua análise tenta recolher o maior número de informações possíveis para encontrar padrões úteis e também 
         pode ser utilizada juntamente com algoritmos de \acrshort{AM}. Os textos geralmente são mais difíceis de obter análises, pois em grande
-        parte não são apresentados de forma estruturada, portanto para que o resultado seja satisfatório é necessário uma etapa de pré-processamento
-        dos dados, para que de alguma forma seja possível estruturar o texto.
+        parte não são apresentados de forma estruturada. Portanto para que o resultado seja satisfatório é necessário uma etapa de pré-processamento
+        dos dados, de modo que seja possível estruturar o texto.
 
-            O corpus é o conjunto de frases que foram rotulados com a sua saída que será utilizada em um modelo de \acrshort{AM}, ou seja ele é 
+            Corpus é o conjunto de frases que foram rotuladas com a sua saída que será utilizada em um modelo de \acrshort{AM}, ou seja, ele é 
         a base de dados que contém todos os textos disponíveis de forma rotulada.
 
   \subsection{Processamento de Linguagem Natural}
 
-          O \acrshort{PLN} é uma área de pesquisa que preocupa-se em explorar como um computador pode entender um texto escrito por humanos, com esse tipo 
+          O \acrshort{PLN} é uma área de pesquisa que preocupa-se em explorar como um computador pode entender um texto escrito por humanos. Com esse tipo 
           de ferramenta é possível realizar análises morfológicas, sintáticas ou léxicas no texto e também extrair informações de um determinado
           documento ~\cite{liddy2001natural}. 
 
           \subsubsection{Análise de Sentimentos}
 
           A análise de sentimentos é um campo que envolve outras ciências além da computação, como a psicologia e linguística, pois é necessário 
-          a construção de dicionários para facilitar a classificação de textos, quando por exemplo a intenção é apenas identificar a polaridade
+          a construção de dicionários para facilitar a classificação de textos. Por exemplo quando a intenção é apenas identificar a polaridade
           de uma palavras, ela poderá ter três saídas conhecidas: Positivo, Negativo e Neutro ~\cite{wegrzyn2012tweets}. 
           
-          Existem diversas formas de fazer o uso da análise de sentimentos, a realização dessas tarefas no idioma em português ainda é muito díficil devido 
-          não ter dicionários grandes para realizar o tratamento com um grande volume de dados, também é possível verificar a polaridade de cada frase através
-          da bibliotca ~\cite{textblob}, mas para isso é necessário traduzir toda a frase para o idioma inglês através da \acrshort{API} aberta da \textit{Google},
-          o que pode implicar um viés durante o processo de análise de sentimentos.
+
+
+          A análise de sentimentos no idioma português ainda é muito difícil em virtude da ausência de dicionários grandes para se realizar o tratamento de grandes volume de dados. 
+          A polaridade de cada frase pode ser verificada por meio da biblioteca ~\cite{textblob},
+           mas, para isso, é necessário traduzir toda a frase para o idioma inglês através da API aberta da Google, 
+           o que pode implicar um viés durante o processo de análise de sentimentos.
           
-          É possível utilizar um modelo de \acrshort{AM} para realizar a análise de sentimentos, onde faz o uso do modelo previamente treinado para realizar a predição
-          da polaridade de novas frases que não existiam durante a fase de treinamento ~\cite{golbeck2010twitter}.
+          É possível utilizar um modelo de \acrshort{AM} para realizar a análise de sentimentos, onde um modelo previamente treinado é aplicado para a predição da polaridade de novas frases que não existiam durante a fase de treinamento ~\cite{golbeck2010twitter}.
           
           
         \subsubsection{Pré-Processamento}
 
-            O pré-processamento dos dados é a parte mais importante da análise, pois é a etapa onde irá ser tratada as informações e com isso 
-          facilitará o processo de aprendizado da máquina. Onde será indentificado padrões para facilitar a limpeza dos dados, onde pode ser definido
-          que todo o texto deverá estar escrito em letra minúscula, remoção de pontuação e acentos, nessa fase também é possível retirar os textos que não 
-          estão no padrão desejado, por exemplo apresentam \textit{emotions} ao invés de texto, remoção de números, ou seja, o interesse dessa etapa é 
-          filtrar o texto de forma que a máquina obtenha apenas informações que irão ser utilizadas para treinamento ~\cite{ferreirametodo}.
+O pré-processamento dos dados é a etapa onde é realizado o tratamento das informações, facilitando o processo de aprendizado da máquina. Nesta fase são identificados padrões de modo a facilitar a limpeza dos dados. Por exemplo, pode-se definir a utilização exclusiva de letras minúsculas, remoção de pontuação e acentos, remoção de textos contendo emotions, remoção de números, etc. Portanto, esta etapa visa filtrar o texto de forma que a máquina obtenha apenas informações que serão efetivamente utilizadas durante o treinamento. ~\cite{ferreirametodo}.
 
         \subsubsection{Tokenização}
 
-              Acontece na etapa de pré-processamento e a sua utilização tem como finalidade extrair pequenas informações de um texto livre. Recebe esse nome, 
-            pois cada divisão é nomeada de \textit{token} e que na maioria das vezes é uma palavra que está inserida no texto, mas em outros casos podem 
-            ser separados em letras ou duplas ou trincas de palavras~\cite{mcnamee2004character}. Nesse trabalho foi utilizado o \textit{token} em sua forma clássica utilizando 
+              A tokenização acontece na etapa de pré-processamento e tem como finalidade extrair pequenas informações de um texto livre. Recebe esse nome, pois cada divisão é nomeada de \textit{token}, 
+              o qual, na maioria das vezes, é uma palavra que está inserida no texto. Entretanto, em outros casos, podem ser apenas letras ou, ainda, duplas ou trincas de palavras ~\cite{mcnamee2004character}. Neste trabalho foi utilizado o \textit{token} em sua forma clássica utilizando 
             a linguagem de programação \textit{Python} e a biblioteca \textit{NLTK} ~\cite{bird2004nltk}.
 
               Por exemplo, caso tenhamos a frase \textit{"Obina é melhor do que Neymar!"}, teremos sete tokens, conforme exemplo abaixo.
@@ -391,15 +381,15 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
                     $[Obina]$  $[é]$  $[melhor]$  $[do]$  $[que]$  $[Neymar]$  $[!]$
         \subsubsection{Stemming}
 
-            Essa técnica serve para evitar que palavras que tenham o mesmo radical sejam classificadas de maneira distintas, ou seja, essa técnica tem
-            por objetivo reduzir até a menor parte com significado da palavra que no caso é o radical, portanto no processo de \textit{steeming}, palavras
-            como caminhar, caminhada, caminharam, caminharão resultem na mesma palavra final: caminh. A necessário atentar-se na escolha do algoritmo correto 
-            para realizar \textit{steeming}, pois essa etapa está diretamente ligada com o idioma em que o texto está escrito.
+          A técnica de stemming tem por objetivo evitar que palavras que tenham o mesmo radical sejam classificadas de maneiras distintas. No processo de \textit{stemming}, 
+          cada palavra é reduzida até a menor parte que mantenha o significado da palavra, ou seja, o radical. Por exemplo, palavras como caminhar, caminhada, caminharam, 
+          caminharão resultam na mesma palavra final: caminh.
+          É necessário atentar-se na escolha do algoritmo correto para realizar o steeming, pois essa etapa está diretamente ligada ao idioma em que o texto está escrito.
         \subsubsection{Stop Words}
 
-          São os termos não relevantes para a análise do texto, são palavras que na maioria das vezes são conectivos de frases ou preposições, que podem
-          ser consideradas como palavras vazias, não existe uma lista universal de \textit{Stop Words}, mas por padrão é utilizada a lista presente na biblioteca
-          NLTK ~\cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontra-se algumas das \textit{Stop Words} utilizadas nesse trabalho.
+            \textit{Stop Words} são os termos considerados não relevantes para a análise do texto. São palavras que, em sua maioria, são conectivos de frases ou preposições, 
+            os quais podem ser consideradas como palavras vazias. Não existe uma lista universal de \textit{Stop Words}, mas, por padrão, é 
+            utilizada a lista presente na biblioteca NLTK ~\cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontram-se algumas das \textit{Stop Words} utilizadas neste trabalho.
 
           \begin{table}[h]\label{tb:stopwords}
             \centering
@@ -430,16 +420,15 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
 
   \subsection{Bag of Words}
 
-            Os dados utilizados nesse trabalho são textos, ou seja, é um formato que não existe um padrão conhecido, o que dificulta
-            a extração de informações. Por isso é necessário alguma técnica que organize esse conjunto de dados e extraia informações
+            Os dados utilizados neste trabalho são textos, ou seja, é um formato que não existe um padrão conhecido, o que dificulta
+            a extração de informações. Por isso, é necessário alguma técnica que organize esse conjunto de dados e extraia informações
             relevantes deles~\cite{wallach2006topic}.
 
-            Portanto é necessário utilizar o \textit{bag of words} para realizar a estruturação do texto que será analisado. No caso mais simples,
-            seria uma matriz que apenas indica se determinado termo existe ou não naquela frase, dessa forma seria uma abordagem booleana. Onde temos duas
+            Portanto, é necessário utilizar o \textit{bag of words} para realizar a estruturação do texto que será analisado. No caso mais simples,
+            seria uma matriz que apenas indica se determinado termo existe ou não naquela frase, constituindo-se em uma abordagem booleana. Onde temos duas
             frases que serão transformadas na matriz a ser utilizada nas próximas etapas.
 
-            \textit{$D_{1}=\textup{José gosta de assistir os jogos do Flamengo.}$}\\
-            \textit{$D_{2}=\textup{Maria gosta de assistir filmes}$}\\
+Por exemplo, as frases "José gosta de assistir os jogos do Flamengo" e "Maria gosta de assistir filmes" podem ser organizadas na seguinte matriz, onde o valor "1" indica que uma dada palavra aparece na frase considerada, enquanto que o valor "0" indica o caso oposto:
 
             \begin{center}
               \begin{bmatrix}              
@@ -450,11 +439,11 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
             \end{center}        
 
   \subsection{Term Frequency}
+            A medida de \textit{Term Frequency} é uma outra forma de representar os dados na matriz do modelo estudado. 
+            Ele considera a quantidade de ocorrências de um determinado termo $n_t$, o que difere drasticamente da abordagem bag of words~\cite{salton1988term}.
 
-            A medida de \textit{Term Frequency} é uma outra forma de representar os dados na matriz do modelo estudado, ele considera 
-            a quantidade de ocorrência que um determinado termo $n_{t}$, o que difere drásticamente do primeiro tipo de \textit{bag of words}~\cite{salton1988term}.
-            Esse modelo tem uma performance superior ao booleano que foi apresentado na subseção anterior, a sua fórmula matemática é descrita na
-            Equação \ref{eq:tf}.
+            Esse modelo tem uma performance superior ao método booleano apresentado na subseção anterior Sua
+            fórmula matemática é descrita na Equação \ref{eq:tf}.
             
 
             \begin{equation}\label{eq:tf}
@@ -467,11 +456,11 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
             
             \subsection{Term Frequency - Inverse Document Frequency (TF-IDF)}
             \label{sec:tfidf}
-               Uma abordagem mais eficaz é a TF-IDF, pois quando se utiliza a \textit{Term Frequency} ele considera todas as palavras 
-               tendo a mesma importância, portanto é necessário normalizar esses valores, para diminuir a influência que esses termos irão 
-               ter no processo de análise textual ~\cite{sparck1972statistical}. Para isso é necessário utilizar a equação descrita por ~\cite{sparck1972statistical},
-               onde é apresentada uma função inversa que irá calcular a importância de cada termo. É possível visualizar a Equação \ref{eq:idf} que é descrita por
-               ~\cite{sparck1972statistical}.
+
+            A técnica \textit{Term Frequency} considera que todas as palavras possuem a mesma importância. Uma abordagem mais eficaz é a \textit{Term Frequency-Inverse Document Frquency} (TF-IDF), 
+            que realiza uma normalização 
+            com a finalidade de diminuir a influência de cada termo sobre o processo de análise textual. 
+            A Equação \ref{eq:idf} apresenta a taxa de normalização dos valores de cada termo ~\cite{sparck1972statistical}:
                
 
                \begin{equation}\label{eq:idf}
@@ -483,14 +472,14 @@ os conceitos de mineração de texto. Na seção 2.3 é apresentado o conceito d
               Onde $N$ é o número total de frases e $d$ é a quantidade de documentos nos quais o termo aparece.
 
 
-              A fórmula final do TF-IDF é obtida a partir do produto da Equação \ref{eq:tf}, que é a frequência de cada termo com a Equação \ref{eq:idf}, 
-              que é o a taxa de normalização dos valores. Na Equação \ref{eq:tfidf} é possível ver que esse tipo de normalização irá desconsiderar 
-              palavras que aparecem em todas as frases do \textit{Corpus}, pois considera que esses termos não são úteis para as etapas seguintes.
+              A fórmula final do TF-IDF é obtida a partir do produto da entre a frequência de cada termo e a taxa de normalização dos valores, dados pelas Equações \ref{eq:tf} e \ref{eq:idf}, respectivamente. Na Equação \ref{eq:tfidf} é possível ver que esse tipo de normalização desconsiderá
+              palavras que aparecem em todas as frases do \textit{Corpus}, pois esses termos não são considerados úteis para as etapas seguintes:
+              
               
 
               \begin{equation}\label{eq:tfidf}
                 \begin{aligned}
-                  Tf-IDF = TF*IDF,
+                  TF-IDF = TF*IDF.
               \end{aligned} 
               \end{equation}
                
