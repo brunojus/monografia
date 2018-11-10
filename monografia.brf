@@ -8,8 +8,8 @@
 \backcite {miller1995wordnet}{{1}{1.1}{section.1.1}}
 \backcite {w3techs}{{2}{1.1}{figure.1.1}}
 \backcite {Twitter}{{2}{1.2}{section.1.2}}
-\backcite {EBC}{{2}{1.2}{section.1.2}}
-\backcite {face}{{2}{1.2}{section.1.2}}
+\backcite {EBC}{{3}{1.2}{section.1.2}}
+\backcite {face}{{3}{1.2}{section.1.2}}
 \backcite {souza}{{3}{1.2}{section.1.2}}
 \backcite {Neuenschwander}{{3}{1.2}{section.1.2}}
 \backcite {textblob}{{3}{1.2}{section.1.2}}
@@ -67,7 +67,7 @@
 \backcite {jin2008pareto}{{26}{3.5}{section.3.5}}
 \backcite {pedregosa2011scikit}{{26}{3.5}{section.3.5}}
 \backcite {lorena2007introduccao}{{26}{3.5}{section.3.5}}
-\backcite {medhat}{{28}{4.1}{section.4.1}}
-\backcite {TSE}{{30}{4.4}{section.4.4}}
-\backcite {LavaJato}{{32}{4.5}{figure.4.2}}
-\backcite {TSE}{{33}{4.3}{figure.4.3}}
+\backcite {medhat}{{27}{3.6}{section.3.6}}
+\backcite {TSE}{{29}{3.9}{section.3.9}}
+\backcite {LavaJato}{{31}{3.10}{figure.3.7}}
+\backcite {TSE}{{32}{3.8}{figure.3.8}}

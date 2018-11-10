@@ -38,20 +38,19 @@
 \BOOKMARK [1][-]{section.3.3}{An\341lise de Sentimentos}{chapter.3}% 38
 \BOOKMARK [1][-]{section.3.4}{Extra\347\343o da Localiza\347\343o e Data}{chapter.3}% 39
 \BOOKMARK [1][-]{section.3.5}{Aprendizado de M\341quina Supervisionado}{chapter.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Avalia\347\343o da Performance dos Algoritmos}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Valida\347\343o Cruzada N-Fold}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{Avalia\347\343o do erro utilizando o modelo}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{Resultado das Elei\347\365es}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{An\341lise Espa\347o-Temporal}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.6}{Plataforma de An\341lise de Sentimentos Online}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 48
-\BOOKMARK [0][-]{chapter.6}{Trabalhos Futuros}{}% 49
-\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 50
-\BOOKMARK [0][-]{chapter*.11}{Ap\352ndice}{}% 51
-\BOOKMARK [0][-]{appendix.A}{}{}% 52
-\BOOKMARK [1][-]{section.A.1}{C\363digo para limpeza dos dados}{appendix.A}% 53
-\BOOKMARK [1][-]{section.A.2}{C\363digo para an\341lise de sentimentos usando dicion\341rio}{appendix.A}% 54
-\BOOKMARK [1][-]{section.A.3}{C\363digo para extra\347\343o da localiza\347\343o do usu\341rio}{appendix.A}% 55
-\BOOKMARK [1][-]{section.A.4}{C\363digo para gera\347\343o da s\351ries temporais}{appendix.A}% 56
-\BOOKMARK [1][-]{section.A.5}{C\363digo para utiliza\347\343o do modelo de aprendizado de m\341quina persistivo}{appendix.A}% 57
+\BOOKMARK [1][-]{section.3.6}{Avalia\347\343o da Performance dos Algoritmos}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.7}{Valida\347\343o Cruzada N-Fold}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.8}{Avalia\347\343o do erro utilizando o modelo}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.9}{Resultado das Elei\347\365es}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.10}{An\341lise Espa\347o-Temporal}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.11}{Plataforma de An\341lise de Sentimentos Online}{chapter.3}% 46
+\BOOKMARK [0][-]{chapter.4}{Conclus\343o}{}% 47
+\BOOKMARK [0][-]{chapter.5}{Trabalhos Futuros}{}% 48
+\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 49
+\BOOKMARK [0][-]{chapter*.11}{Ap\352ndice}{}% 50
+\BOOKMARK [0][-]{appendix.A}{}{}% 51
+\BOOKMARK [1][-]{section.A.1}{C\363digo para limpeza dos dados}{appendix.A}% 52
+\BOOKMARK [1][-]{section.A.2}{C\363digo para an\341lise de sentimentos usando dicion\341rio}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.3}{C\363digo para extra\347\343o da localiza\347\343o do usu\341rio}{appendix.A}% 54
+\BOOKMARK [1][-]{section.A.4}{C\363digo para gera\347\343o da s\351ries temporais}{appendix.A}% 55
+\BOOKMARK [1][-]{section.A.5}{C\363digo para utiliza\347\343o do modelo de aprendizado de m\341quina persistivo}{appendix.A}% 56

@@ -263,3 +263,259 @@ computada apenas a probabilidade condicional para cada valor de saída a partir 
  
  Por último utilizou-se a regressão logística que o tempo de treinamento é considerável ao ser comparado com a árvore de decisão e esse classificador,
  também já tem uma função implementada na biblioteca utilizada nessa etapa.
+
+
+ Esta seção apresenta a validação do framework proposto.
+ Comparamos as previsões do framework com os resultados das
+ eleições presidenciais de 2014 extraídos do banco de dados do
+ Tribunal Superior Eleitoral Brasileiro. Analisamos apenas os
+ resultados referentes aos dois candidatos com maior número
+ de votos obtidos no primeiro turno, Dilma Rousseff e Aécio
+ Neves, que consequentemente se classificaram para o segundo
+ turno
+ 
+ \section{Avaliação da Performance dos Algoritmos}
+ 
+ O desempenho dos algoritmos Naive Bayes (NB), Máquina de
+ Vetores de Suporte (SVM), Regressão Logística (LR) e Árvores de Decisão (DT)
+ foram avaliados através das seguintes métricas: precisão, F1-Score,
+ recall e precisão. Essas informações podem ser visualizadas
+ na Tabela \ref{tb:metricas}.
+ O algoritmo de árvore de decisão apresentou os piores resultados em todas
+ as métricas avaliadas e também apresentou maior custo
+ computacional. Os algoritmos com os melhores resultados
+ em termos de precisão e custo computacional foi o \acrshort{SVM}, pois foi utilizada a função de \textit{gridsearch} para
+ diminuir os erros.
+ Os dados de texto são ideais para classificação de SVM
+ devido à natureza esparsa do texto, em que poucos recursos
+ são irrelevantes, mas tendem a ser correlacionados entre si e
+ geralmente organizados em categorias linearmente separáveis
+ ~\cite{medhat}.
+ 
+ 
+ \begin{table}[htbp]
+     \centering
+     \caption{Performance dos classificadores utilizados}
+     \label{tb:metricas}
+     \begin{tabular}{@{}cccc@{}}
+     \\    \hline
+     Métricas & Classificador & TextBlob & OpLexicon/Sentilex \\  \hline
+     \multirow{4}{*}{Acurácia} & NB & 0.82 & 0.93 \\  
+      & SVM & 0.94 & 0.98 \\ 
+      & LR & 0.70 & 0.65 \\
+      & DT & 0.64 & 0.85 \\ \hline
+     \multirow{4}{*}{Precisão} & NB & 0.83 & 0.92 \\ 
+      & SVM & 0.94 & 0.98 \\ 
+      & LR & 0.79 & 0.83 \\ 
+      & DT & 0.69 & 0.89 \\ \hline
+     \multirow{4}{*}{Recall} & NB & 0.79 & 0.92 \\ 
+      & SVM & 0.93 & 0.97 \\ 
+      & LR & 0.60 & 0.58 \\ 
+      & DT & 0.56 & 0.81 \\ \hline
+     \multirow{4}{*}{F1-score} & NB & 0.80 & 0.92 \\ 
+      & SVM & 0.94 & 0.98 \\ 
+      & LR & 0.55 & 0.60 \\ 
+      & DT & 0.55 & 0.84 \\ \hline
+     \end{tabular}
+     \end{table}
+     
+ \section{Validação Cruzada N-Fold}
+ 
+ Na validação cruzada de $N-fold$, o conjunto de dados é
+ particionado em subconjuntos mutuamente exclusivos de N.
+ Um subconjunto é usado como dados de validação para testar
+ o modelo, e os subconjuntos $N −1$ restantes são usados como
+ dados de treinamento. Como o conjunto de dados tem mais
+ de $100.000$ \textit{tweets}, a validação cruzada de $N-fold$ apresentaria
+ um alto custo computacional se um grande valor de N fosse
+ escolhido. Consequentemente, usamos $N = 5$. Os dados do
+ teste podem ser visualizados na Tabela \ref{tb:fold}.
+ Usando validação cruzada de 5 vezes, obtivemos resultados
+ semelhantes na primeira análise e o SVM permaneceu como
+ o melhor algoritmo para mineração de texto em português.
+ 
+ 
+ \begin{table}[tbp]
+     \centering
+     \caption{Validação cruzada $N-Fold$ com $N=5$ }
+     \label{tb:fold}
+     \begin{tabular}{@{}cccc@{}}
+     \toprule  \hline
+     Métrica & Algorithm & TextBlob & OpLexicon/Sentilex \\  \hline
+     \multirow{4}{*}{Acurácia} & NB & 0.81 & 0.92 \\ 
+      & SVM & 0.93 & 0.98 \\ 
+      & LR & 0.86 & 0.66 \\ 
+      & DT & 0.64 & 0.84  \\  \hline
+     \multirow{4}{*}{Precisão} & NB & 0.82 & 0.92 \\ 
+      & SVM & 0.92 & 0.98 \\ 
+      & LR & 0.78 & 0.83 \\ 
+      & DT & 0.70  & 0.88  \\ \hline
+     \multirow{4}{*}{Recall} & NB & 0.86 & 0.94 \\ 
+      & SVM & 0.93 & 0.98 \\ 
+      & LR & 0.90 & 0.80 \\ 
+      & DT & 0.54  & 0.81  \\ \hline 
+     \multirow{4}{*}{F1-score} & NB & 0.79 & 0.91 \\ 
+      & SVM & 0.92 & 0.98 \\ 
+      & LR & 0.54 & 0.58 \\
+      & DT & 0.56 & 0.84  \\ \hline
+     \end{tabular}
+     \end{table}
+ 
+ \newpage
+ 
+ \section{Avaliação do erro utilizando o modelo}
+ 
+ Sabendo que o algoritmo \acrshort{SVM} apresentou os melhores resultados entre todos os classificadores utilizados, 
+ ele foi utilizado para a avaliar o erro da análise de sentimento. O conjunto de dados de treinamento consiste
+ de 3000 tweets que foram divididos em três grupos de
+ 1000 tweets cada, onde cada grupo apresenta uma determinada polaridade
+ (positivo, neutro ou negativo). Como descrito na matriz de confusão da Figura \ref{confusion_teste}, o \textit{framework} classificou corretamente
+ tweets positivos, negativos e neutros com taxas de 99,50%,
+ 86.90 \% e 70.60 \%, respectivamente. Neste caso, usamos o
+ termos-chave "Aécio" e "Dilma", que se referem ao candidato
+ nomes Aécio Neves e Dilma Rousseff.
+ 
+ Confusion matrix for manual classification with SVM considering the
+ key terms "Dilma" and "Aécio" and 3000 tweets in total
+ 
+ \figuraBib{confusion_teste}{Matriz de confusão comparando a classificação manual com \acrshort{SVM} considerando os termos chaves Dilma e Aécio}{}{confusion_teste}{width=0.8\textwidth}%
+ 
+ 
+ \section{Resultado das Eleições}
+ 
+ Finalmente, nessa seção ocorre a comparação
+ entre os resultados obtidos pelo classificador e os dados
+ reais das eleições anteriores fornecidas pelo Tribunal Superior
+ Eleitoral brasileiro ~\cite{TSE} para obter a previsão eleitoral. Como
+ estamos observando apenas as eleições presidenciais, os candidatos
+ em análise são aqueles que obtiveram, no primeiro
+ turno, votos suficientes para participar do segundo turno.
+ 
+ \begin{table}[tbp]
+     \centering
+     \caption{Distribuição dos resultados da eleição presidencial de 2014}
+     \label{tb:eleicoes2014}
+     \begin{tabular}{ll}
+     \hline
+     Dilma Roussef & 51,64\% \\ \hline
+     Aécio Neves & 48,36\% \\ \hline
+     \end{tabular}
+ \end{table}
+ 
+ A Tabela \ref{tb:eleicoes2014} mostra um exemplo da distribuição dos votos
+ dos candidatos às eleições presidenciais brasileiras de 2014,
+ Aécio Neves e Dilma Rousseff, obtidos do banco de dados do
+ Tribunal Superior Eleitoral.
+ 
+ 
+ 
+ 
+ \section{Análise Espaço-Temporal}
+ 
+ 
+ Usando a análise temporal, é possível observar a intensidade
+ de cada candidato no dia da eleição, e serviu para demonstrar
+ como as reações dos brasileiros estavam acompanhando os
+ resultados do Tribunal Superior Eleitoral em tempo real. E na
+ Figura \ref{time_series} apresenta a quantidade de tweets classificados
+ em três categorias para os candidatos Dilma Roussef e
+ Aécio Neves.
+ 
+ \figuraBib{time_series}{Série temporal utilizando os tweets classificados durante o segundo turno com suas polaridades}{}{time_series}{width=0.6\textwidth}%
+ 
+ 
+ O segundo turno das eleições presidenciais de 2014, ocorreu no dia 26 de outubro. É possível visualizar na Figura \ref{time_series} que nesse dia
+ a quantidade de informações rotuladas como positiva para a candidata Dilma Roussef é superior com uma pequena distância em relação ao oponente Aécio
+ Neves. A queda na popularidade da candidata que ganhou as eleições está ligado ao fato da operação da Polícia Federal, denominada Lava Jato, onde
+ vários político foram presos. 
+ 
+ É possível visualizar o aumento de mensagens de teor negativo a partir do dia 24 de outubro de 2014, isso se dá ao fato do doleiro 
+ responsável pelo esquema de corrupção desse governo ter realizado declarações de que a presidente Dilma Roussef e o ex-presidente Lula tinham 
+ conhecimento de todo o esquema de corrupção na empresa estatal Petrobras e no dia 28 o executivo de uma empresa envolvida em esquemas de proprina
+ ter fechado um acordo de delação premiada com os procuradores da força tarefa da operação ~\cite{LavaJato}. 
+ 
+ 
+ A localização dos votos de cada seção eleitoral são disponibilizada pelo \acrshort{TSE}
+ combinadas com o quantitativo de votos na Figura \ref{mapaTse}. As cores
+ vermelha e azul representam, respectivamente, as regiões onde
+ os candidatos Dilma Rousseff e Aécio Neves tiveram maior número de votos nas eleições presidenciais de 2014.
+ 
+ \figuraBib{mapaTse}{Resultado das eleições presidencias de 2014 pelo \acrshort{TSE} ~\cite{TSE}}{}{mapaTse}{width=0.6\textwidth}%
+ 
+ 
+ A idéia principal é comparar com um local extraído do \textit{twitter}
+ conjuntamente com a análise de sentimentos.
+ Utilizando a geolocalização extraída é possível gerar o mapa
+ com a localização e o envio dos \textit{tweets} daquela região. Na
+ Figura \ref{Prediction} é apresentada a distribuição da polaridade do tweet
+ para cada candidato, a cor vermelha representa a candidata Dilma Roussef 
+ e a cor azul representa o candidato Aécio Neves.
+ 
+ 
+ \figuraBib{Prediction}{Predição da distribuição de votos utilizando o \textit{framework} desenvolvido}{}{Prediction}{width=0.6\textwidth}%
+ 
+ 
+ 
+ \section{Plataforma de Análise de Sentimentos \textit{Online}}
+ 
+ Como resultado desse trabalho foi desenvolvida uma interface online para classificação automática de novos textos
+ extraídos de redes sociais. Na Figura \ref{tela_principal} é detalhada a tela principal que serve para que o usuário
+ envie o arquivo extraído do \textit{twitter} para análise. Foi utilizado o modelo criado de forma persistiva do algoritmo 
+ \acrshort{SVM}.
+ 
+ 
+ \figuraBib{tela_principal}{Tela principal do protótipo de classificação automática de textos provenientes de redes sociais}{}{tela_principal}{width=0.8\textwidth}%
+ 
+ 
+ Durante o dia do segundo turno das eleições presidenciais de 2018, foram extraídos textos que contivessem referências aos dois candidatos, Fernando Haddas
+ e Jair Bolsonaro, a metodologia utilizada foi extrair dados a cada uma hora para agrupar um grande volume de dados para classificação. Nesse processo
+ foram extraídos mais de 200,000 \textit{tweets} para cada candidato, o que totaliza mais de 400,000 linhas de informações. Na Figura \ref{frame_classificador} 
+ apresenta as informações dos dados analisados.
+ 
+ \figuraBib{frame_classificador}{Tela com o resultado das análises utilizando o modelo desenvolvido}{}{frame_classificador}{width=\textwidth}%
+ 
+ A avaliação de cada sentimento no decorrer da eleição pode ser visualizada na Figura \ref{bolsonaro_haddad}, onde é possível ver a diferença 
+ entre os dois candidatos no que diz respeito a polaridade positiva, podemos considerar palavras de cunho positivo como pessoas que votam 
+ no candidato Bolsonaro e negativa pode-se entender como críticas dos eleitores de outros candidatos.
+ 
+ \figuraBib{bolsonaro_haddad}{Evolução do sentimento referente a cada candidato ao longo do dia da votação}{}{bolsonaro_haddad}{width=0.8\textwidth}%
+ 
+ A contabilização dessa análise pode ser vista na Tabela \ref{tb:bolso_haddad}, onde o resultado é favorável ao candidato Jair Bolsonaro.
+ 
+ 
+ \begin{table}
+     \label{tb:bolso_haddad}
+     \centering
+     \caption{Classificação dos dados utilizando o modelo construído para o segundo turno das eleições presidenciais de 2018}
+    
+     \begin{tabular}{llll}
+     \hline
+               & Positivo & Neutro & Negativo \\ \hline
+     Bolsonaro  & 54.47\%  & 30.88\% & 14.63\%  \\ \hline
+     Haddad     & 41.38\%  & 42.95\% & 15.66\%  \\ \hline
+     \end{tabular}
+ \end{table}
+ 
+ 
+ Como as eleições brasileiras utilizam as urnas eletrônicas durante o processo eleitoral, é possível saber 
+ quem ganhou, após a finalização da votação no último colégio eleitoral do Brasil, que é o estado do Acre. Na Tabela
+ \ref{tb:tse2018} é o resultado oficial do \acrshort{TSE}.
+ 
+ 
+ \begin{table}[tbp]
+     \centering
+     \caption{Distribuição dos resultados da eleição presidencial de 2018}
+     \label{tb:tse2018}
+     \begin{tabular}{ll}
+     \hline
+     Bolsonaro & 55,13\% \\ \hline
+     Haddad & 44,87\% \\ \hline
+     \end{tabular}
+ \end{table}
+ 
+ 
+ Ao comparar o resultado do \textit{framework} com o resultado oficial das eleições brasileira, é possível ver 
+ que o resultado foi satisfatório. A utilização da geolocalização nessa etapa não ofereceu bons resultados, visto que
+ a \acrshort{API} do \textit{Twitter} passou por várias atualizações e limitou as requisições para 5,000 por dia, impossibilitando 
+ uma análise detalhada da localização de cada \textit{tweet} postado, outra limitação é que por se tratar de redes sociais, as pessoas
+ não tem uma obrigação legal de inserir a sua localização exata.

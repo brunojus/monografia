@@ -118,66 +118,6 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{IEEE}{}%
-{%
-\gls@defglossaryentry{IEEE}%
-{%
-name={IEEE},%
-sort={IEEE},%
-type={acronym},%
-first={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicos\glsspace (IEEE)},%
-firstplural={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicoss\glsspace (IEEEs)},%
-text={IEEE},%
-plural={IEEEs},%
-description={Instituto de Engenheiros Eletricistas e Eletrônicos},%
-descriptionplural={Instituto de Engenheiros Eletricistas e Eletrônicos\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicos},%
-longplural={Instituto de Engenheiros Eletricistas e Eletr\IeC {\^o}nicoss},%
-short={IEEE},%
-shortplural={IEEEs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ICDM}{}%
-{%
-\gls@defglossaryentry{ICDM}%
-{%
-name={ICDM},%
-sort={ICDM},%
-type={acronym},%
-first={International Conference on Data Mining\glsspace (ICDM)},%
-firstplural={International Conference on Data Minings\glsspace (ICDMs)},%
-text={ICDM},%
-plural={ICDMs},%
-description={International Conference on Data Mining},%
-descriptionplural={International Conference on Data Mining\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={International Conference on Data Mining},%
-longplural={International Conference on Data Minings},%
-short={ICDM},%
-shortplural={ICDMs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
 \ifglsentryexists{SVM}{}%
 {%
 \gls@defglossaryentry{SVM}%

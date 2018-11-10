@@ -33,7 +33,7 @@ Warning--entry type for "ferreirametodo" isn't style-file defined
 Warning--entry type for "martin" isn't style-file defined
 --line 345 of file bibliografia.bib
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Warning--empty language in w3techs
+Warning--empty language in song2014analyzing
 Warning--empty year in lorena2007introduccao
 Warning--empty journal in coelhoanalise
 Warning--empty year in coelhoanalise
@@ -42,7 +42,7 @@ Warning--can't use both volume and number fields in kohavi1995study
 Warning--empty journal in liddy2001natural
 You've used 52 entries,
             2465 wiz_defined-function locations,
-            895 strings with 15737 characters,
+            895 strings with 15698 characters,
 and the built_in function-call counts, 16262 in all, are:
 = -- 1287
 > -- 455

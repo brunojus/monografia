@@ -17,14 +17,13 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Fluxo de pr\IeC {\'e}-processamento de dados.}}{22}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de um tweet extra\IeC {\'\i }do da rede social analisada.}}{25}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Exemplo de um perfil na rede social analisada.}}{26}{figure.3.5}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Matriz de confus\IeC {\~a}o comparando a classifica\IeC {\c c}\IeC {\~a}o manual com \acrshort {SVM} considerando os termos chaves Dilma e A\IeC {\'e}cio.}}{31}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces S\IeC {\'e}rie temporal utilizando os tweets classificados durante o segundo turno com suas polaridades.}}{32}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado das elei\IeC {\c c}\IeC {\~o}es presidencias de 2014 pelo \acrshort {TSE} ~\cite {TSE}.}}{33}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Predi\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o de votos utilizando o \textit {framework} desenvolvido.}}{34}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Tela principal do prot\IeC {\'o}tipo de classifica\IeC {\c c}\IeC {\~a}o autom\IeC {\'a}tica de textos provenientes de redes sociais.}}{34}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tela com o resultado das an\IeC {\'a}lises utilizando o modelo desenvolvido.}}{35}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o do sentimento referente a cada candidato ao longo do dia da vota\IeC {\c c}\IeC {\~a}o.}}{35}{figure.4.7}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Matriz de confus\IeC {\~a}o comparando a classifica\IeC {\c c}\IeC {\~a}o manual com \acrshort {SVM} considerando os termos chaves Dilma e A\IeC {\'e}cio.}}{30}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces S\IeC {\'e}rie temporal utilizando os tweets classificados durante o segundo turno com suas polaridades.}}{31}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Resultado das elei\IeC {\c c}\IeC {\~o}es presidencias de 2014 pelo \acrshort {TSE} ~\cite {TSE}.}}{32}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Predi\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o de votos utilizando o \textit {framework} desenvolvido.}}{33}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Tela principal do prot\IeC {\'o}tipo de classifica\IeC {\c c}\IeC {\~a}o autom\IeC {\'a}tica de textos provenientes de redes sociais.}}{33}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Tela com o resultado das an\IeC {\'a}lises utilizando o modelo desenvolvido.}}{34}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o do sentimento referente a cada candidato ao longo do dia da vota\IeC {\c c}\IeC {\~a}o.}}{34}{figure.3.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {american}{}

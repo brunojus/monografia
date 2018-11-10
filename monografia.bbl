@@ -13,31 +13,6 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {w3techs}
-\btxnamefont {\btxlastnamefont {W3Techs}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Historical trends in the usage of content languages for
-  websites.}{Historical trends in the usage of content languages for
-  websites.}}
-\newblock {\latintext
-  \btxurlfont{https://w3techs.com/technologies/history_overview/content_language}},
-  Acessado em 18.10.2018.
-
-\bibitem {martin}
-\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
-  architecture for software defined networking}{AN INTRUSION DETECTION AND
-  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
-  \btxprintmonthyear{.}{04}{2014}{long}.
-
-\bibitem {TSE}
-\btxnamefont {\btxlastnamefont
-  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
-  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
-\newblock {\latintext
-  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}},
-  Acessado em 28.10.2018.
-
 \bibitem {song2014analyzing}
 \btxnamefont {\btxlastnamefont {Song}, M.}, \btxnamefont {M.\btxfnamespacelong
   C. \btxlastnamefont {Kim}}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -84,6 +59,14 @@
   A.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Wordnet: a lexical
   database for {E}nglish}{WordNet: a lexical database for {E}nglish}}.
 \newblock \btxjournalfont {Communications of the ACM}, 38(11):39--41, 1995.
+
+\bibitem {w3techs}
+\btxnamefont {\btxlastnamefont {Speakt}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Top 10 languages used on the internet today}{Top 10
+  Languages Used On the internet today}}.
+\newblock {\latintext
+  \btxurlfont{https://speakt.com/top-10-languages-used-internet/}}, Acessado em
+  18.10.2018.
 
 \bibitem {Twitter}
 \btxnamefont {\btxlastnamefont {Twitter}}\btxauthorcolon\ \btxtitlefont
@@ -353,6 +336,13 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Ijcai}, \btxvolumelong
   {}~\btxvolumefont {14}, \btxpageslong {}\ 1137--1145. Montreal, Canada, 1995.
 
+\bibitem {martin}
+\btxnamefont {\btxlastnamefont {Andreoni}, Martin}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {An intrusion detection and prevention
+  architecture for software defined networking}{AN INTRUSION DETECTION AND
+  PREVENTION ARCHITECTURE FOR SOFTWARE DEFINED NETWORKING}},
+  \btxprintmonthyear{.}{04}{2014}{long}.
+
 \bibitem {liddy2001natural}
 \btxnamefont {\btxlastnamefont {Liddy}, Elizabeth\btxfnamespacelong
   D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Natural language
@@ -488,6 +478,15 @@
   2014\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {2090-4479}}}.
 \newblock {\latintext
   \btxurlfont{http://www.sciencedirect.com/science/article/pii/S2090447914000550}}.
+
+\bibitem {TSE}
+\btxnamefont {\btxlastnamefont
+  {{E}leitoral}~{T}ribunal~{S}uperior}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{E}statísticas {E}leitorais: eleições
+  anteriores}{{E}statísticas {E}leitorais: eleições anteriores}}.
+\newblock {\latintext
+  \btxurlfont{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/eleicoes/eleicoes-anteriores/estatisticas-eleitorais-anos-anteriores}},
+  Acessado em 28.10.2018.
 
 \bibitem {LavaJato}
 \btxnamefont {\btxlastnamefont {São~Paulo}, Folha~de}\btxauthorcolon\
