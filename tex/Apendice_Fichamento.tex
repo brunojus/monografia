@@ -36,6 +36,7 @@ import numpy as np
 from nltk.tokenize import WordPunctTokenizer
 tok = WordPunctTokenizer()
 
+# Função utilizada para limpeza do texto utilizando expressão regulares
 def removestopwords(texto):
     frases = []
    
@@ -111,6 +112,7 @@ for i in dicionario.readlines():
     dic_palavra_polaridade[palavra] = polaridade
 
 
+# Altrando os valores pelos rótulos
 def Pontuação_sentimento(frase):
     frase = frase.lower()
     l_sentimento = []
@@ -119,13 +121,14 @@ def Pontuação_sentimento(frase):
         l_sentimento.append(int(dic_palavra_polaridade.get(p, 0)))
 
     if sum(l_sentimento) > 0:
-        return 'Positivo, Pontuação: {}'.format(sum(l_sentimento))
+        return 'Positivo'
     elif sum(l_sentimento) == 0:
-        return 'Neutro, Pontuação:{}'.format(sum(l_sentimento))
+        return 'Neutro')
     elif sum(l_sentimento) < 0:
-        return 'Negativo, Pontuação:{}'.format(sum(l_sentimento))
+        return 'Negativo'
 
 
+# Realizando os testes de análise com o dicionário
 frase = Pontuação_sentimento('Sua mãe é feliz')
 print(frase)
 \end{lstlisting}
@@ -138,6 +141,7 @@ print(frase)
     import pandas as pd  
     import tweepy
     
+    # Dados de acesso do Twitter
     consumer_key = ""
     
     consumer_secret = ""
@@ -149,9 +153,12 @@ print(frase)
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     
+    # Logando na API
     api = tweepy.API(auth)
 
     location = []
+
+    # Realizando a extração da localização
     for tweet in entrada['username']:
         try:
             user = api.get_user(tweet)
@@ -178,9 +185,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
 
+
+# Abrindo os datasets
 dataset=pd.read_csv("/home/bruno/Documents/artigo/Dados Brutos/Dilma_final_prog1.csv",delimiter=",",encoding='latin-1').set_index('Date')
 dataset1=pd.read_csv("/home/bruno/Documents/artigo/Dados Brutos/Aecio_final_prog1.csv",delimiter=",",encoding='latin-1').set_index('Date')
 
+# Definindo os rótulos do dataset
 positivo = dataset.loc[dataset['Sentiment'] == 'Positive']
 negativo = dataset.loc[dataset['Sentiment'] == 'Negative']
 neutro  = dataset.loc[dataset['Sentiment'] == 'Neutral']
@@ -239,6 +249,8 @@ import pandas as pd
 import numpy as np
 from sklearn.externals import joblib
 
+
+# importando o modelo treinado previamente
 model = joblib.load('svm.pkl')
 
 bolsonaro = pd.read_csv('bolsonaro_use.csv',sep=';',encoding='utf-8')

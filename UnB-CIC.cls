@@ -927,8 +927,8 @@
 \newcommand{\sigla}[2]{\newacronym{#1}{#1}{#2}}%
 
 
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
+% \setcounter{secnumdepth}{4}
+% \setcounter{tocdepth}{4}
 
 \newcommand{\@referencia}[2]{#1~\ref{#2}}%
 \newcommand{\refCap}[1]{\@referencia{Capítulo}{#1}}%
