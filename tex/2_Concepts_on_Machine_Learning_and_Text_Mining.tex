@@ -41,19 +41,16 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
        características ou \textit{features} de cada dado de entrada, o modelo passa por uma fase de treinamento.
       
 
-      \figuraBib{supervisionado}{Treinamento de um modelo de aprenzidado de máquina supervisionado}{}{supervisionado}{width=.6\textwidth}%
-
-      Na Figura \ref{supervisionado_predicao} é possível visualizar o modelo preditivo em funcionamento, onde o usuário fornece uma informação de entrada
-      e o sistema o responde com a classe que foi identificada através da entrada.
-
-      Após o treinamento descrito na Figura \ref{supervisionado}, o modelo é capaz de prever se um dado de entrada não rotulado pode ser classificada como "cão" ou "gato". 
-      Na Figura \ref{supervisionado_predicao} é possível visualizar o modelo preditivo em funcionamento, onde o usuário fornece um dado de entrada não rotulado e o sistema responde 
-      com a classe que foi identificada.
-
-      \figuraBib{supervisionado_predicao}{Utilização do modelo para realizar predição a partir de classes previamente treinadas}{}{supervisionado_predicao}{width=.6\textwidth}%
+      \figuraBib{AM_supervisionado}{Treinamento de um modelo de aprenzidado de máquina supervisionado \\ Adaptado de \cite{lorena2007introduccao}}{}{supervisionado}{width=.6\textwidth}%
 
 
-      Os algoritmos mais utilizados no aprendizado supervisionado serão detalhados a seguir.
+
+      Após o treinamento descrito na Figura \ref{AM_supervisionado}, o modelo é capaz de classificar novos dados que serão inseridos
+      nesse modelo.
+
+
+
+      Os algoritmos mais utilizados no aprendizado supervisionado serão detalhados a seguir:
 
       \paragraph{SVM}
       \label{par:svm}
@@ -89,8 +86,8 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
 
         Neste trabalho, o SVM foi utilizado para classificar dados multi-classes, visto que foram consideradas três classes distintas durante o desenvolvimento do modelo: Positivo, Negativo e Neutro.
         
-        Tendo como os dados de treinamento $x_{i} \in \mathbb{R}^{p}$, onde $i = 1,...,n$. Onde $y \in {1,-1}^n$, na Equação (\ref{eq:SVM}) é
-        possível visualizar a solução matemática para esse algoritmo:
+        Tendo como os dados de treinamento $x_{i} \in \mathbb{R}^{p}$, onde $i = 1,...,n$, em duas classes e o vetor $y \in {1,-1}^n$, na Equação (\ref{eq:SVM}) é
+        possível visualizar a solução matemática para esse algoritmo, que tem como o objetivo suavizar as margens do classificador linear:
 
         \begin{equation}\label{eq:SVM}
           \begin{aligned}
@@ -100,6 +97,9 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
         \end{aligned}
         \end{equation}
 
+        Onde $\omega$ é o vetor utilizado na classificação, $\zeta_{i}$ são as variáveis de folga, para todo $i = 1\cdots n$, que podem ser vistas como uma minimização a erros marginais
+         \cite{smola2000advances}. A constante $C$ é um termo de regularização que impõe um peso à minimizacão dos erros no conjunto de treinamento \cite{lorena2007introduccao}.
+
         Considerando que o dual de um espaço de Hilbert também é um espaço de Hilbert ~\cite{lorena2007introduccao}, tem-se que:
 
 
@@ -107,14 +107,15 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
           \begin{aligned}
             & \min_{\alpha} \frac{1}{2}\alpha^{T}Q\alpha - e^{T}\alpha\\ \\
             & \textup{sujeito a }  y^{T}\alpha = 0 \\ \\
-            & 0\leq \alpha_{i}\leq C, i= 1\cdots, n 
+            & 0\leq \alpha_{i}\leq C, i= 1\cdots, N
         \end{aligned}
         \end{equation}
 
-        onde \textbf{e} é o vetor com todos os valores, $C>0$ é o limite superior, $Q$ é uma matriz semidefinida positiva de tamanho n por n,
+        onde \textbf{e} é o vetor com todos os valores, $C>0$ é o limite superior, $Q$ é uma matriz semidefinida positiva de tamanho n \times n,
         $Q_{ij}\equiv y_{i}y_{j}K(x_{i},x_{j})$, onde $K(x_{i},x_{j}) = \phi(x_{i})^{T}\phi(x_{j})$ é a função kernel do \acrshort{SVM}. Os 
         vetores de treinamento são definidos em um espaço dimensional maior pela função $\phi$.
-        Por fim na Equação \ref{eq:predSVM}, temos a função de decisão:
+
+        Por fim na Equação (\ref{eq:predSVM}), temos a função de decisão:
 
          \begin{equation}\label{eq:predSVM}
           \begin{aligned}
@@ -122,14 +123,14 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
         \end{aligned}
         \end{equation}
         
-        Onde o termo $y_{i}\alpha_{i}$ representa o coeficiente dual, $K(x_{i},x)$ são os vetores de suporte e $\rho$ é um termo independente.
+        Onde o termo $sgn$ é a função sinal, $\alpha_{i}$ representa o coeficiente dual, $K(x_{i},x)$ são os vetores de suporte e $\rho$ é um termo independente.
 
 
 
         \paragraph{Naive Bayes}
 
-        O Naive Bayes é outro exemplo de algoritmo de \acrshort{AM} supervisionado. Sua formulação matemática é sustentada pelo teorema estatístico de Bayes e assume-se a independência condicional entre cada par de recursos, dado o valor da variável de classe ~\cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na Equação
-        \ref{eq:Bayes}
+        O Naive Bayes é outro exemplo de algoritmo de \acrshort{AM} supervisionado. Sua formulação matemática é sustentada pelo teorema estatístico de Bayes e assume-se a independência condicional entre cada par de recursos, dado o valor da variável de classe ~\cite{McCallum98acomparison}. O teorema de Bayes clássico segue a seguinte relação, onde um termo independente $y$ e o vetor $x_{1}$ até $x_{n}$, na 
+        Equação (\ref{eq:Bayes})
 
         \begin{equation}\label{eq:Bayes}
           \begin{aligned}
@@ -138,7 +139,7 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
         \end{equation}
         
 
-        Na Equação \ref{eq:Bayes1} é desconsiderado completamente a correlação entre as variáveis, 
+        Na Equação (\ref{eq:Bayes1}) é desconsiderada completamente a correlação entre as variáveis, 
 
 
         \begin{equation}\label{eq:Bayes1}
@@ -148,7 +149,7 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
         \end{equation}
 
 
-        Na Equação \ref{eq:BayesSimples}, para todo $i$, é possível simplificar através da relação:
+        Na Equação (\ref{eq:BayesSimples}), para todo $i$, é possível simplificar através da relação:
 
 
         \begin{equation}\label{eq:BayesSimples}
@@ -174,10 +175,10 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
 
         \paragraph{Árvores de Decisão}
 
-          A árvore de decisão funciona quando as classes presentes no conjunto de dados de treinamento se dividem, ou seja, esse algoritmo seleciona
+          A árvore de decisão pode ser aplicada quando as classes presentes no conjunto de dados de treinamento se dividem, ou seja, esse algoritmo seleciona
           um problema mais complexo e divide em subproblemas mais simples e, de forma recursiva a mesma estratégia é a aplicada a cada subproblema ~\cite{coelhoanalise}.
 
-          A Figura ~\ref{decisionTree} ilustra um exemplo de como uma árvore de decisão poderia ser utilizada para realizar análise de crédito de um cliente que deseja contrair empréstimo financeiro
+          A Figura ~\ref{decisionTree} ilustra um exemplo de como uma árvore de decisão pode ser utilizada para realizar análise de crédito de um cliente que deseja contrair empréstimo financeiro
            em um banco. O primeiro fator verificado é o salário do cliente. Caso o salário seja superior a R\$ 20.000,00, o empréstimo é concedido; 
           caso contrário, um segundo fator é analisado: grau de escolaridade. O empréstimo é concedido apenas se o cliente possui como escolaridade mínima graduação
            em nível universitário.
@@ -192,32 +193,32 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
 
           Considerando os dados no nó $m$ que pode ser representado pela letra $Q$. Para cada candidato é dividido $\theta = (j,t_{m})$ consistindo 
           a entrada como $j$ e o \textit{threshold} $t_{m}$, dividindo os dados entre $Q_{left}(\theta)$ e $Q_{right}(\theta)$ e esses subconjuntos podem ser vistos na
-          Equação \ref{eq:DT}
+          Equação (\ref{eq:DT})
 
 
           \begin{equation}\label{eq:DT}
             \begin{aligned}
               & Q_{left}(\theta) = (x,y)|x_{j} \leq t_{m} \\
-              & Q_{right}(\theta) = Q \textbackslash Q_{left}(\theta)
+              & Q_{right}(\theta) = Q \textbackslash Q_{left}(\theta),
           \end{aligned}
           \end{equation}
 
 
           A impureza no nó apresentado é calculada utilizando uma função de impureza denotada por $K()$, que pode ser escolhida dependendo se o 
-          problema for de classificação ou regressão. Na Equação \ref{eq:DT2} é calculada essa impureza:
+          problema for de classificação ou regressão. Na Equação (\ref{eq:DT2}) é calculada essa impureza:
 
           \begin{equation}\label{eq:DT2}
             \begin{aligned}
-              G(Q,\theta) = \frac{n_{left}}{N_{m}}K(Q_{left}(\theta)) + \frac{n_{right}}{N_{m}}K(Q_{right}(\theta))
+              G(Q,\theta) = \frac{n_{left}}{N_{m}}K(Q_{left}(\theta)) + \frac{n_{right}}{N_{m}}K(Q_{right}(\theta)),
           \end{aligned}
           \end{equation}
 
 
-          Por fim, na Equação \ref{eq:DT3} são selecionados os parâmetros para diminuir a impureza,
+          Por fim, na Equação (\ref{eq:DT3}) são selecionados os parâmetros para diminuir a impureza,
 
           \begin{equation}\label{eq:DT3}
             \begin{aligned}
-              \theta = \arg\min_{\theta}G(Q,\theta)
+              \theta = \arg\min_{\theta}G(Q,\theta).
           \end{aligned} 
           \end{equation}
 
@@ -230,17 +231,17 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
           Apesar do nome, é um modelo de classificação linear e não de regressão como sugere o seu nome. Neste modelo, os dados
           são descritos através de um único teste e são modelados a partir de uma função logística ~\cite{nasrabadi2007pattern}.
 
-          Seja a probabilidade P(X), na Equação \ref{eq:LogReg1}
+          Seja a probabilidade P(x), na Equação (\ref{eq:LogReg1})
 
 
           \begin{equation}\label{eq:LogReg1}
             \begin{aligned}
-              & P(x) = \frac{1}{1+e^{-(B_{0}+B_{1}x)}} = \frac{e^{B_{0} + B_{1}}x}{1+e^{B_{0}+B_{1}}x }\\ \\
-              & \frac{p(x)}{1-p(x)} = e^{B_{0}+B_{1}x}\\ \\
+              & P(x) = \frac{1}{1+e^{-(B_{0}+B_{1}x)}} = \frac{e^{B_{0} + B_{1}}x}{1+e^{B_{0}+B_{1}x} }\\ \\
+              & \frac{p(x)}{1-p(x)} = e^{B_{0}+B_{1}x},\\ \\
           \end{aligned} 
           \end{equation}
          
-          Onde, $\Beta_{i}$ são calculados através da função de máxima verossimilhança. Se $P(x)< 0.5$, a variável de resposta é classificada como 0, caso contrário, é classificada como 1.
+          onde, $\beta_{i}$ são calculados através da função de máxima verossimilhança. Se $P(x)< 0.5$, a variável de resposta é classificada como 0, caso contrário, é classificada como 1.
 
     \subsubsection{Aprendizado não-supervisionado}
 
@@ -248,32 +249,25 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
           necessário informar à máquina o tipo de cada dado. Essa não inserção de rótulos faz com que o algoritmo aprenda de acordo 
           com as características dos dados de entrada. Esse tipo de paradigma não tem certos benefícios que existem  no aprendizado supervisionado. 
           Para o seu funcionamento, o modelo propõe hipóteses a partir do que foi inserido na entrada ~\cite{bonaccorso2017machine}. Esse tipo de algoritmo 
-          é muito interessante em base de dados que ainda não foram exploradas e que necessita-se visualizar os dados agrupados.
+          é muito interessante em base de dados que ainda não foram exploradas e que necessitam-se visualizar os dados agrupados. O conceito de \textit{clusters}
+          é utilizado nesse tipo de aprendizado, que é o método que as variáveis que possuem tendências ou padrões semelhantes agrupam-se para formar grupos
+          que possuam a mesma características.  
 
-          A Figura \ref{unsupervised} ilustra um exemplo do funcionamento do algoritmo não supervisionado. São fornecidos quatro dados ao modelo, sendo três com características de cães e um com características de gato. O modelo verifica os dados de entrada e forma dois clusters, sendo um referente aos cães e outro relativo ao gato. Desse modo, o modelo é capaz de agrupar em um único cluster dados de entrada que possuem características semelhantes, independentemente de rótulos.
+          A Figura \ref{unsupervised} ilustra um exemplo do funcionamento do algoritmo não supervisionado. São fornecidos quatro dados ao modelo, sendo três com características de cães e um com características de gato. O modelo verifica os dados de entrada e formam dois clusters, sendo um referente aos cães e outro relativo ao gato. Desse modo, o modelo é capaz de agrupar em um único cluster dados de entrada que possuem características semelhantes, independentemente de rótulos.
 
           \figuraBib{unsupervised}{Treinamento de um modelo de aprendizado de máquina não-supervisionado}{}{unsupervised}{width=0.6\textwidth}%
 
           \paragraph{K-means}
-          O algoritmo mais utilizado no aprendizado não-supervisionado é o \textit{k-means}, pois a sua implementação é muito simples, pois basta comprovar
-          o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência ~\cite{macqueen1967some}. Na 
-          Equação \ref{kmeans} é possível visualizar como é realizada a seleção de clusters através do número de amostras $X = {x_1,x_2,...,x_n} $, descrito pela média $\mu_{j}$ de 
-          cada amostra nos clusters. 
-
-          \begin{equation}\label{kmeans}
-            \begin{aligned}
-              \sum_{i=0}^{n}\min_{\mu_j \in C}(||x_i - \mu_j||^2)
-          \end{aligned} 
-          \end{equation}
-
+          O algoritmo mais utilizado no aprendizado não-supervisionado é o \textit{k-means}, pois a sua implementação é muito simples. Basta comprovar
+          o processo de minimizacão da distância quadrática total de cada ponto de um grupo, em relação ao centróide de referência ~\cite{macqueen1967some}. 
 
 
     \subsubsection{Aprendizado por reforço}
 
-          O último paradigma, conhecido como aprendizado por reforço, baseia-se na forma com a qual o modelo reage de acordo com os dados passados a ele pelo ambiente, ou seja, o modelo aprende continuamente. 
+          O último paradigma abordado nesse trabalho, conhecido como aprendizado por reforço, baseia-se na forma com a qual o modelo reage de acordo com os dados passados a ele pelo ambiente, ou seja, o modelo aprende continuamente. 
           Esse aprendizado é realizado através das ações que são executadas; caso seja a decisão correta, o modelo ganha uma recompensa, caso
           contrário pode ser imposta algum tipo de penalidade ~\cite{zurada}. Nesse paradigma de aprendizado é necessário ajustar os parâmetros de forma
-          contínua com o intuito de maximar ou minimizar um determinado índice, e sempre há um "treinador" nessa fase verificando se os estímulos proporcionados
+          contínua com o intuito de maximar ou minimizar um determinado índice, e sempre há um ``treinador". nessa fase verificando se os estímulos proporcionados
           estão tendo a saída correta. Caso esses dados não estejam balanceados, eles podem alterar a performance do algoritmo ~\cite{mazurowski2008training}.
 
 
@@ -302,7 +296,7 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
           \figuraBib{confusion_matrix}{Matriz de confusão ~\cite{martin}}{}{confusion_matrix}{width=0.6\textwidth}%
 
 
-          Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo. As Equações 2.13, 2,15, 2,15 e 2.16 apresentam os cálculos das métricas Accuracy, Precision, Recall e F1-Score, respectivamente. 
+          Com os resultados extraídos da matriz de confusão é possível calcular outras métricas para verificar o desempenho de cada algoritmo. As Equações (\ref{acuracia}), (\ref{precision}), (\ref{recall}) e (\ref{f1score}) apresentam os cálculos das métricas Accuracy, Precision, Recall e F1-Score, respectivamente. 
           Accuracy ilustra basicamente o percentual de acertos do modelo. A métrica Precision, por sua vez, reflete quantos dados são verdadeiramente corretos 
           dentre todos aqueles classificados como corretos pelo modelo. O Recall, por outro lado, mostra quantos dados são verdadeiramente corretos
            dentre todos os dados verdadeiramente positivos. Por fim, o F1-Score combina as métricas Precision e Recall, gerando um número único que indica a qualidade geral do modelo.
@@ -328,7 +322,7 @@ não serão abordados temas como aprendizado estatístico ou redes bayesianas.
 
           \begin{equation}\label{f1score}
             \begin{aligned}
-              \textup{F$1$-Score} = \frac{2*\textup{Precision}*\textup{Recall}}{\textup{Precision}+\textup{Recall}}
+              \textup{F$1$-Score} = \frac{2\times\textup{Precision}\times\textup{Recall}}{\textup{Precision}+\textup{Recall}}
           \end{aligned} 
           \end{equation}
 
@@ -390,6 +384,7 @@ O pré-processamento dos dados é a etapa onde é realizado o tratamento das inf
             \textit{Stop Words} são os termos considerados não relevantes para a análise do texto. São palavras que, em sua maioria, são conectivos de frases ou preposições, 
             os quais podem ser consideradas como palavras vazias. Não existe uma lista universal de \textit{Stop Words}, mas, por padrão, é 
             utilizada a lista presente na biblioteca NLTK ~\cite{bird2004nltk}. Na Tabela \ref{tb:stopwords} encontram-se algumas das \textit{Stop Words} utilizadas neste trabalho.
+            Nesse trabalho as \textit{stop words} foram removidas por não serem relevantes para as análises.
 
           \begin{table}[h]\label{tb:stopwords}
             \centering
@@ -443,7 +438,7 @@ Por exemplo, as frases "José gosta de assistir os jogos do Flamengo" e "Maria g
             Ele considera a quantidade de ocorrências de um determinado termo $n_t$, o que difere drasticamente da abordagem bag of words~\cite{salton1988term}.
 
             Esse modelo tem uma performance superior ao método booleano apresentado na subseção anterior Sua
-            fórmula matemática é descrita na Equação \ref{eq:tf}.
+            fórmula matemática é descrita na Equação (\ref{eq:tf})
             
 
             \begin{equation}\label{eq:tf}
@@ -460,7 +455,7 @@ Por exemplo, as frases "José gosta de assistir os jogos do Flamengo" e "Maria g
             A técnica \textit{Term Frequency} considera que todas as palavras possuem a mesma importância. Uma abordagem mais eficaz é a \textit{Term Frequency-Inverse Document Frquency} (TF-IDF), 
             que realiza uma normalização 
             com a finalidade de diminuir a influência de cada termo sobre o processo de análise textual. 
-            A Equação \ref{eq:idf} apresenta a taxa de normalização dos valores de cada termo ~\cite{sparck1972statistical}:
+            A Equação (\ref{eq:idf}) apresenta a taxa de normalização dos valores de cada termo ~\cite{sparck1972statistical}:
                
 
                \begin{equation}\label{eq:idf}
@@ -472,14 +467,14 @@ Por exemplo, as frases "José gosta de assistir os jogos do Flamengo" e "Maria g
               Onde $N$ é o número total de frases e $d$ é a quantidade de documentos nos quais o termo aparece.
 
 
-              A fórmula final do TF-IDF é obtida a partir do produto da entre a frequência de cada termo e a taxa de normalização dos valores, dados pelas Equações \ref{eq:tf} e \ref{eq:idf}, respectivamente. Na Equação \ref{eq:tfidf} é possível ver que esse tipo de normalização desconsiderá
+              A fórmula final do TF-IDF é obtida a partir do produto da entre a frequência de cada termo e a taxa de normalização dos valores, dados pelas Equações (\ref{eq:tf}) (\ref{eq:idf}), respectivamente. Na Equação (\ref{eq:tfidf}) é possível ver que esse tipo de normalização desconsiderá
               palavras que aparecem em todas as frases do \textit{Corpus}, pois esses termos não são considerados úteis para as etapas seguintes:
               
               
 
               \begin{equation}\label{eq:tfidf}
                 \begin{aligned}
-                  TF-IDF = TF*IDF.
+                  TF-IDF = TF \times IDF.
               \end{aligned} 
               \end{equation}
                
